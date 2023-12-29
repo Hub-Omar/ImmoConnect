@@ -8,3 +8,11 @@
 a{
     text-decoration: none;
 }
+
+li{
+    list-style: none;
+}
+
+body{
+    background-color: #1D1D1D;
+}
