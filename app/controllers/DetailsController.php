@@ -11,4 +11,10 @@ class DetailsController
         include '../../views/user/details/details.php';
         exit();
     }
+
+    public function signup()
+    {
+        include '../../views/auth/signUp.php';
+        exit();
+    }
 }

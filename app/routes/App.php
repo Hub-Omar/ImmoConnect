@@ -9,6 +9,7 @@ $router = new Router();
 $router->setRoutes([
     'GET' => [
         'details' => ['DetailsController', 'details'],
+        'signup' => ['DetailsController', 'signup'],
     ],
     'POST' => [
         'submit' => ['DetailsController', 'save']
