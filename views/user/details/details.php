@@ -4,16 +4,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
     <title>Document</title>
     <link rel="stylesheet" href="https://demos.creative-tim.com/notus-js/assets/styles/tailwind.css">
+
     <link rel="stylesheet"
         href="https://demos.creative-tim.com/notus-js/assets/vendor/@fortawesome/fontawesome-free/css/all.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
     <link
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;0,800;0,900;1,500;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="../../../public/css/details.css">
+        <script src="https://cdn.tailwindcss.com"></script>
+        <link rel="stylesheet" href="/ImmoConnect/public/css/details.css">
 </head>
 
 <body>
@@ -37,19 +40,19 @@
 
     <div class="details">
         <div class="images">
-            <img src="../../../public/images/detail1.jfif" class="img1">
+            <img src="/ImmoConnect/public/images/detail1.jfif" class="img1">
             <div class="image2">
-                <img src="../../../public/images/Black Brick Vila in Damavand, Iran by Reza Mohtashami.jfif"
+                <img src="/ImmoConnect/public/images/Black Brick Vila in Damavand, Iran by Reza Mohtashami.jfif"
                     class="img2">
-                <img src="../../../public/images/City Beach Residence Elevation.jfif" class="img2">
-                <img src="../../../public/images/detail1.jfif" class="img2">
-                <img src="../../../public/images/download (3).jfif" class="img2">
-                <img src="../../../public/images/detail1.jfif" class="img2">
+                <img src="/ImmoConnect/public/images/City Beach Residence Elevation.jfif" class="img2">
+                <img src="/ImmoConnect/public/images/detail1.jfif" class="img2">
+                <img src="/ImmoConnect/public/images/download (3).jfif" class="img2">
+                <img src="/ImmoConnect/public/images/detail1.jfif" class="img2">
             </div>
         </div>
         <div class="owner">
             <div class="name">
-                <img src="../../../public/images/owner.jfif" class="owner">
+                <img src="/ImmoConnect/public/images/owner.jfif" class="owner">
                 <div class="james">
                     <h3>James</h3>
                     <h4>Owner</h4>
@@ -57,7 +60,7 @@
             </div>
             <p>By proceeding, you consent to receive calls and texts at the number you provided, including marketing by
                 autodialer and prerecorded and artificial voice, and email, from realtor.com</p>
-            <a href="#"><img src="../../../public/images/Screenshot 2023-12-26 171521.png" class="map"></a>
+            <a href="#"><img src="/ImmoConnect/public/images/Screenshot 2023-12-26 171521.png" class="map"></a>
         </div>
     </div>
     <div class="description">
@@ -71,8 +74,8 @@
         <p class="desc">By proceeding, you consent to receive calls and texts at the number you provided, including
             marketing by autodialer and prerecorded and artificial voice, and email, from realtor.com</p>
         <div class="icons">
-            <a href="#" class="h-name"><img src="../../../public/images/home.png" class="home">189 Wilson Ave</a>
-            <a href="#" class="h-name"><img src="../../../public/images/location.png" class="home">189 Wilson Ave,
+            <a href="#" class="h-name"><img src="/ImmoConnect/public/images/home.png" class="home">189 Wilson Ave</a>
+            <a href="#" class="h-name"><img src="/ImmoConnect/public/images/location.png" class="home">189 Wilson Ave,
                 Chicopee, MA 01013</a>
         </div>
         <button class="Contactowner">Contact Owner</button>
@@ -95,56 +98,56 @@
 
         <div class="cards">
             <div class="card">
-                <img src="../../../public/images/City Beach Residence Elevation.jfif">
+                <img src="/ImmoConnect/public/images/City Beach Residence Elevation.jfif">
                 <div class="descr">
                     <p>Carriage House</p>
                     <p>$514,999</p>
                 </div>
             </div>
             <div class="card">
-                <img src="../../../public/images/Black Brick Vila in Damavand, Iran by Reza Mohtashami.jfif">
+                <img src="/ImmoConnect/public/images/Black Brick Vila in Damavand, Iran by Reza Mohtashami.jfif">
                 <div class="descr">
                     <p>Tudor</p>
                     <p>$514,999</p>
                 </div>
             </div>
             <div class="card">
-                <img src="../../../public/images/detail1.jfif">
+                <img src="/ImmoConnect/public/images/detail1.jfif">
                 <div class="descr">
                     <p>189 Wilson Ave</p>
                     <p>$414,999</p>
                 </div>
             </div>
             <div class="card">
-                <img src="../../../public/images/download (3).jfif">
+                <img src="/ImmoConnect/public/images/download (3).jfif">
                 <div class="descr">
                     <p>189 Wilson Ave</p>
                     <p>$614,999</p>
                 </div>
             </div>
             <div class="card">
-                <img src="../../../public/images/City Beach Residence Elevation.jfif">
+                <img src="/ImmoConnect/public/images/City Beach Residence Elevation.jfif">
                 <div class="descr">
                     <p>189 Wilson Ave</p>
                     <p>$514,999</p>
                 </div>
             </div>
             <div class="card">
-                <img src="../../../public/images/Black Brick Vila in Damavand, Iran by Reza Mohtashami.jfif">
+                <img src="/ImmoConnect/public/images/Black Brick Vila in Damavand, Iran by Reza Mohtashami.jfif">
                 <div class="descr">
                     <p>189 Wilson Ave</p>
                     <p>$714,999</p>
                 </div>
             </div>
             <div class="card">
-                <img src="../../../public/images/detail1.jfif">
+                <img src="/ImmoConnect/public/images/detail1.jfif">
                 <div class="descr">
                     <p>189 Wilson Ave</p>
                     <p>$514,999</p>
                 </div>
             </div>
             <div class="card">
-                <img src="../../../public/images/download (3).jfif">
+                <img src="/ImmoConnect/public/images/download (3).jfif">
                 <div class="descr">
                     <p>189 Wilson Ave</p>
                     <p>$314,999</p>
@@ -154,7 +157,7 @@
         <div class="comments">
             <div class="owner">
                 <div class="name">
-                    <img src="../../../public/images/owner.jfif" class="owner">
+                    <img src="/ImmoConnect/public/images/owner.jfif" class="owner">
                     <div class="james">
                         <h3>James</h3>
                         <h4>Owner</h4>
@@ -167,28 +170,28 @@
             </div>
             <div class="comments2">
                 <div class="name2">
-                    <img src="../../../public/images/owner.jfif" class="owner">
+                    <img src="/ImmoConnect/public/images/owner.jfif" class="owner">
                     <div class="jamess">
                         <p>By proceeding, you consent to receive calls and texts at the number you provided, including
                             marketing by autodialer</p>
                     </div>
                 </div>
                 <div class="name2">
-                    <img src="../../../public/images/owner.jfif" class="owner">
+                    <img src="/ImmoConnect/public/images/owner.jfif" class="owner">
                     <div class="jamess">
                         <p>By proceeding, you consent to receive calls and texts at the number you provided, including
                             marketing by autodialer</p>
                     </div>
                 </div>
                 <div class="name2">
-                    <img src="../../../public/images/owner.jfif" class="owner">
+                    <img src="/ImmoConnect/public/images/owner.jfif" class="owner">
                     <div class="jamess">
                         <p>By proceeding, you consent to receive calls and texts at the number you provided, including
                             marketing by autodialer</p>
                     </div>
                 </div>
                 <div class="name2">
-                    <img src="../../../public/images/owner.jfif" class="owner">
+                    <img src="/ImmoConnect/public/images/owner.jfif" class="owner">
                     <div class="jamess">
                         <p>By proceeding, you consent to receive calls and texts at the number you provided, including
                             marketing by autodialer</p>
@@ -201,7 +204,7 @@
     <footer>
         <div class="rows">
             <div class="copy">
-                <a href="#" class="logo" aria-label="Read more"><img src="../../../public/images/Group 1000001820.png"
+                <a href="#" class="logo" aria-label="Read more"><img src="/ImmoConnect/public/images/Group 1000001820.png"
                         alt="#"></a>
                 <h1>Terms of use | Privacy</h1>
                 <p>Copyright by 2019 YourName, Inc</p>
@@ -236,14 +239,14 @@
             <div class="det-foot">
                 <h1>Connect</h1>
                 <ul>
-                    <li><a href="#" aria-label="Read more"><img src="../../../public/images/Group-3.png"
+                    <li><a href="#" aria-label="Read more"><img src="/ImmoConnect/public/images/Group-3.png"
                                 alt="#">Facebook</a>
                     </li>
-                    <li><a href="#" aria-label="Read more"><img src="../../../public/images/Group22.png" alt="#"
+                    <li><a href="#" aria-label="Read more"><img src="/ImmoConnect/public/images/Group22.png" alt="#"
                                 class="tweet">Twitter</a></li>
-                    <li><a href="#" aria-label="Read more"><img src="../../../public/images/Group-1.png"
+                    <li><a href="#" aria-label="Read more"><img src="/ImmoConnect/public/images/Group-1.png"
                                 alt="#">Github</a></li>
-                    <li><a href="#" aria-label="Read more"><img src="../../../public/images/Group-2.png"
+                    <li><a href="#" aria-label="Read more"><img src="/ImmoConnect/public/images/Group-2.png"
                                 alt="#">Dribble</a>
                     </li>
                 </ul>
@@ -251,7 +254,7 @@
         </div>
     </footer>
 
-    <script src="../../../public/js/main.js"></script>
+    <script src="/ImmoConnect/public/js/main.js"></script>
 
 
 </body>
