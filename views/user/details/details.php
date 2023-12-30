@@ -15,8 +15,8 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;0,800;0,900;1,500;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
-        <script src="https://cdn.tailwindcss.com"></script>
-        <link rel="stylesheet" href="/ImmoConnect/public/css/details.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="/ImmoConnect/public/css/details.css">
 </head>
 
 <body>
@@ -26,7 +26,7 @@
         <div class="head-left">
             <a href="#"><i class='bx bxs-chevron-left'></i></a>
             <div class="search">
-                <input type="text" placeholder="Search" class="search">
+                <input type="text" placeholder="Search" class="search" id="searchInput" oninput="searchCards()">
                 <div class="icon">
                     <i class='bx bx-search-alt'></i>
                 </div>
@@ -96,6 +96,15 @@
             </select>
         </form>
 
+        <div id="noResultsMsg" style="display: none; text-align: center; margin-top: 80px;color:white;">
+            No results found.
+        </div>
+        <div id="noResultsCategoryMsg" style="display: none; text-align: center; margin-top: 20px;color:white;">
+            No results found for the selected category.
+        </div>
+        <div id="noResultsPriceMsg" style="display: none; text-align: center; margin-top: 20px;color:white;">
+            No results found for the selected price range.
+        </div>
         <div class="cards">
             <div class="card">
                 <img src="/ImmoConnect/public/images/City Beach Residence Elevation.jfif">
@@ -164,8 +173,10 @@
                     </div>
                 </div>
 
-                <textarea name="comment" id="comment" cols="30" rows="10" placeholder="add a comment"></textarea>
-                <button class="Contactowner" id="btn">Send</button>
+                <form action="#" class="comm">
+                    <textarea name="comment" id="comment" cols="30" rows="10" placeholder="add a comment"></textarea>
+                    <button class="Contactowner" id="btn">Send</button>
+                </form>
 
             </div>
             <div class="comments2">
@@ -201,11 +212,12 @@
         </div>
     </div>
 
+
     <footer>
         <div class="rows">
             <div class="copy">
-                <a href="#" class="logo" aria-label="Read more"><img src="/ImmoConnect/public/images/Group 1000001820.png"
-                        alt="#"></a>
+                <a href="#" class="logo" aria-label="Read more"><img
+                        src="/ImmoConnect/public/images/Group 1000001820.png" alt="#"></a>
                 <h1>Terms of use | Privacy</h1>
                 <p>Copyright by 2019 YourName, Inc</p>
             </div>

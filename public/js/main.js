@@ -31,9 +31,15 @@ searchInput.addEventListener("input", function () {
 categorySelect.addEventListener("change", filterCards);
 priceSelect.addEventListener("change", filterCards);
 
+var noResultsMsg = document.getElementById("noResultsMsg");
+var noResultsCategoryMsg = document.getElementById("noResultsCategoryMsg");
+var noResultsPriceMsg = document.getElementById("noResultsPriceMsg");
+
 function filterCards() {
     var selectedCategory = categorySelect.value;
     var selectedPrice = priceSelect.value;
+
+    var foundResults = false;
 
     cards.forEach(function (card) {
         var cardCategory = card.querySelector(".descr p:first-child").textContent.toLowerCase();
@@ -44,10 +50,15 @@ function filterCards() {
 
         if (categoryMatch && priceMatch) {
             card.style.display = "block";
+            foundResults = true;
         } else {
             card.style.display = "none";
         }
     });
+
+    noResultsMsg.style.display = foundResults ? "none" : "block";
+    noResultsCategoryMsg.style.display = foundResults || selectedCategory === "" ? "none" : "block";
+    noResultsPriceMsg.style.display = foundResults || selectedPrice === "" ? "none" : "block";
 }
 function checkPriceMatch(cardPrice, selectedPrice) {
     var numericCardPrice = parseInt(cardPrice.replace(/\$|,/g, ''), 10);
@@ -61,8 +72,31 @@ function checkPriceMatch(cardPrice, selectedPrice) {
     } else if (selectedPrice === "+$500.000") {
         return numericCardPrice >= 500000;
     }
-    else{
+    else {
 
     }
     return true;
+}
+function searchCards() {
+    var input, filter, cards, card, txtValue;
+    input = document.getElementById("searchInput");
+    filter = input.value.toUpperCase();
+    cards = document.getElementsByClassName("card");
+    var noResultsMsg = document.getElementById("noResultsMsg");
+
+    var foundResults = false;
+
+    for (var i = 0; i < cards.length; i++) {
+        card = cards[i];
+        txtValue = card.textContent || card.innerText;
+
+        if (txtValue.toUpperCase().indexOf(filter) > -1) {
+            card.style.display = "";
+            foundResults = true;
+        } else {
+            card.style.display = "none";
+        }
+    }
+
+    noResultsMsg.style.display = foundResults ? "none" : "block";
 }
