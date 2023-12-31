@@ -156,7 +156,7 @@
         </select>
     </form>
 
-    <div id="noResultsMsg" style="display: none; text-align: center; margin-top: 80px;color:white;">
+    <div id="noResultsMsg" style="display: none; text-align: center; margin-top: 80px;color:white;padding:1% 5%">
         No results found.
     </div>
     <div id="noResultsCategoryMsg" style="display: none; text-align: center; margin-top: 20px;color:white;">
