@@ -267,6 +267,7 @@ form{
     gap: 3rem;
     margin-top: 50px;
     float: right;
+    margin-right: 6rem;
 }
 
 #city{
@@ -317,11 +318,12 @@ form{
 }
 .cards{
     display: grid;
-    grid-template-columns: repeat(auto-fill , minmax(350px , 1fr));
+    grid-template-columns: repeat(auto-fill , minmax(320px , 1fr));
     align-items: center;
     justify-content: center;
     margin-top: 7%;
-    gap: 4rem;
+    padding: 1% 4%;
+    gap: 2rem;
 }
 
 .card img:hover{
@@ -331,8 +333,23 @@ form{
 .comments{
     margin-top: 7%;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
+}
+
+.pagination{
+    display: flex;
+    width: 100%;
+    align-items: flex-end;
+    justify-content: end;
+    gap: 3rem;
+    padding: 3% 6%;
+}
+
+.pagination button{
+    color: #93B1A6;
+    font-weight: bold;
+    border: none;
 }
 
 #comment{
@@ -372,6 +389,15 @@ form{
     padding: 4%;
     margin-top: 5%;
 }
+
+.modal {
+    transition: opacity 0.25s ease;
+    z-index: 100001;
+  }
+  body.modal-active {
+    overflow-x: hidden;
+    overflow-y: visible !important;
+  }
 
 .copy h1 {
     font-size: 15px;

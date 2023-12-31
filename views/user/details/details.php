@@ -9,6 +9,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="https://demos.creative-tim.com/notus-js/assets/styles/tailwind.css">
 
+
     <link rel="stylesheet"
         href="https://demos.creative-tim.com/notus-js/assets/vendor/@fortawesome/fontawesome-free/css/all.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
@@ -42,11 +43,13 @@
         <div class="images">
             <img src="/ImmoConnect/public/images/detail1.jfif" class="img1">
             <div class="image2">
-                <img src="/ImmoConnect/public/images/Black Brick Vila in Damavand, Iran by Reza Mohtashami.jfif"
+                <img src="/ImmoConnect/public/images/Black Brick Vila in Damavand, Iran by Reza Mohtashami (1).jfif"
                     class="img2">
-                <img src="/ImmoConnect/public/images/City Beach Residence Elevation.jfif" class="img2">
+                <img src="/ImmoConnect/public/images/Natural Light Living Rooms - Statement Wall Ideas for Living Room.jfif"
+                    class="img2">
                 <img src="/ImmoConnect/public/images/detail1.jfif" class="img2">
-                <img src="/ImmoConnect/public/images/download (3).jfif" class="img2">
+                <img src="/ImmoConnect/public/images/best home decor style for 2023_home decor style rustic farmhouse _home decor living room home decor.jfif"
+                    class="img2">
                 <img src="/ImmoConnect/public/images/detail1.jfif" class="img2">
             </div>
         </div>
@@ -78,138 +81,239 @@
             <a href="#" class="h-name"><img src="/ImmoConnect/public/images/location.png" class="home">189 Wilson Ave,
                 Chicopee, MA 01013</a>
         </div>
-        <button class="Contactowner">Contact Owner</button>
-        <form action="#">
-            <select name="city" id="city"><i class='bx bx-chevron-down'></i>
-                <option value="" selected>Cetegory</option>
-                <option value="Carriage House">Carriage House</option>
-                <option value="Tudor">Tudor</option>
-                <option value="Brownstone">Brownstone</option>
-                <option value="Cape Cod">Cape Cod</option>
-            </select>
-            <select name="price" id="price">
-                <option value="" selected>Price</option>
-                <option value="-$500.000">-$500.000</option>
-                <option value="-$400.000">-$400.000</option>
-                <option value="-$300.000">-$300.000</option>
-                <option value="+$500.000">+$500.000</option>
-            </select>
-        </form>
+        <button class="Contactowner modal-open" id="contactOwnerBtn">Contact Owner</button>
+        <div
+            class="modal opacity-0 pointer-events-none fixed w-full h-full top-0 left-0 flex items-center justify-center">
+            <div class="modal-overlay absolute w-full h-full bg-gray-900 opacity-50"></div>
 
-        <div id="noResultsMsg" style="display: none; text-align: center; margin-top: 80px;color:white;">
-            No results found.
-        </div>
-        <div id="noResultsCategoryMsg" style="display: none; text-align: center; margin-top: 20px;color:white;">
-            No results found for the selected category.
-        </div>
-        <div id="noResultsPriceMsg" style="display: none; text-align: center; margin-top: 20px;color:white;">
-            No results found for the selected price range.
-        </div>
-        <div class="cards">
-            <div class="card">
-                <img src="/ImmoConnect/public/images/City Beach Residence Elevation.jfif">
-                <div class="descr">
-                    <p>Carriage House</p>
-                    <p>$514,999</p>
+            <div
+                class="modal-container bg-white w-11/12 md:max-w-md mx-auto rounded-3xl shadow-lg z-50 overflow-y-auto">
+
+                <div
+                    class="modal-close absolute top-0 right-0 cursor-pointer flex flex-col items-center mt-4 mr-4 text-white text-sm z-50 rounded-xl">
+                    <svg class="fill-current text-white" xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                        viewBox="0 0 18 18">
+                        <path
+                            d="M14.53 4.53l-1.06-1.06L9 7.94 4.53 3.47 3.47 4.53 7.94 9l-4.47 4.47 1.06 1.06L9 10.06l4.47 4.47 1.06-1.06L10.06 9z">
+                        </path>
+                    </svg>
+                    <span class="text-sm">(Esc)</span>
                 </div>
-            </div>
-            <div class="card">
-                <img src="/ImmoConnect/public/images/Black Brick Vila in Damavand, Iran by Reza Mohtashami.jfif">
-                <div class="descr">
-                    <p>Tudor</p>
-                    <p>$514,999</p>
-                </div>
-            </div>
-            <div class="card">
-                <img src="/ImmoConnect/public/images/detail1.jfif">
-                <div class="descr">
-                    <p>189 Wilson Ave</p>
-                    <p>$414,999</p>
-                </div>
-            </div>
-            <div class="card">
-                <img src="/ImmoConnect/public/images/download (3).jfif">
-                <div class="descr">
-                    <p>189 Wilson Ave</p>
-                    <p>$614,999</p>
-                </div>
-            </div>
-            <div class="card">
-                <img src="/ImmoConnect/public/images/City Beach Residence Elevation.jfif">
-                <div class="descr">
-                    <p>189 Wilson Ave</p>
-                    <p>$514,999</p>
-                </div>
-            </div>
-            <div class="card">
-                <img src="/ImmoConnect/public/images/Black Brick Vila in Damavand, Iran by Reza Mohtashami.jfif">
-                <div class="descr">
-                    <p>189 Wilson Ave</p>
-                    <p>$714,999</p>
-                </div>
-            </div>
-            <div class="card">
-                <img src="/ImmoConnect/public/images/detail1.jfif">
-                <div class="descr">
-                    <p>189 Wilson Ave</p>
-                    <p>$514,999</p>
-                </div>
-            </div>
-            <div class="card">
-                <img src="/ImmoConnect/public/images/download (3).jfif">
-                <div class="descr">
-                    <p>189 Wilson Ave</p>
-                    <p>$314,999</p>
-                </div>
-            </div>
-        </div>
-        <div class="comments">
-            <div class="owner">
-                <div class="name">
-                    <img src="/ImmoConnect/public/images/owner.jfif" class="owner">
-                    <div class="james">
-                        <h3>James</h3>
-                        <h4>Owner</h4>
+
+                <div class="modal-content py-4 px-6 bg-white rounded-xl">
+                    <!-- Title -->
+                    <div class="flex justify-between items-center pb-3">
+                        <p class="text-2xl font-bold text-[#183D3D]">Contact Owner</p>
+                        <div class="modal-close cursor-pointer z-50">
+                            <svg class="fill-current text-black" xmlns="http://www.w3.org/2000/svg" width="18"
+                                height="18" viewBox="0 0 18 18">
+                                <path
+                                    d="M14.53 4.53l-1.06-1.06L9 7.94 4.53 3.47 3.47 4.53 7.94 9l-4.47 4.47 1.06 1.06L9 10.06l4.47 4.47 1.06-1.06L10.06 9z">
+                                </path>
+                            </svg>
+                        </div>
+                    </div>
+
+                    <div class="flex items-center pb-3">
+                        <img src="/ImmoConnect/public/images/owner.jfif" class="owner w-10 h-10 rounded-full"
+                            alt="Owner Image">
+                        <div class="james ml-3">
+                            <h3 class="text-black">James</h3>
+                            <h4 class="text-black" style="color:gray;">Owner</h4>
+                        </div>
+                    </div>
+                    <textarea id="messageInput"
+                        class="w-full h-20 p-2 border border-white rounded-xl mb-4 text-white bg-[#1D1D1D]"
+                        placeholder="Type your message..."></textarea>
+
+                    <div class="flex justify-end pt-2">
+                        <button
+                            class="px-4 bg-transparent p-3 rounded-lg text-[#93B1A6] hover:bg-gray-100 hover:text-indigo-400 mr-2">Send
+                            Message</button>
+                        <button
+                            class="modal-close px-4 bg-[#183D3D] p-3 rounded-lg text-white hover:bg-red-700">Close</button>
                     </div>
                 </div>
 
-                <form action="#" class="comm">
-                    <textarea name="comment" id="comment" cols="30" rows="10" placeholder="add a comment"></textarea>
-                    <button class="Contactowner" id="btn">Send</button>
-                </form>
-
             </div>
-            <div class="comments2">
-                <div class="name2">
-                    <img src="/ImmoConnect/public/images/owner.jfif" class="owner">
-                    <div class="jamess">
-                        <p>By proceeding, you consent to receive calls and texts at the number you provided, including
-                            marketing by autodialer</p>
-                    </div>
+        </div>
+
+    </div>
+    <form action="#" method="post">
+        <select name="city" id="city"><i class='bx bx-chevron-down'></i>
+            <option value="" selected>Cetegory</option>
+            <option value="Carriage House">Carriage House</option>
+            <option value="Tudor">Tudor</option>
+            <option value="Brownstone">Brownstone</option>
+            <option value="Cape Cod">Cape Cod</option>
+        </select>
+        <select name="price" id="price">
+            <option value="" selected>Price</option>
+            <option value="-$500.000">-$500.000</option>
+            <option value="-$400.000">-$400.000</option>
+            <option value="-$300.000">-$300.000</option>
+            <option value="+$500.000">+$500.000</option>
+        </select>
+    </form>
+
+    <div id="noResultsMsg" style="display: none; text-align: center; margin-top: 80px;color:white;">
+        No results found.
+    </div>
+    <div id="noResultsCategoryMsg" style="display: none; text-align: center; margin-top: 20px;color:white;">
+        No results found for the selected category.
+    </div>
+    <div id="noResultsPriceMsg" style="display: none; text-align: center; margin-top: 20px;color:white;">
+        No results found for the selected price range.
+    </div>
+    <div class="cards" id="cards-container">
+        <div class="card">
+            <img src="/ImmoConnect/public/images/City Beach Residence Elevation.jfif">
+            <div class="descr">
+                <p>Carriage House</p>
+                <p>$514,999</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="/ImmoConnect/public/images/Black Brick Vila in Damavand, Iran by Reza Mohtashami.jfif">
+            <div class="descr">
+                <p>Tudor</p>
+                <p>$514,999</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="/ImmoConnect/public/images/detail1.jfif">
+            <div class="descr">
+                <p>189 Wilson Ave</p>
+                <p>$414,999</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="/ImmoConnect/public/images/download (3).jfif">
+            <div class="descr">
+                <p>189 Wilson Ave</p>
+                <p>$614,999</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="/ImmoConnect/public/images/City Beach Residence Elevation.jfif">
+            <div class="descr">
+                <p>189 Wilson Ave</p>
+                <p>$514,999</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="/ImmoConnect/public/images/Black Brick Vila in Damavand, Iran by Reza Mohtashami.jfif">
+            <div class="descr">
+                <p>189 Wilson Ave</p>
+                <p>$714,999</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="/ImmoConnect/public/images/detail1.jfif">
+            <div class="descr">
+                <p>189 Wilson Ave</p>
+                <p>$514,999</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="/ImmoConnect/public/images/Black Brick Vila in Damavand, Iran by Reza Mohtashami (1).jfif">
+            <div class="descr">
+                <p>189 Wilson Ave</p>
+                <p>$314,999</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="/ImmoConnect/public/images/Black Brick Vila in Damavand, Iran by Reza Mohtashami (1).jfif">
+            <div class="descr">
+                <p>189 Wilson Ave</p>
+                <p>$314,999</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="/ImmoConnect/public/images/download (3).jfif">
+            <div class="descr">
+                <p>189 Wilson Ave</p>
+                <p>$314,999</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="/ImmoConnect/public/images/download (3).jfif">
+            <div class="descr">
+                <p>189 Wilson Ave</p>
+                <p>$314,999</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="/ImmoConnect/public/images/download (3).jfif">
+            <div class="descr">
+                <p>189 Wilson Ave</p>
+                <p>$314,999</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="/ImmoConnect/public/images/download (3).jfif">
+            <div class="descr">
+                <p>189 Wilson Ave</p>
+                <p>$314,999</p>
+            </div>
+        </div>
+    </div>
+    <div class="pagination" id="pagination">
+        <button onclick="changePage(-1)">Previous</button>
+        <button onclick="changePage(1)">Next</button>
+    </div>
+    <div class="comments">
+        <div class="owner">
+            <div class="name">
+                <img src="/ImmoConnect/public/images/owner.jfif" class="owner">
+                <div class="james">
+                    <h3>James</h3>
+                    <h4>Owner</h4>
                 </div>
-                <div class="name2">
-                    <img src="/ImmoConnect/public/images/owner.jfif" class="owner">
-                    <div class="jamess">
-                        <p>By proceeding, you consent to receive calls and texts at the number you provided, including
-                            marketing by autodialer</p>
-                    </div>
+            </div>
+
+            <form action="#" class="comm">
+                <textarea name="comment" id="comment" cols="30" rows="10" placeholder="add a comment"></textarea>
+                <button class="Contactowner" id="btn">Send</button>
+            </form>
+
+        </div>
+        <div class="comments2">
+            <div class="name2">
+                <img src="/ImmoConnect/public/images/owner.jfif" class="owner">
+                <div class="jamess">
+                    <p>By proceeding, you consent to receive calls and texts at the number you provided, including
+                        marketing by autodialer</p>
                 </div>
-                <div class="name2">
-                    <img src="/ImmoConnect/public/images/owner.jfif" class="owner">
-                    <div class="jamess">
-                        <p>By proceeding, you consent to receive calls and texts at the number you provided, including
-                            marketing by autodialer</p>
-                    </div>
+            </div>
+            <div class="name2">
+                <img src="/ImmoConnect/public/images/owner.jfif" class="owner">
+                <div class="jamess">
+                    <p>By proceeding, you consent to receive calls and texts at the number you provided, including
+                        marketing by autodialer</p>
                 </div>
-                <div class="name2">
-                    <img src="/ImmoConnect/public/images/owner.jfif" class="owner">
-                    <div class="jamess">
-                        <p>By proceeding, you consent to receive calls and texts at the number you provided, including
-                            marketing by autodialer</p>
-                    </div>
+            </div>
+            <div class="name2">
+                <img src="/ImmoConnect/public/images/owner.jfif" class="owner">
+                <div class="jamess">
+                    <p>By proceeding, you consent to receive calls and texts at the number you provided, including
+                        marketing by autodialer</p>
+                </div>
+            </div>
+            <div class="name2">
+                <img src="/ImmoConnect/public/images/owner.jfif" class="owner">
+                <div class="jamess">
+                    <p>By proceeding, you consent to receive calls and texts at the number you provided, including
+                        marketing by autodialer</p>
                 </div>
             </div>
         </div>
+    </div>
     </div>
 
 
@@ -267,7 +371,78 @@
     </footer>
 
     <script src="/ImmoConnect/public/js/main.js"></script>
+    <script>
+        var openmodal = document.querySelectorAll('.modal-open')
+        for (var i = 0; i < openmodal.length; i++) {
+            openmodal[i].addEventListener('click', function (event) {
+                event.preventDefault()
+                toggleModal()
+            })
+        }
 
+        const overlay = document.querySelector('.modal-overlay')
+        overlay.addEventListener('click', toggleModal)
+
+        var closemodal = document.querySelectorAll('.modal-close')
+        for (var i = 0; i < closemodal.length; i++) {
+            closemodal[i].addEventListener('click', toggleModal)
+        }
+
+        document.onkeydown = function (evt) {
+            evt = evt || window.event
+            var isEscape = false
+            if ("key" in evt) {
+                isEscape = (evt.key === "Escape" || evt.key === "Esc")
+            } else {
+                isEscape = (evt.keyCode === 27)
+            }
+            if (isEscape && document.body.classList.contains('modal-active')) {
+                toggleModal()
+            }
+        };
+
+
+        function toggleModal() {
+            const body = document.querySelector('body')
+            const modal = document.querySelector('.modal')
+            modal.classList.toggle('opacity-0')
+            modal.classList.toggle('pointer-events-none')
+            body.classList.toggle('modal-active')
+        }
+
+    </script>
+
+    <script>
+        const cardsContainer = document.getElementById('cards-container');
+        const pagination = document.getElementById('pagination');
+        const cardsPerPage = 10; // Adjust this based on the number of cards you want per page
+        let currentPage = 1;
+
+        // Function to show/hide cards based on the current page
+        function showCards() {
+            const cards = cardsContainer.querySelectorAll('.card');
+            const start = (currentPage - 1) * cardsPerPage;
+            const end = start + cardsPerPage;
+
+            cards.forEach((card, index) => {
+                card.style.display = index >= start && index < end ? 'block' : 'none';
+            });
+        }
+
+        // Function to handle page change
+        function changePage(direction) {
+            currentPage += direction;
+            if (currentPage < 1) {
+                currentPage = 1;
+            } else if (currentPage > Math.ceil(cardsContainer.children.length / cardsPerPage)) {
+                currentPage = Math.ceil(cardsContainer.children.length / cardsPerPage);
+            }
+            showCards();
+        }
+
+        // Initial call to show the first page of cards
+        showCards();
+    </script>
 
 </body>
 

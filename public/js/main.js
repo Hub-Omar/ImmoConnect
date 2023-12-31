@@ -100,3 +100,6 @@ function searchCards() {
 
     noResultsMsg.style.display = foundResults ? "none" : "block";
 }
+
+
+
