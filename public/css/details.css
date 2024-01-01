@@ -366,6 +366,7 @@ form{
     background-color: #363636;
     border-radius: 15px;
     display: flex;
+    align-items: flex-start;
     flex-direction: column;
     gap: 2rem;
     padding: 30px;

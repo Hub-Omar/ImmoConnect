@@ -10,10 +10,12 @@ $router->setRoutes([
     'GET' => [
         'details' => ['DetailsController', 'details'],
         'signup' => ['DetailsController', 'signup'],
+        'comments' => ['DetailsController', 'getComments'],
     ],
     'POST' => [
-        'submit' => ['DetailsController', 'save']
-    ]
+        'submit' => ['DetailsController', 'save'],
+        'details' => ['DetailsController', 'saveComment']
+        ],
 ]);
 
 if (isset($_GET['url'])) {
