@@ -69,7 +69,7 @@
     <div class="description">
         <p><i class='bx bxs-circle'></i> For Sell</p>
         <div class="price">
-            <h1><?php echo $annonce['prix'] ?></h1>
+            <h1>$<?php echo $annonce['prix'] ?></h1>
             <div class="line"></div>
             <p>$614,999</p>
             <button class="buy" onclick="showPaymentModal()">Buy Now</button>
@@ -157,102 +157,20 @@
         No results found for the selected price range.
     </div>
     <div class="cards" id="cards-container">
-        <div class="card">
-            <img src="/ImmoConnect/public/images/City Beach Residence Elevation.jfif">
-            <div class="descr">
-                <p>Carriage House</p>
-                <p>$514,999</p>
-            </div>
-        </div>
-        <div class="card">
-            <img src="/ImmoConnect/public/images/Black Brick Vila in Damavand, Iran by Reza Mohtashami.jfif">
-            <div class="descr">
-                <p>Tudor</p>
-                <p>$514,999</p>
-            </div>
-        </div>
-        <div class="card">
-            <img src="/ImmoConnect/public/images/detail1.jfif">
-            <div class="descr">
-                <p>189 Wilson Ave</p>
-                <p>$414,999</p>
-            </div>
-        </div>
-        <div class="card">
-            <img src="/ImmoConnect/public/images/download (3).jfif">
-            <div class="descr">
-                <p>189 Wilson Ave</p>
-                <p>$614,999</p>
-            </div>
-        </div>
-        <div class="card">
-            <img src="/ImmoConnect/public/images/City Beach Residence Elevation.jfif">
-            <div class="descr">
-                <p>189 Wilson Ave</p>
-                <p>$514,999</p>
-            </div>
-        </div>
-        <div class="card">
-            <img src="/ImmoConnect/public/images/Black Brick Vila in Damavand, Iran by Reza Mohtashami.jfif">
-            <div class="descr">
-                <p>189 Wilson Ave</p>
-                <p>$714,999</p>
-            </div>
-        </div>
-        <div class="card">
-            <img src="/ImmoConnect/public/images/detail1.jfif">
-            <div class="descr">
-                <p>189 Wilson Ave</p>
-                <p>$514,999</p>
-            </div>
-        </div>
-        <div class="card">
-            <img src="/ImmoConnect/public/images/Black Brick Vila in Damavand, Iran by Reza Mohtashami (1).jfif">
-            <div class="descr">
-                <p>189 Wilson Ave</p>
-                <p>$314,999</p>
-            </div>
-        </div>
-
-        <div class="card">
-            <img src="/ImmoConnect/public/images/Black Brick Vila in Damavand, Iran by Reza Mohtashami (1).jfif">
-            <div class="descr">
-                <p>189 Wilson Ave</p>
-                <p>$314,999</p>
-            </div>
-        </div>
-
-        <div class="card">
-            <img src="/ImmoConnect/public/images/download (3).jfif">
-            <div class="descr">
-                <p>189 Wilson Ave</p>
-                <p>$314,999</p>
-            </div>
-        </div>
-
-        <div class="card">
-            <img src="/ImmoConnect/public/images/download (3).jfif">
-            <div class="descr">
-                <p>189 Wilson Ave</p>
-                <p>$314,999</p>
-            </div>
-        </div>
-
-        <div class="card">
-            <img src="/ImmoConnect/public/images/download (3).jfif">
-            <div class="descr">
-                <p>189 Wilson Ave</p>
-                <p>$314,999</p>
-            </div>
-        </div>
-
-        <div class="card">
-            <img src="/ImmoConnect/public/images/download (3).jfif">
-            <div class="descr">
-                <p>189 Wilson Ave</p>
-                <p>$314,999</p>
-            </div>
-        </div>
+    <?php if (isset($all_annonce) && !empty($all_annonce)): ?>
+                <?php foreach ($all_annonce as $all_annonces): ?>
+                    
+                    <div class="card">
+                        <img src="/ImmoConnect/public/images/<?php echo $all_annonces['image']?>">
+                        <div class="descr">
+                            <p><?php echo $all_annonces['titre']?></p>
+                            <p>$<?php echo $all_annonces['prix']?></p>
+                        </div>
+                    </div>
+                <?php endforeach; ?>
+            <?php else: ?>
+                <p>No annonce available.</p>
+            <?php endif; ?>
     </div>
     <div class="pagination" id="pagination">
         <button onclick="changePage(-1)">Previous</button>
@@ -268,7 +186,7 @@
                 </div>
             </div>
 
-            <form action="details" method="post" class="comm">
+            <form action="details" method="post" class="comm" id="commentForm">
                 <textarea name="comment" id="comment" cols="30" rows="10" placeholder="add a comment"></textarea>
                 <button class="Contactowner" id="btn" type="submit" name="submit">Send</button>
             </form>
@@ -352,6 +270,8 @@
     <script src="/ImmoConnect/public/js/main.js"></script>
     <!-- Add this to your HTML file where the form is located -->
 
+    
+
     <script>
         var openmodal = document.querySelectorAll('.modal-open')
         for (var i = 0; i < openmodal.length; i++) {
@@ -396,10 +316,9 @@
     <script>
         const cardsContainer = document.getElementById('cards-container');
         const pagination = document.getElementById('pagination');
-        const cardsPerPage = 10; // Adjust this based on the number of cards you want per page
+        const cardsPerPage = 10; 
         let currentPage = 1;
 
-        // Function to show/hide cards based on the current page
         function showCards() {
             const cards = cardsContainer.querySelectorAll('.card');
             const start = (currentPage - 1) * cardsPerPage;
@@ -410,7 +329,6 @@
             });
         }
 
-        // Function to handle page change
         function changePage(direction) {
             currentPage += direction;
             if (currentPage < 1) {
@@ -421,7 +339,6 @@
             showCards();
         }
 
-        // Initial call to show the first page of cards
         showCards();
     </script>
 
