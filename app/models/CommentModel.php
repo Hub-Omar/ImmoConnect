@@ -1,15 +1,25 @@
 <?php
 
 namespace App\models;
-require_once '../../vendor/autoload.php';
-
+require '../../vendor/autoload.php';
 use App\dao\CommentDAO;
 
 class CommentModel
 {
-    public static function saveComment($comment, $userId, $annonceId)
+    private $comment;
+    private $userId;
+    private $annonceId;
+
+    public function __construct($comment, $userId, $annonceId)
     {
-        CommentDAO::saveComment($comment, $userId, $annonceId);
+        $this->comment = $comment;
+        $this->userId = $userId;
+        $this->annonceId = $annonceId;
+    }
+
+    public function saveComment()
+    {
+        CommentDAO::saveComment($this->comment, $this->userId, $this->annonceId);
     }
 
     public static function getCommentsByAnnonceId($annonceId)

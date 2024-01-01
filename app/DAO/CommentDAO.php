@@ -1,8 +1,7 @@
 <?php
 
 namespace App\dao;
-require_once '../../vendor/autoload.php';
-
+require '../../vendor/autoload.php';
 use App\database\Database;
 
 class CommentDAO
@@ -13,7 +12,7 @@ class CommentDAO
 
         $sql = "INSERT INTO `commentair`(`label`, `annonce_id`, `user_id`) VALUES (?, ?, ?)";
         $stmt = $conn->prepare($sql);
-        $stmt->bind_param("sii", $comment, $annonceId , $userId);
+        $stmt->bind_param("sii", $comment, $annonceId, $userId);
         $stmt->execute();
 
         $stmt->close();
