@@ -20,29 +20,6 @@
     <link rel="stylesheet" href="/ImmoConnect/public/css/details.css">
 </head>
 
-
-<style>
-    #loadingSpinner {
-        display: none;
-        border: 8px solid #f3f3f3; /* Light grey */
-        border-top: 8px solid #3498db; /* Blue */
-        border-radius: 50%;
-        width: 50px;
-        height: 50px;
-        animation: spin 1s linear infinite; /* Apply animation */
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        margin-top: -25px; /* Center vertically */
-        margin-left: -25px; /* Center horizontally */
-    }
-
-    @keyframes spin {
-        0% { transform: rotate(0deg); }
-        100% { transform: rotate(360deg); }
-    }
-</style>
-
 <body>
 
 
@@ -64,7 +41,7 @@
 
     <div class="details">
         <div class="images">
-            <img src="/ImmoConnect/public/images/detail1.jfif" class="img1">
+            <img src="/ImmoConnect/public/images/<?php echo $annonce['image'] ?>" class="img1">
             <div class="image2">
                 <img src="/ImmoConnect/public/images/Black Brick Vila in Damavand, Iran by Reza Mohtashami (1).jfif"
                     class="img2">
@@ -92,17 +69,15 @@
     <div class="description">
         <p><i class='bx bxs-circle'></i> For Sell</p>
         <div class="price">
-            <h1>$514,999</h1>
+            <h1><?php echo $annonce['prix'] ?></h1>
             <div class="line"></div>
             <p>$614,999</p>
             <button class="buy" onclick="showPaymentModal()">Buy Now</button>
-            <!-- Add this code within the <body> tag, after the existing modal code -->
 
         </div>
-        <p class="desc">By proceeding, you consent to receive calls and texts at the number you provided, including
-            marketing by autodialer and prerecorded and artificial voice, and email, from realtor.com</p>
+        <p class="desc"><?php echo $annonce['description'] ?></p>
         <div class="icons">
-            <a href="#" class="h-name"><img src="/ImmoConnect/public/images/home.png" class="home">189 Wilson Ave</a>
+            <a href="#" class="h-name"><img src="/ImmoConnect/public/images/home.png" class="home"><?php echo $annonce['titre'] ?></a>
             <a href="#" class="h-name"><img src="/ImmoConnect/public/images/location.png" class="home">189 Wilson Ave,
                 Chicopee, MA 01013</a>
         </div>
@@ -181,7 +156,6 @@
     <div id="noResultsPriceMsg" style="display: none; text-align: center; margin-top: 20px;color:white;">
         No results found for the selected price range.
     </div>
-    <div id="loadingSpinner"></div>
     <div class="cards" id="cards-container">
         <div class="card">
             <img src="/ImmoConnect/public/images/City Beach Residence Elevation.jfif">

@@ -3,23 +3,21 @@
 namespace App\controllers;
 
 require_once '../../vendor/autoload.php';
+use App\models\AnnonceModel;
 use App\models\CommentModel;
 
 class DetailsController
 {
-
     public function details()
     {
-            $annonceId = 2;
-            $comments = CommentModel::getCommentsByAnnonceId($annonceId);
-    
-            $this->detailsView($comments);
-        
-    }
-    
-    
+        $annonceId = 2;
+        $annonce = AnnonceModel::getAnnonceById($annonceId);
+        $comments = CommentModel::getCommentsByAnnonceId($annonceId);
 
-    private function detailsView($comments)
+        $this->detailsView($annonce, $comments);
+    }
+
+    private function detailsView($annonce, $comments)
     {
         include '../../views/user/details/details.php';
         exit();
