@@ -20,6 +20,29 @@
     <link rel="stylesheet" href="/ImmoConnect/public/css/details.css">
 </head>
 
+
+<style>
+    #loadingSpinner {
+        display: none;
+        border: 8px solid #f3f3f3; /* Light grey */
+        border-top: 8px solid #3498db; /* Blue */
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+        animation: spin 1s linear infinite; /* Apply animation */
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-top: -25px; /* Center vertically */
+        margin-left: -25px; /* Center horizontally */
+    }
+
+    @keyframes spin {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+    }
+</style>
+
 <body>
 
 
@@ -158,6 +181,7 @@
     <div id="noResultsPriceMsg" style="display: none; text-align: center; margin-top: 20px;color:white;">
         No results found for the selected price range.
     </div>
+    <div id="loadingSpinner"></div>
     <div class="cards" id="cards-container">
         <div class="card">
             <img src="/ImmoConnect/public/images/City Beach Residence Elevation.jfif">

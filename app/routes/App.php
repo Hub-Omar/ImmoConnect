@@ -10,11 +10,10 @@ $router->setRoutes([
     'GET' => [
         'details' => ['DetailsController', 'details'],
         'signup' => ['DetailsController', 'signup'],
-        'comments' => ['DetailsController', 'getComments'],
     ],
     'POST' => [
         'submit' => ['DetailsController', 'save'],
-        'details' => ['DetailsController', 'saveComment']
+        'details' => ['CommentsController', 'saveComment']
         ],
 ]);
 
