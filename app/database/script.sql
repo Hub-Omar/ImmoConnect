@@ -1,0 +1,61 @@
+CREATE DATABASE immoconnect;
+
+CREATE TABLE role (
+    id INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
+    nom VARCHAR(255)
+);
+
+CREATE TABLE User (
+    id INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
+    nom_complet VARCHAR(255),
+    email VARCHAR(255),
+    password VARCHAR(255),
+    Tel VARCHAR(255),
+    profile VARCHAR(255) NULL,
+    role_id INT,
+    FOREIGN KEY (role_id) REFERENCES role(id) ON DELETE CASCADE ON UPDATE CASCADE
+);
+
+CREATE TABLE Bien (
+    id INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
+    emplacement VARCHAR(255),
+    type VARCHAR(255),
+    user_id INT,
+    FOREIGN KEY (user_id) REFERENCES User(id) ON DELETE CASCADE ON UPDATE CASCADE
+);
+
+CREATE TABLE Annonce (
+    id INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
+    image VARCHAR(255),
+    prix double,
+    titre VARCHAR(255),
+    description VARCHAR(255),
+    date_ajout DATE,
+    bien_id INT,
+    FOREIGN KEY (bien_id) REFERENCES Bien(id) ON DELETE CASCADE ON UPDATE CASCADE
+);
+
+CREATE TABLE Commentair (
+    id INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
+    label VARCHAR(255),
+    annonce_id INT,
+    user_id INT,
+    FOREIGN KEY (annonce_id) REFERENCES Annonce(id) ON DELETE CASCADE ON UPDATE CASCADE,
+    FOREIGN KEY (user_id) REFERENCES User(id) ON DELETE CASCADE ON UPDATE CASCADE
+);
+
+CREATE TABLE Message_user (
+    emetteur_id INT,
+    recepteur_id INT,
+    message VARCHAR(255),
+    FOREIGN KEY (emetteur_id) REFERENCES User(id) ON DELETE CASCADE ON UPDATE CASCADE,
+    FOREIGN KEY (recepteur_id) REFERENCES User(id) ON DELETE CASCADE ON UPDATE CASCADE
+);
+
+CREATE TABLE paiment (
+    id INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
+    mode VARCHAR(255),
+    prix_final VARCHAR(255),
+    annonce_id INT,
+    FOREIGN KEY (annonce_id) REFERENCES Annonce(id) ON DELETE CASCADE ON UPDATE CASCADE
+);
