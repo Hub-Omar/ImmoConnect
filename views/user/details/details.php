@@ -34,7 +34,7 @@
             </div>
         </div>
         <div class="btns">
-            <a href="#" class="signin">Sign in</a>
+            <a href="signin" class="signin">Sign in</a>
             <a href="signup" class="signup">Sign up</a>
         </div>
     </header>
