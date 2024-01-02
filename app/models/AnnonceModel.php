@@ -30,9 +30,25 @@ class AnnonceModel
         return AnnonceDAO::getAnnonceById($id);
     }
 
-    public static function getAllAnnonce()
+    public function getAllAnnonce()
     {
         return AnnonceDAO::getAllAnnonce();
     }
+
+    public function AddAnnonce()
+    {
+        return AnnonceDAO::addAnnonce();
+    }
+
+    public function DeletAnnonce()
+    {
+        return AnnonceDAO::DeletAnnonce();
+    }
+     
+    public function UpdateAnnonce()
+    {
+        return AnnonceDAO::UpdateAnnonce();
+    }
+
 
 }

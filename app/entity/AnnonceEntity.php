@@ -57,26 +57,36 @@ class AnnonceEntity
     {
         return $this->bienId;
     }
-    public function setId($id){
+
+    public function setId($id)
+    {
         $this->id = $id;
     }
-    public function setImage($image){
+
+    public function setImage($image)
+    {
         $this->image = $image;
     }
-    public function setPrix($prix){
+    
+    public function setPrix($prix)
+    {
         $this->prix = $prix;
     }
-    public function setTitre($titre){
+    public function setTitre($titre)
+    {
         $this->titre = $titre;
     }
-    public function setDescription($description){
+    public function setDescription($description)
+    {
         $this->description = $description;
     }
-    public function setDateAjout($dateAjout){
+    public function setDateAjout($dateAjout)
+    {
         $this->dateAjout = $dateAjout;
     }
 
-    public function setBienId($bienId){
+    public function setBienId($bienId)
+    {
         $this->bienId = $bienId;
     }
 }

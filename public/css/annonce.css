@@ -2,12 +2,8 @@
     margin: 0%;
     padding: 0%;
     box-sizing: border-box;
+    
 }
 body{
     background: #1d1d1d;
-}
-.head{
-    background-image: url('../image/home1.jpg');
-    height: 50%;
-    width: 90%;
 }
