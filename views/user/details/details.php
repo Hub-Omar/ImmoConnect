@@ -69,15 +69,21 @@
     <div class="description">
         <p><i class='bx bxs-circle'></i> For Sell</p>
         <div class="price">
-            <h1>$<?php echo $annonce['prix'] ?></h1>
+            <h1>$
+                <?php echo $annonce['prix'] ?>
+            </h1>
             <div class="line"></div>
             <p>$614,999</p>
             <button class="buy" onclick="showPaymentModal()">Buy Now</button>
 
         </div>
-        <p class="desc"><?php echo $annonce['description'] ?></p>
+        <p class="desc">
+            <?php echo $annonce['description'] ?>
+        </p>
         <div class="icons">
-            <a href="#" class="h-name"><img src="/ImmoConnect/public/images/home.png" class="home"><?php echo $annonce['titre'] ?></a>
+            <a href="#" class="h-name"><img src="/ImmoConnect/public/images/home.png" class="home">
+                <?php echo $annonce['titre'] ?>
+            </a>
             <a href="#" class="h-name"><img src="/ImmoConnect/public/images/location.png" class="home">189 Wilson Ave,
                 Chicopee, MA 01013</a>
         </div>
@@ -157,20 +163,24 @@
         No results found for the selected price range.
     </div>
     <div class="cards" id="cards-container">
-    <?php if (isset($all_annonce) && !empty($all_annonce)): ?>
-                <?php foreach ($all_annonce as $all_annonces): ?>
-                    
-                    <div class="card">
-                        <img src="/ImmoConnect/public/images/<?php echo $all_annonces['image']?>">
-                        <div class="descr">
-                            <p><?php echo $all_annonces['titre']?></p>
-                            <p>$<?php echo $all_annonces['prix']?></p>
-                        </div>
+        <?php if (isset($all_annonce) && !empty($all_annonce)): ?>
+            <?php foreach ($all_annonce as $all_annonces): ?>
+
+                <div class="card">
+                    <img src="/ImmoConnect/public/images/<?php echo $all_annonces['image'] ?>">
+                    <div class="descr">
+                        <p>
+                            <?php echo $all_annonces['titre'] ?>
+                        </p>
+                        <p>$
+                            <?php echo $all_annonces['prix'] ?>
+                        </p>
                     </div>
-                <?php endforeach; ?>
-            <?php else: ?>
-                <p>No annonce available.</p>
-            <?php endif; ?>
+                </div>
+            <?php endforeach; ?>
+        <?php else: ?>
+            <p>No annonce available.</p>
+        <?php endif; ?>
     </div>
     <div class="pagination" id="pagination">
         <button onclick="changePage(-1)">Previous</button>
@@ -187,6 +197,7 @@
             </div>
 
             <form action="details" method="post" class="comm" id="commentForm">
+                <input type="hidden" name="annonceId" value="<?= $annonce['id'] ?>">
                 <textarea name="comment" id="comment" cols="30" rows="10" placeholder="add a comment"></textarea>
                 <button class="Contactowner" id="btn" type="submit" name="submit">Send</button>
             </form>
@@ -270,7 +281,7 @@
     <script src="/ImmoConnect/public/js/main.js"></script>
     <!-- Add this to your HTML file where the form is located -->
 
-    
+
 
     <script>
         var openmodal = document.querySelectorAll('.modal-open')
@@ -316,7 +327,7 @@
     <script>
         const cardsContainer = document.getElementById('cards-container');
         const pagination = document.getElementById('pagination');
-        const cardsPerPage = 10; 
+        const cardsPerPage = 10;
         let currentPage = 1;
 
         function showCards() {
