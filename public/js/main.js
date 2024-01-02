@@ -61,22 +61,21 @@ function filterCards() {
     noResultsPriceMsg.style.display = foundResults || selectedPrice === "" ? "none" : "block";
 }
 function checkPriceMatch(cardPrice, selectedPrice) {
-    var numericCardPrice = parseInt(cardPrice.replace(/\$|,/g, ''), 10);
-    console.log("Numeric Card Price: ", numericCardPrice);
-    if (selectedPrice === "-$500.000") {
-        return numericCardPrice <= 500000;
-    } else if (selectedPrice === "-$400.000") {
-        return numericCardPrice <= 400000;
-    } else if (selectedPrice === "-$300.000") {
-        return numericCardPrice <= 300000;
-    } else if (selectedPrice === "+$500.000") {
-        return numericCardPrice >= 500000;
-    }
-    else {
+    var numericCardPrice = parseFloat(cardPrice.replace(/[^0-9.-]+/g, ''));
 
+    if (selectedPrice === "-$500.000") {
+        return numericCardPrice < 500000;
+    } else if (selectedPrice === "-$400.000") {
+        return numericCardPrice < 400000;
+    } else if (selectedPrice === "-$300.000") {
+        return numericCardPrice < 300000;
+    } else if (selectedPrice === "+$500.000") {
+        return numericCardPrice > 500000;
     }
+
     return true;
 }
+
 function searchCards() {
     var input, filter, cards, card, txtValue;
     input = document.getElementById("searchInput");
