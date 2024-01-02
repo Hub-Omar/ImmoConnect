@@ -12,12 +12,13 @@ class DetailsController
     {
         $annonceId = 2;
         $annonce = AnnonceModel::getAnnonceById($annonceId);
+        $all_annonce = AnnonceModel::getAllAnnonce();
         $comments = CommentModel::getCommentsByAnnonceId($annonceId);
 
-        $this->detailsView($annonce, $comments);
+        $this->detailsView($annonce, $all_annonce, $comments);
     }
 
-    private function detailsView($annonce, $comments)
+    private function detailsView($annonce, $all_annonce,$comments)
     {
         include '../../views/user/details/details.php';
         exit();
