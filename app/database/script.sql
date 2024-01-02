@@ -27,7 +27,7 @@ CREATE TABLE Bien (
 CREATE TABLE Annonce (
     id INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
     image VARCHAR(255),
-    prix INT,
+    prix double,
     titre VARCHAR(255),
     description VARCHAR(255),
     date_ajout DATE,
