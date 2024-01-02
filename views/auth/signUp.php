@@ -5,11 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="../../public/css/tailwind.css" rel="stylesheet">
-<<<<<<< HEAD
-=======
     <link href="../../public/css/sign_login.css" rel="stylesheet">
->>>>>>> 6fdea8b83dea33a2749bb52edb4c5fbea916a027
-    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
 </head>
 
 
