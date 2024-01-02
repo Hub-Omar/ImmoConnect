@@ -9,8 +9,6 @@ class Database {
     public static function connect() {
         $dotenv = \Dotenv\Dotenv::createImmutable(__DIR__ . '/../../');
         $dotenv->load();
-  
-
         self::$cnx = mysqli_connect($_ENV['DB_SERVERNAME'], $_ENV['DB_USERNAME'],  $_ENV['DB_PASSWORD'], $_ENV['DB_NAME']);
 
         if (!self::$cnx) {
