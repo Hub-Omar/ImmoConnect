@@ -22,7 +22,6 @@
 
 <body>
 
-
     <header>
         <div class="head-left">
             <a href="#"><i class='bx bxs-chevron-left'></i></a>
