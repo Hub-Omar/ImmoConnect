@@ -30,25 +30,25 @@ class AnnonceModel
         return AnnonceDAO::getAnnonceById($id);
     }
 
-    public function getAllAnnonce()
+    public static function getAllAnnonce()
     {
         return AnnonceDAO::getAllAnnonce();
     }
 
-    public function AddAnnonce()
-    {
-        return AnnonceDAO::addAnnonce();
-    }
+    // public static function AddAnnonce()
+    // {
+    //     return AnnonceDAO::addAnnonce();
+    // }
 
-    public function DeletAnnonce()
-    {
-        return AnnonceDAO::DeletAnnonce();
-    }
+    // public static function DeletAnnonce()
+    // {
+    //     return AnnonceDAO::DeletAnnonce();
+    // }
      
-    public function UpdateAnnonce()
-    {
-        return AnnonceDAO::UpdateAnnonce();
-    }
+    // public static function UpdateAnnonce()
+    // {
+    //     return AnnonceDAO::UpdateAnnonce();
+    // }
 
 
 }
