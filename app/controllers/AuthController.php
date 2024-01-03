@@ -22,8 +22,7 @@ class AuthController
             $password = $_POST['password'];
             $phone = $_POST['phone'];
 
-            $userModel = new UserModel();
-            $userModel->registerUser($name, $email, $password, $phone);
+            $userModel = UserModel::registerUser($name, $email, $password, $phone);
 
             header("Location: signin");
             exit();
@@ -45,10 +44,9 @@ class AuthController
             $email = $_POST['email'];
             $password = $_POST['password'];
 
-            $userModel = new UserModel();
-            $authenticated = $userModel->authenticateUser($email, $password);
+            $userModel = UserModel::authenticateUser($email, $password);
 
-            if ($authenticated) {
+            if ($userModel) {
                 $user = UserDAO::getUserByEmail($email);
 
                 if ($user['role_id'] == 1) {
