@@ -42,59 +42,35 @@ class AnnonceDAO
         return $all_annonce;
     }
 
-    public static function AddAnnonce($image, $prix, $titre, $description, $date_ajout)
+    public function AddAnnonce()
     {
         $conn = Database::connect();
         
         $requetAjouter = "INSERT INTO `annonce`(`image`, `prix`, `titre`, `description`, `date_ajout`, `bien_id`) 
-        VALUES (:image,:prix,:titre,:description,:date_ajout)";
+        VALUES ([value-2],[value-3],[value-4],[value-5],[value-6],[value-7])";
    
-        $ajouterAnnonce = $conn->prepare($requetAjouter);
-        $stmt=bindparam(":image",$image);
-        $stmt=bindparam(":prix",$prix);
-        $stmt=bindparam(":titre",$titre);
-        $stmt=bindparam(":description",$description);
-        $stmt=bindparam(":date_ajout",$date_ajout);
-        $stmt->execute();
+        $ajouterclients = mysqli_query($connect,$requetAjouter);
    
-       return $stmt;
-       }
+        if($ajouterclients){
+        header("Location:clients.php");
+   }
+   else{
+    echo"erreur";
+   }
 
-    public static function deleteAnnonce($id)
-        {
 
-       $conn = Database::connect();
+    }
 
-       $requeteDelete = "DELETE FROM `annonce` WHERE `id` = :id";
+    public function DeletAnnonce()
+    {
+        $conn = Database::connect();
 
-       $delete = $conn->prepare($requeteDelete);
+    }
 
-       $delete->bindParam(":id", $id);
+    public function UpdateAnnonce()
+    {        
+        $conn = Database::connect();
 
-       $deleteAnnonce= $delete->execute();
-
-       return $deleteAnnonce;
-
-       }
-       
-
-    public static function updateAnnonce($image, $prix, $titre, $description, $date_ajout)
-     {
-
-    $conn = Database::connect();
-
-    $requeteUpdate = "UPDATE `annonce` SET `image`=:image, `prix`=:prix, `titre`=:titre, `description`=:description, `date_ajout`=:date_ajout ";
-    
-    $update = $conn->prepare($requeteUpdate);
-    $update->bindParam(":image", $image);
-    $update->bindParam(":prix", $prix);
-    $update->bindParam(":titre", $titre);
-    $update->bindParam(":description", $description);
-    $update->bindParam(":date_ajout", $date_ajout);
-
-    $updateAnnonce=$update->execute();
-
-    return $updateAnnonce;
-
+        
     }
 }

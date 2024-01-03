@@ -10,8 +10,8 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
-var searchInput = document.querySelector(".search");
-var categorySelect = document.getElementById("city");
+var searchInput = document.getElementById("searchInput");
+var categorySelect = document.getElementById("category"); 
 var priceSelect = document.getElementById("price");
 var cards = document.querySelectorAll(".card");
 
@@ -42,8 +42,11 @@ function filterCards() {
     var foundResults = false;
 
     cards.forEach(function (card) {
-        var cardCategory = card.querySelector(".descr p:first-child").textContent.toLowerCase();
-        var cardPrice = card.querySelector(".descr p:last-child").textContent;
+        var cardCategoryElement = card.querySelectorAll(".descr p:first-child");
+        var cardCategory = cardCategoryElement ? cardCategoryElement.textContent.toLowerCase() : '';
+
+        var cardPriceElement = card.querySelectorAll(".descr p:last-child");
+        var cardPrice = cardPriceElement ? cardPriceElement.textContent : '';
 
         var categoryMatch = selectedCategory === "" || cardCategory === selectedCategory.toLowerCase();
         var priceMatch = selectedPrice === "" || checkPriceMatch(cardPrice, selectedPrice);
@@ -60,6 +63,8 @@ function filterCards() {
     noResultsCategoryMsg.style.display = foundResults || selectedCategory === "" ? "none" : "block";
     noResultsPriceMsg.style.display = foundResults || selectedPrice === "" ? "none" : "block";
 }
+
+
 function checkPriceMatch(cardPrice, selectedPrice) {
     var numericCardPrice = parseFloat(cardPrice.replace(/[^0-9.-]+/g, ''));
 
@@ -75,6 +80,7 @@ function checkPriceMatch(cardPrice, selectedPrice) {
 
     return true;
 }
+
 
 function searchCards() {
     var input, filter, cards, card, txtValue;

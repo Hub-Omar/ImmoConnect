@@ -14,7 +14,9 @@ $router->setRoutes([
     ],
     'POST' => [
         'submit' => ['DetailsController', 'save'],
-        'details' => ['CommentsController', 'saveComment']
+        'details' => ['CommentsController', 'saveComment'],
+        'signup' => ['AuthController', 'registerUser'],
+        'signin' => ['AuthController', 'authenticateUser'],
         ],
 ]);
 
