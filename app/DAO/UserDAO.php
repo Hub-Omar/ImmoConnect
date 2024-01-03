@@ -1,5 +1,4 @@
 <?php
-<<<<<<< HEAD
 
 namespace App\DAO;
 
@@ -40,13 +39,9 @@ class UserDAO
 
         $result = $stmt->get_result();
         $user = $result->fetch_assoc();
-=======
-namespace App\dao;
-require '../../vendor/autoload.php';
-use App\database\Database;
+        return $user;
+    }
 
-class UserDAO
-{
     public static function getAllUsers()
     {   $conn = Database::connect();
 
@@ -56,21 +51,14 @@ class UserDAO
 
         $result=$stmt->get_result();
         $row = $result->fetch_all(MYSQLI_ASSOC);
->>>>>>> 5967f54389a107849407166e9ad1dce8a3375618
 
         $stmt->close();
         $conn->close();
-
-<<<<<<< HEAD
-        return $user;
+        return $row;
     }
-}
-=======
-       return $row;
-    }
+    
 
-    public static function updateUser()
-    {
+    public static function updateUser(){
        $conn=Database::connect();
        
        $requete = "UPDATE `user` 
@@ -86,5 +74,5 @@ class UserDAO
     }
 
 }
+
 ?>
->>>>>>> 5967f54389a107849407166e9ad1dce8a3375618
