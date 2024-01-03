@@ -26,16 +26,22 @@ CREATE TABLE Bien (
 
 CREATE TABLE Annonce (
     id INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
-    image VARCHAR(255),
     prix double,
     titre VARCHAR(255),
     description VARCHAR(255),
-    date_ajout DATE,
+    date_ajout DATE
+);
+
+CREATE TABLE images(
+    id INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
+    path VARCHAR(255),
+    annonce_id INT,
     bien_id INT,
+    FOREIGN KEY (annonce_id) REFERENCES annonce(id) ON DELETE CASCADE ON UPDATE CASCADE,
     FOREIGN KEY (bien_id) REFERENCES Bien(id) ON DELETE CASCADE ON UPDATE CASCADE
 );
 
-CREATE TABLE Commentair (
+CREATE TABLE Commentaire (
     id INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
     label VARCHAR(255),
     annonce_id INT,
@@ -44,12 +50,14 @@ CREATE TABLE Commentair (
     FOREIGN KEY (user_id) REFERENCES User(id) ON DELETE CASCADE ON UPDATE CASCADE
 );
 
-CREATE TABLE Message_user (
+CREATE TABLE Message (
+    id INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
     emetteur_id INT,
     recepteur_id INT,
-    message VARCHAR(255),
-    FOREIGN KEY (emetteur_id) REFERENCES User(id) ON DELETE CASCADE ON UPDATE CASCADE,
-    FOREIGN KEY (recepteur_id) REFERENCES User(id) ON DELETE CASCADE ON UPDATE CASCADE
+    message_text VARCHAR(255),
+    sent_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    FOREIGN KEY (emetteur_id) REFERENCES user(id) ON DELETE CASCADE ON UPDATE CASCADE,
+    FOREIGN KEY (recepteur_id) REFERENCES user(id) ON DELETE CASCADE ON UPDATE CASCADE
 );
 
 CREATE TABLE paiment (
