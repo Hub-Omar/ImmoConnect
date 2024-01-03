@@ -42,6 +42,7 @@ class AnnonceDAO
         return $all_annonce;
     }
 
+<<<<<<< HEAD
     public static function AddAnnonce($prix, $titre, $description, $date_ajout)
     {
         $conn = Database::connect();
@@ -53,10 +54,25 @@ class AnnonceDAO
 
         $stmt=bind_param("issd",$prix ,$titre ,$description ,$date_ajout);
         $stmt->execute();
+=======
+    public function AddAnnonce()
+    {
+        $conn = Database::connect();
+        
+        $requetAjouter = "INSERT INTO `annonce`(`image`, `prix`, `titre`, `description`, `date_ajout`, `bien_id`) 
+        VALUES ([value-2],[value-3],[value-4],[value-5],[value-6],[value-7])";
    
-       return $stmt;
-       }
+        $ajouterclients = mysqli_query($connect,$requetAjouter);
+>>>>>>> bf0dd6ba067f5b4a7df567ef5bdaca65488d15fb
+   
+        if($ajouterclients){
+        header("Location:clients.php");
+   }
+   else{
+    echo"erreur";
+   }
 
+<<<<<<< HEAD
     public static function deleteAnnonce($id)
         {
 
@@ -88,6 +104,21 @@ class AnnonceDAO
     $updateAnnonce=$update->execute();
 
     return $updateAnnonce;
+=======
+>>>>>>> bf0dd6ba067f5b4a7df567ef5bdaca65488d15fb
 
+    }
+
+    public function DeletAnnonce()
+    {
+        $conn = Database::connect();
+
+    }
+
+    public function UpdateAnnonce()
+    {        
+        $conn = Database::connect();
+
+        
     }
 }
