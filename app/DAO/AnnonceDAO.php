@@ -42,19 +42,16 @@ class AnnonceDAO
         return $all_annonce;
     }
 
-    public static function AddAnnonce($image, $prix, $titre, $description, $date_ajout)
+    public static function AddAnnonce($prix, $titre, $description, $date_ajout)
     {
         $conn = Database::connect();
         
-        $requetAjouter = "INSERT INTO `annonce`(`image`, `prix`, `titre`, `description`, `date_ajout`, `bien_id`) 
-        VALUES (:image,:prix,:titre,:description,:date_ajout)";
+        $requetAjouter = "INSERT INTO `annonce`(`prix`, `titre`, `description`, `date_ajout`) 
+        VALUES (?,?,?,?)";
    
         $ajouterAnnonce = $conn->prepare($requetAjouter);
-        $stmt=bindparam(":image",$image);
-        $stmt=bindparam(":prix",$prix);
-        $stmt=bindparam(":titre",$titre);
-        $stmt=bindparam(":description",$description);
-        $stmt=bindparam(":date_ajout",$date_ajout);
+
+        $stmt=bind_param("issd",$prix ,$titre ,$description ,$date_ajout);
         $stmt->execute();
    
        return $stmt;
@@ -65,11 +62,11 @@ class AnnonceDAO
 
        $conn = Database::connect();
 
-       $requeteDelete = "DELETE FROM `annonce` WHERE `id` = :id";
+       $requeteDelete = "DELETE FROM `annonce` WHERE `id` = ?";
 
        $delete = $conn->prepare($requeteDelete);
 
-       $delete->bindParam(":id", $id);
+       $delete->bind_param("i", $id);
 
        $deleteAnnonce= $delete->execute();
 
@@ -78,20 +75,16 @@ class AnnonceDAO
        }
        
 
-    public static function updateAnnonce($image, $prix, $titre, $description, $date_ajout)
+    public static function updateAnnonce($prix, $titre, $description, $date_ajout)
      {
 
     $conn = Database::connect();
 
-    $requeteUpdate = "UPDATE `annonce` SET `image`=:image, `prix`=:prix, `titre`=:titre, `description`=:description, `date_ajout`=:date_ajout ";
-    
-    $update = $conn->prepare($requeteUpdate);
-    $update->bindParam(":image", $image);
-    $update->bindParam(":prix", $prix);
-    $update->bindParam(":titre", $titre);
-    $update->bindParam(":description", $description);
-    $update->bindParam(":date_ajout", $date_ajout);
+    $requeteUpdate = "UPDATE `annonce` SET `prix`=?, `titre`=?, `description`=?, `date_ajout`=?";
 
+    $update = $conn->prepare($requeteUpdate);
+    $update->bind_param("issd",$prix, $titre, $description, $date_ajout);
+    
     $updateAnnonce=$update->execute();
 
     return $updateAnnonce;

@@ -7,17 +7,15 @@ use App\dao\AnnonceDAO;
 class AnnonceModel
 {
     private $id;
-    private $image;
     private $prix;
     private $titre;
     private $description;
     private $dateAjout;
     private $bienId;
 
-    public function __construct($id, $image, $prix, $titre, $description, $dateAjout, $bienId)
+    public function __construct($id,$prix, $titre, $description, $dateAjout, $bienId)
     {
         $this->id = $id;
-        $this->image = $image;
         $this->prix = $prix;
         $this->titre = $titre;
         $this->description = $description;
@@ -30,22 +28,22 @@ class AnnonceModel
         return AnnonceDAO::getAnnonceById($id);
     }
 
-    public function getAllAnnonce()
+    public static function getAllAnnonce()
     {
         return AnnonceDAO::getAllAnnonce();
     }
 
-    public function AddAnnonce($image, $prix, $titre, $description, $dateAjout)
+    public static function AddAnnonce($prix, $titre, $description, $dateAjout)
     {
         return AnnonceDAO::addAnnonce();
     }
 
-    public function DeletAnnonce()
+    public static function DeletAnnonce()
     {
         return AnnonceDAO::deletAnnonce();
     }
      
-    public function UpdateAnnonce($image, $prix, $titre, $description, $dateAjout)
+    public static function UpdateAnnonce($prix, $titre, $description, $dateAjout)
     {
         return AnnonceDAO::UpdateAnnonce();
     }
