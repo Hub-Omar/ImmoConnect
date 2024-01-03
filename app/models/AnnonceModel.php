@@ -35,20 +35,20 @@ class AnnonceModel
         return AnnonceDAO::getAllAnnonce();
     }
 
-    // public static function AddAnnonce()
-    // {
-    //     return AnnonceDAO::addAnnonce();
-    // }
+    public function AddAnnonce($image, $prix, $titre, $description, $dateAjout)
+    {
+        return AnnonceDAO::addAnnonce();
+    }
 
-    // public static function DeletAnnonce()
-    // {
-    //     return AnnonceDAO::DeletAnnonce();
-    // }
+    public function DeletAnnonce()
+    {
+        return AnnonceDAO::deletAnnonce();
+    }
      
-    // public static function UpdateAnnonce()
-    // {
-    //     return AnnonceDAO::UpdateAnnonce();
-    // }
+    public function UpdateAnnonce($image, $prix, $titre, $description, $dateAjout)
+    {
+        return AnnonceDAO::UpdateAnnonce();
+    }
 
 
 }
