@@ -4,15 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<<<<<<< HEAD
-    <link href="../../public/css/tailwind.css" rel="stylesheet">
-    <link href="../../public/css/sign_login.css" rel="stylesheet">
-    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
-=======
     <link href="/ImmoConnect/public/css/tailwind.css" rel="stylesheet">
     <link href="/ImmoConnect/public/css/sign_login.css" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
->>>>>>> 6ce1c33bd637ee5b402c1bcb4d7f2c31b028ba84
 </head>
 
 
