@@ -42,6 +42,7 @@
 
                 <div class="form-input mb-5 pt-2">
                     <button type="submit" class="text-white bg-green-700 hover:bg-green-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Submit</button>
+                    <a href="signin" class=" text-black p-5">Already Have an account !!<span class="text-white hover:text-blue-500 p-1">Login</span></a>
                 </div>
             </form>
         </div>
