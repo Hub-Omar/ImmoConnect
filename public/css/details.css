@@ -92,7 +92,7 @@ i{
 }
 
 .img1{
-    width: 802px;
+    width: 650px;
     height: 441px;
     border-radius: 48px;
     object-fit: cover;
@@ -294,8 +294,8 @@ form{
 }
 
 .card img{
-    width: 300px;
-    height: 350px;
+    width: 250px;
+    height: 330px;
     border-radius: 20px;
     cursor: pointer;
     transition: all .5s ease;
@@ -324,6 +324,7 @@ form{
     margin-top: 7%;
     padding: 1% 4%;
     gap: 2rem;
+    box-shadow:20px #1D1D1D;
 }
 
 .card img:hover{
