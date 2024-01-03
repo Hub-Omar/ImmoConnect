@@ -23,7 +23,18 @@ class UserDAO
 
     public static function updateUser()
     {
-        
+       $conn=Database::connect();
+       
+       $requete = "UPDATE `user` 
+                  SET `nom_complet`= ?, `email`=?, `password`= ?, `Tel`= ?, `profile`= ?, `role_id`= ? WHERE `id`=?";
+
+        $stmt=$conn->prepare($requete);
+        $stmt->bind_param("sssssi", $nom_complet, $email, $password, $tel, $profile, $role_id);
+        $result = $stmt->execute();
+
+        $stmt->close();
+        $stmt->close();
+        return $result;
     }
 
 }
