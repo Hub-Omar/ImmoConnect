@@ -274,11 +274,9 @@
             </div>
         </div>
     </footer>
-    <!-- Add this to the head of your HTML file -->
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
 
     <script src="/ImmoConnect/public/js/main.js"></script>
-    <!-- Add this to your HTML file where the form is located -->
 
 
 

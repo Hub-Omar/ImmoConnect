@@ -3,20 +3,66 @@
 namespace App\controllers;
 
 require_once '../../vendor/autoload.php';
-
+use App\models\UserModel;
+use App\DAO\UserDAO;
 
 class AuthController
 {
-
     public function signup()
     {
         include '../../views/auth/signUp.php';
         exit();
     }
 
+    public function registerUser()
+    {
+        if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['signup'])) {
+            $name = $_POST['name'];
+            $email = $_POST['email'];
+            $password = $_POST['password'];
+            $phone = $_POST['phone'];
+
+            $userModel = new UserModel();
+            $userModel->registerUser($name, $email, $password, $phone);
+
+            header("Location: signin");
+            exit();
+        } else {
+            include '../../views/auth/signUp.php';
+            exit();
+        }
+    }
+
     public function login()
     {
         include '../../views/auth/login.php';
         exit();
+    }
+
+    public function authenticateUser()
+    {
+        if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['login'])) {
+            $email = $_POST['email'];
+            $password = $_POST['password'];
+
+            $userModel = new UserModel();
+            $authenticated = $userModel->authenticateUser($email, $password);
+
+            if ($authenticated) {
+                $user = UserDAO::getUserByEmail($email);
+
+                if ($user['role_id'] == 1) {
+                    header("Location: admin");
+                    exit();
+                } elseif ($user['role_id'] == 2) {
+                    header("Location: details");
+                    exit();
+                }
+            } else {
+            }
+        } else {
+            include '../../views/auth/login.php';
+            exit();
+        }
     }
 }
