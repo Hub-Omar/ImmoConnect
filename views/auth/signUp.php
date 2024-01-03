@@ -4,7 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<<<<<<< HEAD
+=======
 
+>>>>>>> bf0dd6ba067f5b4a7df567ef5bdaca65488d15fb
     <link href="/ImmoConnect/public/css/tailwind.css" rel="stylesheet">
 
     <link href="/ImmoConnect/public/css/sign_login.css" rel="stylesheet">

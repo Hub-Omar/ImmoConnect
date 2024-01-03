@@ -18,7 +18,7 @@
         <div class="form-container max-w-sm mx-auto mt-20">
             <form id="signupForm" class="max-w-sm mx-auto" action="signin" method="post">
                 <h1 class="text-3xl text-white font-bold text-center">
-                    Log In
+                    Log In 
                 </h1>
                 <p class="text-white font-sans text-center">Sign in with your account !</p>
                 <div class="form-input mb-2 pt-5">

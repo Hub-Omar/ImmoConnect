@@ -14,7 +14,9 @@
         <link rel="stylesheet"href="https://demos.creative-tim.com/notus-js/assets/vendor/@fortawesome/fontawesome-free/css/all.min.css">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
         <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;0,800;0,900;1,500;1,700;1,800;1,900&display=swap"rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.css" rel="stylesheet" />
         <script src="https://cdn.tailwindcss.com"></script>
+
         <link rel="stylesheet" href="/ImmoConnect/public/css/details.css">
     <title>Document</title>
 </head>
@@ -22,7 +24,7 @@
 
 <!-- =================================== header/navbar ============================== -->
    
-<nav class="bg-none pt-2">
+<!-- <nav class="bg-none pt-2">
   <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
     <a href="https://flowbite.com/" class="flex items-center space-x-3 rtl:space-x-reverse">
         <img src="https://flowbite.com/docs/images/logo.svg" class="h-8" alt="Flowbite Logo" />
@@ -53,7 +55,7 @@
             </button>
           </div>
           <div class="absolute right-0 z-10 mt-2 w-48 origin-top-right rounded-md bg-white py-1 shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none" role="menu" aria-orientation="vertical" aria-labelledby="user-menu-button" tabindex="-1">
-            <!-- Active: "bg-gray-100", Not Active: "" -->
+             Active: "bg-gray-100", Not Active: "" 
             <a href="#" class="block px-4 py-2 text-sm text-gray-700" role="menuitem" tabindex="-1" id="user-menu-item-0">Your Profile</a>
             <a href="#" class="block px-4 py-2 text-sm text-gray-700" role="menuitem" tabindex="-1" id="openModalBtn"></a>
             <button id="openModalBtn">Add New Annonce</button>
@@ -63,14 +65,98 @@
           </div>
         </div>
   </div>
+</nav> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<nav >
+  <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+  <a href="https://flowbite.com/" class="flex items-center space-x-3 rtl:space-x-reverse">
+      <img src="https://flowbite.com/docs/images/logo.svg" class="h-8" alt="Flowbite Logo" />
+      <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Flowbite</span>
+  </a>
+  <div class="flex items-center md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
+      <button type="button" class="flex text-sm bg-gray-800 rounded-full md:me-0 focus:ring-4 focus:ring-gray-300 dark:focus:ring-gray-600" id="user-menu-button" aria-expanded="false" data-dropdown-toggle="user-dropdown" data-dropdown-placement="bottom">
+        <span class="sr-only">Open user menu</span>
+        <img class="w-8 h-8 rounded-full" src="/docs/images/people/profile-picture-3.jpg" alt="user photo">
+      </button>
+      <!-- Dropdown menu -->
+      <div class="z-50 hidden my-4 text-base list-none bg-white divide-y divide-gray-100 rounded-lg shadow dark:bg-gray-700 dark:divide-gray-600" id="user-dropdown">
+        <div class="px-4 py-3">
+          <span class="block text-sm text-gray-900 dark:text-white">Bonnie Green</span>
+          <span class="block text-sm  text-gray-500 truncate dark:text-gray-400">name@flowbite.com</span>
+        </div>
+        <ul class="py-2" aria-labelledby="user-menu-button">
+          <li>
+            <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Dashboard</a>
+          </li>
+          <li>
+            <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Settings</a>
+          </li>
+          <li>
+            <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Earnings</a>
+          </li>
+          <li>
+            <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Sign out</a>
+          </li>
+        </ul>
+      </div>
+      <button data-collapse-toggle="navbar-user" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-user" aria-expanded="false">
+        <span class="sr-only">Open main menu</span>
+        <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
+        </svg>
+    </button>
+  </div>
+  <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-user">
+    <ul class="flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+      <li>
+        <a href="#" class="block py-2 px-3 text-white rounded md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-blue-500" aria-current="page">Home</a>
+      </li>
+      <li>
+        <a href="#" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">About</a>
+      </li>
+      <li>
+        <a href="#" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Services</a>
+      </li>
+      <li>
+        <a href="#" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Pricing</a>
+      </li>
+      <li>
+        <a href="#" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Contact</a>
+      </li>
+    </ul>
+  </div>
+  </div>
 </nav>
+
 
 <!-- ================================= first View ========================= -->
 
 
 <div class="relative">
 <img style="width:94rem;height:41rem" class="p-5 rounded-3xl " src="../../public/image/pexels-clay-elliot-5524336.jpg" />
-<div style="top:20rem;right:20rem;background-color:rgba(30, 30, 30, 0.55);height:13rem;width:33rem" class="absolute rounded-2xl p-5 flex flex-col space-y-12 ">
+<div style="top:20rem;right:20rem;background-color:rgba(30, 30, 30, 0.55)" class="absolute rounded-2xl h-52 w-96 p-5 flex flex-col space-y-12 md:right-8 w-8	">
   <p style="" class="relative text-white pt-1 font-bold font-medium">Whether you’re searching  for houses, 
   apartments, or condos, it's easy to find a place
    you'll love.</p>
@@ -87,19 +173,6 @@
 
 <!-- ============================= first Annonce/part1 ============== -->
 
-
-
-<div id="myModal" class="modal">
-
-  <!-- Modal Content -->
-  <div class="modal-content">
-    <span class="close" id="closeModalBtn">&times;</span>
-    <p>This is a modal! You can put any content here.</p>
-  </div>
-
-</div>
-
-
 <div class="text-center	text-white font-bold pt-10 ">
 
 <h1 class="text-2xl	">Explore homes on ImmoConnect <br>
@@ -107,7 +180,6 @@ Take a deep dive and browse homes for sale, original neighborhood photos, <br>
 resident reviews and local insights to find what is right for you.</h1>  
 
 </div>
-    
 
 <div class="cards" id="cards-container">
         <div class="card">
@@ -116,7 +188,11 @@ resident reviews and local insights to find what is right for you.</h1>
                 <p>Carriage House</p>
                 <p>$514,999</p>
             </div>
-            <input type="submit" style="background-color:#183D3D;left:7em top: 10px;width:6em;height:2em" class="relative rounded-lg text-white pt-11 font-light" value="Show More">
+
+            <!-- <button type="submit" style="background-color:#183D3D;left:7em top: 10px;width:6em;height:2em" data-Annonce-id="<?php echo $book['id']; ?>">
+                                Annonce Now
+                            </button> -->
+            <input type="submit" style="background-color:#183D3D;left:2em ; top: 10px;width:6em;height:2em" class="relative rounded-lg text-white pt-11 font-light" value="Show More">
         </div>
         <div class="card">
             <img src="/ImmoConnect/public/images/Black Brick Vila in Damavand, Iran by Reza Mohtashami.jfif">
@@ -160,7 +236,7 @@ resident reviews and local insights to find what is right for you.</h1>
                 <p>189 Wilson Ave</p>
                 <p>$514,999</p>
             </div>
-            <input type="submit" style="background-color:#183D3D;left:3em ;width:6em;height:2em" class="relative rounded-lg text-white pt-11 font-light" value="Show More">
+            <input type="submit" style="background-color:#183D3D;left:3em;width:6em;height:2em" class="relative rounded-lg text-white pt-11 " value="Show More">
 
         </div>
         <div class="card">
@@ -177,8 +253,8 @@ resident reviews and local insights to find what is right for you.</h1>
             <div class="descr">
                 <p>189 Wilson Ave</p>
                 <p>$714,999</p>
+                <input type="submit" style="background-color:#183D3D;left:3em ;top:3em ;width:6em;height:2em" class="relative rounded-lg text-white pt-11 font-light" value="Show More">
             </div>
-            <input type="submit" style="background-color:#183D3D;left:3em ;width:6em;height:2em" class="relative rounded-lg text-white pt-11 font-light" value="Show More">
         </div>
     </div>
     <div class="pagination" id="pagination">
@@ -223,6 +299,7 @@ resident reviews and local insights to find what is right for you.</h1>
   </div>
 
   <!-- =================== Annonce/part2 =============== -->
+
   <div class="cards-b flex justify-evenly flex-row sm:flex flex-wrap pt-20 ">
 
 <div class="card relative pl-4 border:1px none ;border-radius:20%;">
@@ -606,5 +683,8 @@ resident reviews and local insights to find what is right for you.</h1>
             modal.style.display = 'none';
         });
     </script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.js"></script>
+
 </body>
 </html>

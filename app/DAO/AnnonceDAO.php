@@ -42,6 +42,19 @@ class AnnonceDAO
         return $all_annonce;
     }
 
+<<<<<<< HEAD
+    public static function AddAnnonce($prix, $titre, $description, $date_ajout)
+    {
+        $conn = Database::connect();
+        
+        $requetAjouter = "INSERT INTO `annonce`(`prix`, `titre`, `description`, `date_ajout`) 
+        VALUES (?,?,?,?)";
+   
+        $ajouterAnnonce = $conn->prepare($requetAjouter);
+
+        $stmt=bind_param("issd",$prix ,$titre ,$description ,$date_ajout);
+        $stmt->execute();
+=======
     public function AddAnnonce()
     {
         $conn = Database::connect();
@@ -50,6 +63,7 @@ class AnnonceDAO
         VALUES ([value-2],[value-3],[value-4],[value-5],[value-6],[value-7])";
    
         $ajouterclients = mysqli_query($connect,$requetAjouter);
+>>>>>>> bf0dd6ba067f5b4a7df567ef5bdaca65488d15fb
    
         if($ajouterclients){
         header("Location:clients.php");
@@ -58,6 +72,40 @@ class AnnonceDAO
     echo"erreur";
    }
 
+<<<<<<< HEAD
+    public static function deleteAnnonce($id)
+        {
+
+       $conn = Database::connect();
+
+       $requeteDelete = "DELETE FROM `annonce` WHERE `id` = ?";
+
+       $delete = $conn->prepare($requeteDelete);
+
+       $delete->bind_param("i", $id);
+
+       $deleteAnnonce= $delete->execute();
+
+       return $deleteAnnonce;
+
+       }
+       
+
+    public static function updateAnnonce($prix, $titre, $description, $date_ajout)
+     {
+
+    $conn = Database::connect();
+
+    $requeteUpdate = "UPDATE `annonce` SET `prix`=?, `titre`=?, `description`=?, `date_ajout`=?";
+
+    $update = $conn->prepare($requeteUpdate);
+    $update->bind_param("issd",$prix, $titre, $description, $date_ajout);
+    
+    $updateAnnonce=$update->execute();
+
+    return $updateAnnonce;
+=======
+>>>>>>> bf0dd6ba067f5b4a7df567ef5bdaca65488d15fb
 
     }
 
