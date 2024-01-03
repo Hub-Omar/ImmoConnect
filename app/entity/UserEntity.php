@@ -75,6 +75,16 @@ class UserEntity
     {
         $this->profil=$profil;
     }
+    //////////role-id//////////
+    public function getRole_id()
+    {
+        return $this->role_id;
+    }
+    public function setRole_id($role_id)
+    {
+        $this->role_id=$role_id;
+    }
+
 
     
 }
