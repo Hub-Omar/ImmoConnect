@@ -58,4 +58,5 @@ CREATE TABLE paiment (
     prix_final VARCHAR(255),
     annonce_id INT,
     FOREIGN KEY (annonce_id) REFERENCES Annonce(id) ON DELETE CASCADE ON UPDATE CASCADE
+
 );

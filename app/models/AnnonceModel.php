@@ -35,17 +35,17 @@ class AnnonceModel
         return AnnonceDAO::getAllAnnonce();
     }
 
-    public function AddAnnonce()
+    public function AddAnnonce($image, $prix, $titre, $description, $dateAjout)
     {
         return AnnonceDAO::addAnnonce();
     }
 
     public function DeletAnnonce()
     {
-        return AnnonceDAO::DeletAnnonce();
+        return AnnonceDAO::deletAnnonce();
     }
      
-    public function UpdateAnnonce()
+    public function UpdateAnnonce($image, $prix, $titre, $description, $dateAjout)
     {
         return AnnonceDAO::UpdateAnnonce();
     }
