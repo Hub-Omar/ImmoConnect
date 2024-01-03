@@ -8,16 +8,12 @@
         <link href="../../public/css/tailwind.css" rel="stylesheet">
         <link href="../../public/css/annonce.css" rel="stylesheet"> 
         <script src="../../public/js/annonce.js"></script>
-
-
+        <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">    
         <link rel="stylesheet" href="https://demos.creative-tim.com/notus-js/assets/styles/tailwind.css">
-        <link rel="stylesheet"
-        href="https://demos.creative-tim.com/notus-js/assets/vendor/@fortawesome/fontawesome-free/css/all.min.css">
+        <link rel="stylesheet"href="https://demos.creative-tim.com/notus-js/assets/vendor/@fortawesome/fontawesome-free/css/all.min.css">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
-        <link
-        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;0,800;0,900;1,500;1,700;1,800;1,900&display=swap"
-        rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;0,800;0,900;1,500;1,700;1,800;1,900&display=swap"rel="stylesheet">
         <script src="https://cdn.tailwindcss.com"></script>
         <link rel="stylesheet" href="/ImmoConnect/public/css/details.css">
     <title>Document</title>
@@ -71,6 +67,7 @@
 
 <!-- ================================= first View ========================= -->
 
+
 <div class="relative">
 <img style="width:94rem;height:41rem" class="p-5 rounded-3xl " src="../../public/image/pexels-clay-elliot-5524336.jpg" />
 <div style="top:20rem;right:20rem;background-color:rgba(30, 30, 30, 0.55);height:13rem;width:33rem" class="absolute rounded-2xl p-5 flex flex-col space-y-12 ">
@@ -101,7 +98,6 @@
   </div>
 
 </div>
-
 
 
 <div class="text-center	text-white font-bold pt-10 ">
@@ -513,15 +509,14 @@ resident reviews and local insights to find what is right for you.</h1>
         </div>
     </footer>
 
-
-
      <!-- Add this to the head of your HTML file -->
+
      <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+     <script src="/ImmoConnect/public/js/main.js"></script>
 
-<script src="/ImmoConnect/public/js/main.js"></script>
-<!-- Add this to your HTML file where the form is located -->
+     <!-- Add this to your HTML file where the form is located -->
 
-<script>
+    <script>
     var openmodal = document.querySelectorAll('.modal-open')
     for (var i = 0; i < openmodal.length; i++) {
         openmodal[i].addEventListener('click', function (event) {
@@ -594,5 +589,22 @@ resident reviews and local insights to find what is right for you.</h1>
     showCards();
 </script>
 
+
+
+<!-- =================== modal ============= -->
+<script>
+        // JavaScript to handle modal opening and closing
+        const openModalButton = document.getElementById('openModal');
+        const closeModalButton = document.getElementById('closeModal');
+        const modal = document.getElementById('modal');
+
+        openModalButton.addEventListener('click', () => {
+            modal.style.display = 'flex';
+        });
+
+        closeModalButton.addEventListener('click', () => {
+            modal.style.display = 'none';
+        });
+    </script>
 </body>
 </html>

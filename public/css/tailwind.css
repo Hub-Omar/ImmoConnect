@@ -579,6 +579,8 @@ video {
 }
 
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 .sr-only {
@@ -605,10 +607,13 @@ video {
 }
 
 >>>>>>> 56d037424afefa4fdc6487ac522df151f52f7506
+>>>>>>> 6ce1c33bd637ee5b402c1bcb4d7f2c31b028ba84
 .pointer-events-none {
   pointer-events: none;
 }
 
+<<<<<<< HEAD
+=======
 <<<<<<< HEAD
 =======
 .pointer-events-auto {
@@ -636,6 +641,7 @@ video {
 }
 
 >>>>>>> 56d037424afefa4fdc6487ac522df151f52f7506
+>>>>>>> 6ce1c33bd637ee5b402c1bcb4d7f2c31b028ba84
 .fixed {
   position: fixed;
 }
@@ -644,12 +650,17 @@ video {
   position: absolute;
 }
 
+<<<<<<< HEAD
+=======
 =======
 >>>>>>> 0e8de57ceb81d71ae1d57206e15b0646f07e1518
+>>>>>>> 6ce1c33bd637ee5b402c1bcb4d7f2c31b028ba84
 .relative {
   position: relative;
 }
 
+<<<<<<< HEAD
+=======
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -662,6 +673,7 @@ video {
 }
 
 >>>>>>> 56d037424afefa4fdc6487ac522df151f52f7506
+>>>>>>> 6ce1c33bd637ee5b402c1bcb4d7f2c31b028ba84
 .inset-y-0 {
   top: 0px;
   bottom: 0px;
@@ -669,11 +681,14 @@ video {
 
 <<<<<<< HEAD
 =======
+<<<<<<< HEAD
+=======
 .end-1 {
   inset-inline-end: 0.25rem;
 }
 
 >>>>>>> 56d037424afefa4fdc6487ac522df151f52f7506
+>>>>>>> 6ce1c33bd637ee5b402c1bcb4d7f2c31b028ba84
 .left-0 {
   left: 0px;
 }
@@ -684,11 +699,14 @@ video {
 
 <<<<<<< HEAD
 =======
+<<<<<<< HEAD
+=======
 .start-0 {
   inset-inline-start: 0px;
 }
 
 >>>>>>> 56d037424afefa4fdc6487ac522df151f52f7506
+>>>>>>> 6ce1c33bd637ee5b402c1bcb4d7f2c31b028ba84
 .top-0 {
   top: 0px;
 }
@@ -697,6 +715,8 @@ video {
   top: 0.75rem;
 }
 
+<<<<<<< HEAD
+=======
 <<<<<<< HEAD
 =======
 .isolate {
@@ -712,10 +732,13 @@ video {
 }
 
 >>>>>>> 56d037424afefa4fdc6487ac522df151f52f7506
+>>>>>>> 6ce1c33bd637ee5b402c1bcb4d7f2c31b028ba84
 .z-50 {
   z-index: 50;
 }
 
+<<<<<<< HEAD
+=======
 <<<<<<< HEAD
 =======
 .float-start {
@@ -765,10 +788,13 @@ video {
 >>>>>>> 56d037424afefa4fdc6487ac522df151f52f7506
 =======
 >>>>>>> 0e8de57ceb81d71ae1d57206e15b0646f07e1518
+>>>>>>> 6ce1c33bd637ee5b402c1bcb4d7f2c31b028ba84
 .m-0 {
   margin: 0px;
 }
 
+<<<<<<< HEAD
+=======
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -777,13 +803,17 @@ video {
 }
 
 >>>>>>> 56d037424afefa4fdc6487ac522df151f52f7506
+>>>>>>> 6ce1c33bd637ee5b402c1bcb4d7f2c31b028ba84
 .mx-3 {
   margin-left: 0.75rem;
   margin-right: 0.75rem;
 }
 
+<<<<<<< HEAD
+=======
 =======
 >>>>>>> 0e8de57ceb81d71ae1d57206e15b0646f07e1518
+>>>>>>> 6ce1c33bd637ee5b402c1bcb4d7f2c31b028ba84
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -861,6 +891,8 @@ video {
 }
 
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 .me-2 {
@@ -868,6 +900,7 @@ video {
 }
 
 >>>>>>> 56d037424afefa4fdc6487ac522df151f52f7506
+>>>>>>> 6ce1c33bd637ee5b402c1bcb4d7f2c31b028ba84
 .ml-2 {
   margin-left: 0.5rem;
 }
@@ -876,8 +909,11 @@ video {
   margin-left: 0.75rem;
 }
 
+<<<<<<< HEAD
+=======
 =======
 >>>>>>> 0e8de57ceb81d71ae1d57206e15b0646f07e1518
+>>>>>>> 6ce1c33bd637ee5b402c1bcb4d7f2c31b028ba84
 .ml-auto {
   margin-left: auto;
 }
@@ -891,6 +927,8 @@ video {
 }
 
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 .mt-2 {
@@ -898,10 +936,13 @@ video {
 }
 
 >>>>>>> 56d037424afefa4fdc6487ac522df151f52f7506
+>>>>>>> 6ce1c33bd637ee5b402c1bcb4d7f2c31b028ba84
 .mt-20 {
   margin-top: 5rem;
 }
 
+<<<<<<< HEAD
+=======
 <<<<<<< HEAD
 =======
 .mt-4 {
@@ -911,6 +952,7 @@ video {
 >>>>>>> 56d037424afefa4fdc6487ac522df151f52f7506
 =======
 >>>>>>> 0e8de57ceb81d71ae1d57206e15b0646f07e1518
+>>>>>>> 6ce1c33bd637ee5b402c1bcb4d7f2c31b028ba84
 .mt-6 {
   margin-top: 1.5rem;
 }
@@ -931,6 +973,8 @@ video {
   display: flex;
 }
 
+<<<<<<< HEAD
+=======
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -999,18 +1043,26 @@ video {
 }
 
 >>>>>>> 56d037424afefa4fdc6487ac522df151f52f7506
+>>>>>>> 6ce1c33bd637ee5b402c1bcb4d7f2c31b028ba84
 .hidden {
   display: none;
 }
 
+<<<<<<< HEAD
+=======
 =======
 >>>>>>> 0e8de57ceb81d71ae1d57206e15b0646f07e1518
+>>>>>>> 6ce1c33bd637ee5b402c1bcb4d7f2c31b028ba84
 .h-10 {
   height: 2.5rem;
 }
 
-.h-4 {
-  height: 1rem;
+.h-20 {
+  height: 5rem;
+}
+
+.h-3 {
+  height: 0.75rem;
 }
 
 .h-5 {
@@ -1018,10 +1070,15 @@ video {
 }
 
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 6ce1c33bd637ee5b402c1bcb4d7f2c31b028ba84
 .h-6 {
   height: 1.5rem;
 }
 
+<<<<<<< HEAD
+=======
 <<<<<<< HEAD
 =======
 .h-8 {
@@ -1029,6 +1086,7 @@ video {
 }
 
 >>>>>>> 56d037424afefa4fdc6487ac522df151f52f7506
+>>>>>>> 6ce1c33bd637ee5b402c1bcb4d7f2c31b028ba84
 .h-\[32rem\] {
   height: 32rem;
 }
@@ -1043,6 +1101,8 @@ video {
 
 <<<<<<< HEAD
 =======
+<<<<<<< HEAD
+=======
 .h-32 {
   height: 8rem;
 }
@@ -1054,11 +1114,15 @@ video {
 >>>>>>> 56d037424afefa4fdc6487ac522df151f52f7506
 =======
 >>>>>>> 0e8de57ceb81d71ae1d57206e15b0646f07e1518
+>>>>>>> 6ce1c33bd637ee5b402c1bcb4d7f2c31b028ba84
 .w-10 {
   width: 2.5rem;
 }
 
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 6ce1c33bd637ee5b402c1bcb4d7f2c31b028ba84
 .w-11\/12 {
   width: 91.666667%;
 }
@@ -1073,6 +1137,8 @@ video {
 
 .w-6 {
   width: 1.5rem;
+<<<<<<< HEAD
+=======
 <<<<<<< HEAD
 =======
 }
@@ -1092,12 +1158,15 @@ video {
 .w-4 {
   width: 1rem;
 >>>>>>> 0e8de57ceb81d71ae1d57206e15b0646f07e1518
+>>>>>>> 6ce1c33bd637ee5b402c1bcb4d7f2c31b028ba84
 }
 
 .w-full {
   width: 100%;
 }
 
+<<<<<<< HEAD
+=======
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -1110,10 +1179,13 @@ video {
 }
 
 >>>>>>> 56d037424afefa4fdc6487ac522df151f52f7506
+>>>>>>> 6ce1c33bd637ee5b402c1bcb4d7f2c31b028ba84
 .min-w-full {
   min-width: 100%;
 }
 
+<<<<<<< HEAD
+=======
 <<<<<<< HEAD
 =======
 .max-w-screen-xl {
@@ -1123,6 +1195,7 @@ video {
 >>>>>>> 56d037424afefa4fdc6487ac522df151f52f7506
 =======
 >>>>>>> 0e8de57ceb81d71ae1d57206e15b0646f07e1518
+>>>>>>> 6ce1c33bd637ee5b402c1bcb4d7f2c31b028ba84
 .max-w-sm {
   max-width: 24rem;
 }
@@ -1131,6 +1204,8 @@ video {
   max-width: 36rem;
 }
 
+<<<<<<< HEAD
+=======
 <<<<<<< HEAD
 =======
 .flex-shrink {
@@ -1514,10 +1589,16 @@ video {
   max-width: 36rem;
 }
 
+>>>>>>> 6ce1c33bd637ee5b402c1bcb4d7f2c31b028ba84
 .origin-center {
   transform-origin: center;
 }
 
+<<<<<<< HEAD
+.rotate-90 {
+  --tw-rotate: 90deg;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+=======
 .origin-top-right {
   transform-origin: top right;
 }
@@ -1636,6 +1717,7 @@ video {
   --tw-scale-x: .95;
   --tw-scale-y: .95;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+>>>>>>> 6ce1c33bd637ee5b402c1bcb4d7f2c31b028ba84
 }
 
 .transform {
@@ -1646,6 +1728,8 @@ video {
   cursor: pointer;
 }
 
+<<<<<<< HEAD
+=======
 .list-none {
   list-style-type: none;
 }
@@ -1658,19 +1742,25 @@ video {
   flex-direction: column;
 }
 
+>>>>>>> 6ce1c33bd637ee5b402c1bcb4d7f2c31b028ba84
 .flex-wrap {
   flex-wrap: wrap;
 }
 
+<<<<<<< HEAD
+=======
 .items-end {
   align-items: flex-end;
 }
 
 >>>>>>> 56d037424afefa4fdc6487ac522df151f52f7506
+>>>>>>> 6ce1c33bd637ee5b402c1bcb4d7f2c31b028ba84
 .items-center {
   align-items: center;
 }
 
+<<<<<<< HEAD
+=======
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -1687,6 +1777,7 @@ video {
 }
 
 >>>>>>> 56d037424afefa4fdc6487ac522df151f52f7506
+>>>>>>> 6ce1c33bd637ee5b402c1bcb4d7f2c31b028ba84
 .justify-start {
   justify-content: flex-start;
 }
@@ -1695,17 +1786,25 @@ video {
   justify-content: flex-end;
 }
 
+<<<<<<< HEAD
+=======
 =======
 >>>>>>> 0e8de57ceb81d71ae1d57206e15b0646f07e1518
+>>>>>>> 6ce1c33bd637ee5b402c1bcb4d7f2c31b028ba84
 .justify-center {
   justify-content: center;
 }
 
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 6ce1c33bd637ee5b402c1bcb4d7f2c31b028ba84
 .justify-between {
   justify-content: space-between;
 }
 
+<<<<<<< HEAD
+=======
 <<<<<<< HEAD
 =======
 .justify-around {
@@ -1749,12 +1848,15 @@ video {
 }
 
 >>>>>>> 56d037424afefa4fdc6487ac522df151f52f7506
+>>>>>>> 6ce1c33bd637ee5b402c1bcb4d7f2c31b028ba84
 .space-y-2 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-y-reverse: 0;
   margin-top: calc(0.5rem * calc(1 - var(--tw-space-y-reverse)));
   margin-bottom: calc(0.5rem * var(--tw-space-y-reverse));
 }
 
+<<<<<<< HEAD
+=======
 <<<<<<< HEAD
 =======
 .space-y-reverse > :not([hidden]) ~ :not([hidden]) {
@@ -1870,10 +1972,13 @@ video {
 }
 
 >>>>>>> 56d037424afefa4fdc6487ac522df151f52f7506
+>>>>>>> 6ce1c33bd637ee5b402c1bcb4d7f2c31b028ba84
 .overflow-auto {
   overflow: auto;
 }
 
+<<<<<<< HEAD
+=======
 <<<<<<< HEAD
 =======
 .overflow-hidden {
@@ -1897,10 +2002,13 @@ video {
 }
 
 >>>>>>> 56d037424afefa4fdc6487ac522df151f52f7506
+>>>>>>> 6ce1c33bd637ee5b402c1bcb4d7f2c31b028ba84
 .overflow-y-auto {
   overflow-y: auto;
 }
 
+<<<<<<< HEAD
+=======
 <<<<<<< HEAD
 =======
 .overflow-x-hidden {
@@ -2072,8 +2180,13 @@ video {
 >>>>>>> 56d037424afefa4fdc6487ac522df151f52f7506
 =======
 >>>>>>> 0e8de57ceb81d71ae1d57206e15b0646f07e1518
+>>>>>>> 6ce1c33bd637ee5b402c1bcb4d7f2c31b028ba84
 .rounded {
   border-radius: 0.25rem;
+}
+
+.rounded-3xl {
+  border-radius: 1.5rem;
 }
 
 .rounded-full {
@@ -2085,10 +2198,15 @@ video {
 }
 
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 6ce1c33bd637ee5b402c1bcb4d7f2c31b028ba84
 .rounded-xl {
   border-radius: 0.75rem;
 }
 
+<<<<<<< HEAD
+=======
 <<<<<<< HEAD
 =======
 .rounded-b {
@@ -2156,10 +2274,13 @@ video {
 >>>>>>> 56d037424afefa4fdc6487ac522df151f52f7506
 =======
 >>>>>>> 0e8de57ceb81d71ae1d57206e15b0646f07e1518
+>>>>>>> 6ce1c33bd637ee5b402c1bcb4d7f2c31b028ba84
 .border {
   border-width: 1px;
 }
 
+<<<<<<< HEAD
+=======
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -2174,10 +2295,13 @@ video {
 }
 
 >>>>>>> 56d037424afefa4fdc6487ac522df151f52f7506
+>>>>>>> 6ce1c33bd637ee5b402c1bcb4d7f2c31b028ba84
 .border-b {
   border-bottom-width: 1px;
 }
 
+<<<<<<< HEAD
+=======
 <<<<<<< HEAD
 =======
 .border-e {
@@ -2189,10 +2313,13 @@ video {
 }
 
 >>>>>>> 56d037424afefa4fdc6487ac522df151f52f7506
+>>>>>>> 6ce1c33bd637ee5b402c1bcb4d7f2c31b028ba84
 .border-r {
   border-right-width: 1px;
 }
 
+<<<<<<< HEAD
+=======
 <<<<<<< HEAD
 =======
 .border-s {
@@ -2200,10 +2327,13 @@ video {
 }
 
 >>>>>>> 56d037424afefa4fdc6487ac522df151f52f7506
+>>>>>>> 6ce1c33bd637ee5b402c1bcb4d7f2c31b028ba84
 .border-t {
   border-top-width: 1px;
 }
 
+<<<<<<< HEAD
+=======
 <<<<<<< HEAD
 =======
 .border-solid {
@@ -2243,12 +2373,16 @@ video {
 >>>>>>> 56d037424afefa4fdc6487ac522df151f52f7506
 =======
 >>>>>>> 0e8de57ceb81d71ae1d57206e15b0646f07e1518
+>>>>>>> 6ce1c33bd637ee5b402c1bcb4d7f2c31b028ba84
 .border-gray-300 {
   --tw-border-opacity: 1;
   border-color: rgb(209 213 219 / var(--tw-border-opacity));
 }
 
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 6ce1c33bd637ee5b402c1bcb4d7f2c31b028ba84
 .border-white {
   --tw-border-opacity: 1;
   border-color: rgb(255 255 255 / var(--tw-border-opacity));
@@ -2257,6 +2391,9 @@ video {
 .bg-\[\#183D3D\] {
 <<<<<<< HEAD
 =======
+<<<<<<< HEAD
+=======
+>>>>>>> 6ce1c33bd637ee5b402c1bcb4d7f2c31b028ba84
   --tw-bg-opacity: 1;
   background-color: rgb(24 61 61 / var(--tw-bg-opacity));
 }
@@ -2266,6 +2403,8 @@ video {
   background-color: rgb(29 29 29 / var(--tw-bg-opacity));
 }
 
+<<<<<<< HEAD
+=======
 .bg-\[rgb\(255\2c 0\2c 0\)\] {
   --tw-bg-opacity: 1;
   background-color: rgb(255 0 0 / var(--tw-bg-opacity));
@@ -2289,6 +2428,7 @@ video {
   background-color: rgb(243 244 246 / var(--tw-bg-opacity));
 }
 
+>>>>>>> 6ce1c33bd637ee5b402c1bcb4d7f2c31b028ba84
 .bg-gray-100 {
   --tw-bg-opacity: 1;
   background-color: rgb(243 244 246 / var(--tw-bg-opacity));
@@ -2328,6 +2468,10 @@ video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
+<<<<<<< HEAD
+.fill-current {
+  fill: currentColor;
+=======
 <<<<<<< HEAD
 <<<<<<< HEAD
 .fill-current {
@@ -2505,10 +2649,16 @@ video {
 >>>>>>> 0e8de57ceb81d71ae1d57206e15b0646f07e1518
 .p-0 {
   padding: 0px;
+>>>>>>> 6ce1c33bd637ee5b402c1bcb4d7f2c31b028ba84
 }
 
-.p-10 {
-  padding: 2.5rem;
+.object-cover {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.p-0 {
+  padding: 0px;
 }
 
 .p-2 {
@@ -2520,10 +2670,15 @@ video {
 }
 
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 6ce1c33bd637ee5b402c1bcb4d7f2c31b028ba84
 .p-3 {
   padding: 0.75rem;
 }
 
+<<<<<<< HEAD
+=======
 <<<<<<< HEAD
 =======
 .p-4 {
@@ -2531,6 +2686,7 @@ video {
 }
 
 >>>>>>> 56d037424afefa4fdc6487ac522df151f52f7506
+>>>>>>> 6ce1c33bd637ee5b402c1bcb4d7f2c31b028ba84
 .p-6 {
   padding: 1.5rem;
 }
@@ -2540,8 +2696,11 @@ video {
   padding-right: 0.75rem;
 }
 
+<<<<<<< HEAD
+=======
 =======
 >>>>>>> 0e8de57ceb81d71ae1d57206e15b0646f07e1518
+>>>>>>> 6ce1c33bd637ee5b402c1bcb4d7f2c31b028ba84
 .px-4 {
   padding-left: 1rem;
   padding-right: 1rem;
@@ -2573,11 +2732,16 @@ video {
 }
 
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 6ce1c33bd637ee5b402c1bcb4d7f2c31b028ba84
 .py-4 {
   padding-top: 1rem;
   padding-bottom: 1rem;
 }
 
+<<<<<<< HEAD
+=======
 <<<<<<< HEAD
 =======
 .py-3 {
@@ -2603,6 +2767,7 @@ video {
 >>>>>>> 56d037424afefa4fdc6487ac522df151f52f7506
 =======
 >>>>>>> 0e8de57ceb81d71ae1d57206e15b0646f07e1518
+>>>>>>> 6ce1c33bd637ee5b402c1bcb4d7f2c31b028ba84
 .pb-2 {
   padding-bottom: 0.5rem;
 }
@@ -2616,6 +2781,9 @@ video {
 }
 
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 6ce1c33bd637ee5b402c1bcb4d7f2c31b028ba84
 .pl-10 {
   padding-left: 2.5rem;
 }
@@ -2630,11 +2798,14 @@ video {
 
 <<<<<<< HEAD
 =======
+<<<<<<< HEAD
+=======
 .pr-8 {
   padding-right: 2rem;
 }
 
 >>>>>>> 56d037424afefa4fdc6487ac522df151f52f7506
+>>>>>>> 6ce1c33bd637ee5b402c1bcb4d7f2c31b028ba84
 .pt-2 {
   padding-top: 0.5rem;
 }
@@ -2643,8 +2814,11 @@ video {
   padding-top: 1.25rem;
 }
 
+<<<<<<< HEAD
+=======
 =======
 >>>>>>> 0e8de57ceb81d71ae1d57206e15b0646f07e1518
+>>>>>>> 6ce1c33bd637ee5b402c1bcb4d7f2c31b028ba84
 .pt-8 {
   padding-top: 2rem;
 }
@@ -2673,6 +2847,8 @@ video {
   text-align: center;
 }
 
+<<<<<<< HEAD
+=======
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -2725,6 +2901,7 @@ video {
 }
 
 >>>>>>> 56d037424afefa4fdc6487ac522df151f52f7506
+>>>>>>> 6ce1c33bd637ee5b402c1bcb4d7f2c31b028ba84
 .font-sans {
   font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
@@ -2734,8 +2911,11 @@ video {
   line-height: 2rem;
 }
 
+<<<<<<< HEAD
+=======
 =======
 >>>>>>> 0e8de57ceb81d71ae1d57206e15b0646f07e1518
+>>>>>>> 6ce1c33bd637ee5b402c1bcb4d7f2c31b028ba84
 .text-3xl {
   font-size: 1.875rem;
   line-height: 2.25rem;
@@ -2785,6 +2965,26 @@ video {
   text-transform: uppercase;
 }
 
+<<<<<<< HEAD
+.text-\[\#183D3D\] {
+  --tw-text-opacity: 1;
+  color: rgb(24 61 61 / var(--tw-text-opacity));
+}
+
+.text-\[\#93B1A6\] {
+  --tw-text-opacity: 1;
+  color: rgb(147 177 166 / var(--tw-text-opacity));
+}
+
+.text-black {
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity));
+}
+
+.text-gray-300 {
+  --tw-text-opacity: 1;
+  color: rgb(209 213 219 / var(--tw-text-opacity));
+=======
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -2895,6 +3095,7 @@ video {
   --tw-text-opacity: 1;
   color: rgb(37 99 235 / var(--tw-text-opacity));
 >>>>>>> 0e8de57ceb81d71ae1d57206e15b0646f07e1518
+>>>>>>> 6ce1c33bd637ee5b402c1bcb4d7f2c31b028ba84
 }
 
 .text-gray-500 {
@@ -2932,6 +3133,8 @@ video {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
+<<<<<<< HEAD
+=======
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -2992,6 +3195,7 @@ video {
 }
 
 >>>>>>> 56d037424afefa4fdc6487ac522df151f52f7506
+>>>>>>> 6ce1c33bd637ee5b402c1bcb4d7f2c31b028ba84
 .opacity-0 {
   opacity: 0;
 }
@@ -3000,6 +3204,8 @@ video {
   opacity: 0.5;
 }
 
+<<<<<<< HEAD
+=======
 <<<<<<< HEAD
 =======
 .bg-blend-normal {
@@ -3141,14 +3347,18 @@ video {
 }
 
 >>>>>>> 56d037424afefa4fdc6487ac522df151f52f7506
+>>>>>>> 6ce1c33bd637ee5b402c1bcb4d7f2c31b028ba84
 .shadow {
   --tw-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
   --tw-shadow-colored: 0 1px 3px 0 var(--tw-shadow-color), 0 1px 2px -1px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
+<<<<<<< HEAD
+=======
 =======
 >>>>>>> 0e8de57ceb81d71ae1d57206e15b0646f07e1518
+>>>>>>> 6ce1c33bd637ee5b402c1bcb4d7f2c31b028ba84
 .shadow-lg {
   --tw-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
   --tw-shadow-colored: 0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);
@@ -3166,6 +3376,8 @@ video {
   outline-offset: 2px;
 }
 
+<<<<<<< HEAD
+=======
 <<<<<<< HEAD
 =======
 .outline {
@@ -3266,6 +3478,7 @@ video {
 }
 
 >>>>>>> 56d037424afefa4fdc6487ac522df151f52f7506
+>>>>>>> 6ce1c33bd637ee5b402c1bcb4d7f2c31b028ba84
 .transition {
   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
@@ -3280,15 +3493,21 @@ video {
 
 <<<<<<< HEAD
 =======
+<<<<<<< HEAD
+=======
 .ease-in {
   transition-timing-function: cubic-bezier(0.4, 0, 1, 1);
 }
 
 >>>>>>> 56d037424afefa4fdc6487ac522df151f52f7506
+>>>>>>> 6ce1c33bd637ee5b402c1bcb4d7f2c31b028ba84
 .ease-in-out {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+<<<<<<< HEAD
+.hover\:bg-gray-100:hover {
+=======
 <<<<<<< HEAD
 .hover\:bg-gray-100:hover {
 =======
@@ -3398,6 +3617,7 @@ video {
 
 .hover\:bg-gray-100:hover {
 >>>>>>> 0e8de57ceb81d71ae1d57206e15b0646f07e1518
+>>>>>>> 6ce1c33bd637ee5b402c1bcb4d7f2c31b028ba84
   --tw-bg-opacity: 1;
   background-color: rgb(243 244 246 / var(--tw-bg-opacity));
 }
@@ -3415,6 +3635,8 @@ video {
 .hover\:text-indigo-400:hover {
   --tw-text-opacity: 1;
   color: rgb(129 140 248 / var(--tw-text-opacity));
+<<<<<<< HEAD
+=======
 }
 
 .hover\:bg-gray-100:hover {
@@ -3449,6 +3671,7 @@ video {
 .hover\:text-indigo-400:hover {
   --tw-text-opacity: 1;
   color: rgb(129 140 248 / var(--tw-text-opacity));
+>>>>>>> 6ce1c33bd637ee5b402c1bcb4d7f2c31b028ba84
 }
 
 .hover\:text-teal-700:hover {
@@ -3456,6 +3679,8 @@ video {
   color: rgb(15 118 110 / var(--tw-text-opacity));
 }
 
+<<<<<<< HEAD
+=======
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -3484,11 +3709,14 @@ video {
 >>>>>>> 56d037424afefa4fdc6487ac522df151f52f7506
 =======
 >>>>>>> 0e8de57ceb81d71ae1d57206e15b0646f07e1518
+>>>>>>> 6ce1c33bd637ee5b402c1bcb4d7f2c31b028ba84
 .focus\:border-blue-500:focus {
   --tw-border-opacity: 1;
   border-color: rgb(59 130 246 / var(--tw-border-opacity));
 }
 
+<<<<<<< HEAD
+=======
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -3498,13 +3726,17 @@ video {
 }
 
 >>>>>>> 56d037424afefa4fdc6487ac522df151f52f7506
+>>>>>>> 6ce1c33bd637ee5b402c1bcb4d7f2c31b028ba84
 .focus\:text-gray-700:focus {
   --tw-text-opacity: 1;
   color: rgb(55 65 81 / var(--tw-text-opacity));
 }
 
+<<<<<<< HEAD
+=======
 =======
 >>>>>>> 0e8de57ceb81d71ae1d57206e15b0646f07e1518
+>>>>>>> 6ce1c33bd637ee5b402c1bcb4d7f2c31b028ba84
 .focus\:outline-none:focus {
   outline: 2px solid transparent;
   outline-offset: 2px;
@@ -3538,6 +3770,8 @@ video {
   }
 
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
   .md\:w-auto {
@@ -3549,10 +3783,13 @@ video {
   }
 
 >>>>>>> 56d037424afefa4fdc6487ac522df151f52f7506
+>>>>>>> 6ce1c33bd637ee5b402c1bcb4d7f2c31b028ba84
   .md\:max-w-md {
     max-width: 28rem;
   }
 
+<<<<<<< HEAD
+=======
 <<<<<<< HEAD
 =======
   .md\:flex-row {
@@ -3562,6 +3799,7 @@ video {
 >>>>>>> 56d037424afefa4fdc6487ac522df151f52f7506
 =======
 >>>>>>> 0e8de57ceb81d71ae1d57206e15b0646f07e1518
+>>>>>>> 6ce1c33bd637ee5b402c1bcb4d7f2c31b028ba84
   .md\:justify-between {
     justify-content: space-between;
   }
@@ -3569,6 +3807,9 @@ video {
 
 @media (min-width: 1024px) {
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 6ce1c33bd637ee5b402c1bcb4d7f2c31b028ba84
   .lg\:col-span-1 {
     grid-column: span 1 / span 1;
   }
@@ -3579,6 +3820,8 @@ video {
 
 <<<<<<< HEAD
 =======
+<<<<<<< HEAD
+=======
   .lg\:my-8 {
     margin-top: 2rem;
     margin-bottom: 2rem;
@@ -3587,6 +3830,7 @@ video {
 >>>>>>> 56d037424afefa4fdc6487ac522df151f52f7506
 =======
 >>>>>>> 0e8de57ceb81d71ae1d57206e15b0646f07e1518
+>>>>>>> 6ce1c33bd637ee5b402c1bcb4d7f2c31b028ba84
   .lg\:mb-0 {
     margin-bottom: 0px;
   }
@@ -3608,6 +3852,8 @@ video {
   }
 
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
   .lg\:w-1\/3 {
@@ -3615,12 +3861,16 @@ video {
   }
 
 >>>>>>> 56d037424afefa4fdc6487ac522df151f52f7506
+>>>>>>> 6ce1c33bd637ee5b402c1bcb4d7f2c31b028ba84
   .lg\:grid-cols-3 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
+<<<<<<< HEAD
+=======
 =======
 >>>>>>> 0e8de57ceb81d71ae1d57206e15b0646f07e1518
+>>>>>>> 6ce1c33bd637ee5b402c1bcb4d7f2c31b028ba84
   .lg\:text-left {
     text-align: left;
   }
@@ -3631,6 +3881,8 @@ video {
 }
 
 @media (prefers-color-scheme: dark) {
+<<<<<<< HEAD
+=======
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -3652,11 +3904,14 @@ video {
   }
 
 >>>>>>> 56d037424afefa4fdc6487ac522df151f52f7506
+>>>>>>> 6ce1c33bd637ee5b402c1bcb4d7f2c31b028ba84
   .dark\:bg-blue-600 {
     --tw-bg-opacity: 1;
     background-color: rgb(37 99 235 / var(--tw-bg-opacity));
   }
 
+<<<<<<< HEAD
+=======
 <<<<<<< HEAD
 =======
   .dark\:bg-gray-800 {
@@ -3696,11 +3951,14 @@ video {
     --tw-ring-offset-color: #1f2937;
   }
 
+>>>>>>> 6ce1c33bd637ee5b402c1bcb4d7f2c31b028ba84
   .dark\:hover\:bg-blue-700:hover {
     --tw-bg-opacity: 1;
     background-color: rgb(29 78 216 / var(--tw-bg-opacity));
   }
 
+<<<<<<< HEAD
+=======
   .dark\:focus\:border-blue-500:focus {
     --tw-border-opacity: 1;
     border-color: rgb(59 130 246 / var(--tw-border-opacity));
@@ -3717,10 +3975,13 @@ video {
   }
 
 >>>>>>> 56d037424afefa4fdc6487ac522df151f52f7506
+>>>>>>> 6ce1c33bd637ee5b402c1bcb4d7f2c31b028ba84
   .dark\:focus\:ring-blue-800:focus {
     --tw-ring-opacity: 1;
     --tw-ring-color: rgb(30 64 175 / var(--tw-ring-opacity));
   }
+<<<<<<< HEAD
+=======
 <<<<<<< HEAD
 =======
 
@@ -3728,4 +3989,5 @@ video {
     --tw-ring-offset-color: #1f2937;
   }
 >>>>>>> 56d037424afefa4fdc6487ac522df151f52f7506
+>>>>>>> 6ce1c33bd637ee5b402c1bcb4d7f2c31b028ba84
 }
