@@ -18,6 +18,7 @@ $router->setRoutes([
         'details' => ['CommentsController', 'saveComment'],
         'signup' => ['AuthController', 'registerUser'],
         'signin' => ['AuthController', 'authenticateUser'],
+        'addMessage' => ['MessageController', 'addMessage'],
         ],
 ]);
 
