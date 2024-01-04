@@ -1,23 +1,20 @@
 <?php
 
 namespace app\controllers;
-use App\models\AnnonceModel;
 require '../../vendor/autoload.php';
 
 
-class Annoncecontroller{
+class AnnonceController{
 
 
 
-    // public function add(){
+    public function annonce()
+    {
+        include '../../views/annonce/annonce.php';
+        exit();
+    }
 
-
-    //    $
-
-
-
-    // }
-
+    
 
 
 

@@ -151,5 +151,21 @@ class AnnonceDAO
     return $updateAnnonce;
 
     }
+
+    public static function updateStatut($annonceId, $newStatut)
+    {
+        $conn = Database::connect();
+
+        $sql = "UPDATE annonce SET statut = ? WHERE id = ?";
+        $stmt = $conn->prepare($sql);
+        $stmt->bind_param("ii", $newStatut, $annonceId);
+
+        $success = $stmt->execute();
+
+        $stmt->close();
+        $conn->close();
+
+        return $success;
+    }
 }
     
