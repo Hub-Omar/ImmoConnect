@@ -39,6 +39,7 @@ class UserDAO
 
         $result = $stmt->get_result();
         $user = $result->fetch_assoc();
+        
         return $user;
     }
 
@@ -54,7 +55,7 @@ class UserDAO
 
         $stmt->close();
         $conn->close();
-<<<<<<< HEAD
+
 
        return $users;
     }
@@ -74,9 +75,8 @@ class UserDAO
         $stmt->close();
         
         return $user;
-=======
-        return $row;
->>>>>>> fbd0a7f29c1d144448ad9de933b4c2d8bdcf867f
+
+
     }
     
 
