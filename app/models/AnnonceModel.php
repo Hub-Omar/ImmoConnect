@@ -33,13 +33,12 @@ class AnnonceModel
         return AnnonceDAO::getAllAnnonce();
     }
 
-<<<<<<< HEAD
     public static function AddAnnonce($prix, $titre, $description, $dateAjout)
     {
         return AnnonceDAO::addAnnonce();
     }
 
-    public static function DeletAnnonce()
+    public static function DeletAnnonce($id)
     {
         return AnnonceDAO::deletAnnonce();
     }
@@ -48,22 +47,7 @@ class AnnonceModel
     {
         return AnnonceDAO::UpdateAnnonce();
     }
-=======
-    // public function AddAnnonce($image, $prix, $titre, $description, $dateAjout)
-    // {
-    //     return AnnonceDAO::addAnnonce();
-    // }
-
-    // public function DeletAnnonce()
-    // {
-    //     return AnnonceDAO::deletAnnonce();
-    // }
-     
-    // public function UpdateAnnonce($image, $prix, $titre, $description, $dateAjout)
-    // {
-    //     return AnnonceDAO::UpdateAnnonce();
-    // }
->>>>>>> bf0dd6ba067f5b4a7df567ef5bdaca65488d15fb
+    
 
 
 }
