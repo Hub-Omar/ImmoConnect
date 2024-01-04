@@ -4,24 +4,17 @@ namespace App\DAO;
 
 require '../../vendor/autoload.php';
 use App\database\Database;
-use App\entity\UserEntity;
 
 class UserDAO
 {
-    public static function registerUser(UserEntity $user)
+    public static function registerUser($fullName, $email, $password, $tel, $roleId)
     {
         $conn = Database::connect();
-        $fullName = $user->getFullName();
-        $email = $user->getEmail();
-        $password = $user->getPassword();
-        $tel = $user->getTel();
-        $role = $user->getRoleId(); 
 
-        
         $sql = "INSERT INTO `user` (`nom_complet`, `email`, `password`, `Tel`, `role_id`) VALUES (?, ?, ?, ?, ?)";
         $stmt = $conn->prepare($sql);
         
-        $stmt->bind_param("ssssi", $fullName, $email, $password, $tel, $role);
+        $stmt->bind_param("ssssi", $fullName, $email, $password, $tel, $roleId);
         $stmt->execute();
 
         $stmt->close();
@@ -39,6 +32,7 @@ class UserDAO
 
         $result = $stmt->get_result();
         $user = $result->fetch_assoc();
+        
         return $user;
     }
 
@@ -50,11 +44,32 @@ class UserDAO
         $stmt->execute();
 
         $result=$stmt->get_result();
-        $row = $result->fetch_all(MYSQLI_ASSOC);
+        $users = $result->fetch_all(MYSQLI_ASSOC);
 
         $stmt->close();
         $conn->close();
-        return $row;
+
+
+       return $users;
+    }
+
+    public static function getUserbyId($id)
+    {
+         $conn=Database::connect();
+
+        $requete = "SELECT * FROM `user` WHERE `id`=?";
+        $stmt = $conn->prepare($requete);
+        $stmt->bind_param("i", $id);
+        $stmt->execute();
+
+        $result = $stmt->get_result();
+        $user = $result->fetch_assoc();
+        
+        $stmt->close();
+        
+        return $user;
+
+
     }
     
 
@@ -62,15 +77,32 @@ class UserDAO
        $conn=Database::connect();
        
        $requete = "UPDATE `user` 
-                  SET `nom_complet`= ?, `email`=?, `password`= ?, `Tel`= ?, `profile`= ?, `role_id`= ? WHERE `id`=?";
+                  SET `nom_complet`= ?, `email`=?, `password`= ?, `Tel`= ?, `profile`= ?, `role_id`= ?
+                   WHERE `id`=?";
 
         $stmt=$conn->prepare($requete);
         $stmt->bind_param("sssssi", $nom_complet, $email, $password, $tel, $profile, $role_id);
         $result = $stmt->execute();
 
         $stmt->close();
-        $stmt->close();
+        $conn->close();
         return $result;
+    }
+
+    public static function deleteUser($id)
+    {
+      $conn = Database::connect();
+
+      $requete = "DELETE FROM `user` WHERE `id`=?";
+      $stmt = $conn->prepare($requete);
+      $stmt->bind_param("i", $id);
+
+      $result = $stmt->execute();
+
+      $stmt->close();
+      $conn->close();
+
+      return $result;
     }
 
 }

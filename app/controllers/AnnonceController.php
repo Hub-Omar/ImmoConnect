@@ -9,14 +9,14 @@ class Annoncecontroller{
 
 
 
-    // public function add(){
+    public function add(){
 
 
-    //    $
+       if(isset)
 
 
 
-    // }
+    }
 
 
 

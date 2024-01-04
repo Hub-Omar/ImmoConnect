@@ -1,7 +1,9 @@
 <?php
 
 namespace App\models;
+
 require '../../vendor/autoload.php';
+
 use App\dao\AnnonceDAO;
 
 class AnnonceModel
@@ -13,7 +15,7 @@ class AnnonceModel
     private $dateAjout;
     private $bienId;
 
-    public function __construct($id,$prix, $titre, $description, $dateAjout, $bienId)
+    public function __construct($id, $prix, $titre, $description, $dateAjout, $bienId)
     {
         $this->id = $id;
         $this->prix = $prix;
