@@ -17,6 +17,7 @@ class CommentsController
             $commentModel->saveComment();
 
             header("Location: details");
+            
             exit();
         }
     }
