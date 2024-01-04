@@ -1,4 +1,9 @@
+<?php
+use App\models\AnnonceController;
 
+require '../../vendor/autoload.php';
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -12,7 +17,7 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">    
         <!-- <link rel="stylesheet" href="https://demos.creative-tim.com/notus-js/assets/styles/tailwind.css"> -->
          <link rel="stylesheet"href="https://demos.creative-tim.com/notus-js/assets/vendor/@fortawesome/fontawesome-free/css/all.min.css">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"> -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
         <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;0,800;0,900;1,500;1,700;1,800;1,900&display=swap"rel="stylesheet">
         <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.css" rel="stylesheet" />
         <script src="https://cdn.tailwindcss.com"></script>
@@ -30,12 +35,12 @@
   <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
   <a href="https://flowbite.com/" class="flex items-center space-x-3 rtl:space-x-reverse">
       <img src="https://flowbite.com/docs/images/logo.svg" class="h-8" alt="Flowbite Logo" />
-      <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Flowbite</span>
+      <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">ImmoConnect</span>
   </a>
   <div class="flex items-center md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
       <button type="button" class="flex text-sm bg-gray-800 rounded-full md:me-0 focus:ring-4 focus:ring-gray-300 dark:focus:ring-gray-600" id="user-menu-button" aria-expanded="false" data-dropdown-toggle="user-dropdown" data-dropdown-placement="bottom">
         <span class="sr-only">Open user menu</span>
-        <img class="w-8 h-8 rounded-full" src="/docs/images/people/profile-picture-3.jpg" alt="user photo">
+        <img class="w-8 h-8 rounded-full" src="../../public/image/7O2A0316.JPG" alt="user photo">
       </button>
       <!-- Dropdown menu -->
       <div class="z-50 hidden my-4 text-base list-none bg-white divide-y divide-gray-100 rounded-lg shadow dark:bg-gray-700 dark:divide-gray-600" id="user-dropdown">
@@ -45,13 +50,14 @@
         </div>
         <ul class="py-2" aria-labelledby="user-menu-button">
           <li>
+<<<<<<< HEAD
             <a href="viewChat" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Chat</a>
+=======
+            <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Chat</a>
+>>>>>>> 8fe6cb5e897db4879325f21cb093b19886e8a71c
           </li>
           <li>
             <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Settings</a>
-          </li>
-          <li>
-            <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Earnings</a>
           </li>
           <li>
             <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Sign out</a>
@@ -87,7 +93,7 @@
 
 
 <div class="relative">
-<img style="width:92rem;height:43rem" class="pl-6 rounded-3xl md: flex w-full" src="../../public/image/pexels-clay-elliot-5524336.jpg" />
+<img style="width:93rem;height:43rem" class="pl-6 rounded-3xl md: flex w-full" src="../../public/image/pexels-clay-elliot-5524336.jpg" />
 <div style="top:20rem;right:20rem;background-color:rgba(30, 30, 30, 0.55)" class="absolute rounded-2xl h-52 w-96 flex flex-col space-y-12 md:right-8 w-8	">
   <p style="" class="relative text-white top-5 left-2 font-bold font-medium">Whether you’re searching  for houses, 
   apartments, or condos, it's easy to find a place
@@ -104,6 +110,59 @@
 </div>
 
 <!-- ============================= first Annonce/part1 ============== -->
+
+
+<!-- Main modal -->
+<div id="crud-modal" tabindex="-1" aria-hidden="true" class="hidden bg-gray-800 overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
+    <div class="relative p-4 bg-white w-full max-w-md max-h-full">
+        <!-- Modal content -->
+        <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
+            <!-- Modal header -->
+            <div class="flex items-center justify-between p-4 md:p-5 border-b rounded-t dark:border-gray-600">
+                <h3 class="text-lg font-semibold text-gray-900 dark:text-white">
+                    Create New Annonce
+                </h3>
+                <button type="button" class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm h-40 w-24 ms-auto inline-flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white" data-modal-toggle="crud-modal">
+                    <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"/>
+                    </svg>
+                    <span class="sr-only">Close modal</span>
+                </button>
+            </div>
+            <!-- Modal body -->
+            <form class="flex flex-row justify-centre mr-1 md:p-5" action="../../app/controllers/AnnonceController.php">
+                <div class="flex flex-col gap-4 mb-4 pl-3">
+                    <div class="col-span-3">
+                        <input type="file" class="h-10 w-36 block mb-2 text-sm rounded-lg font-medium text-gray-900 dark:text-white" id="imageInput" name="images[]" multiple accept="image/*">
+                    </div>
+                    <div class="">
+                        <label for="name" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"></label>
+                        <input type="text" name="name" id="name" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="Type product name" required="">
+                    </div>
+                    <div class=" sm:col-span-1">
+                        <label for="price" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"></label>
+                        <input type="number" name="price" id="price" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="$2999" required="">
+                    </div>
+                    <div class="">
+                        <label for="name" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"></label>
+                        <input type="date" name="name" id="date" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="" required="">
+                    </div>
+                    <div class="">
+                        <label for="description" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Annonce Description</label>
+                        <textarea id="description" rows="4" class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Write Annonce description here"></textarea>                    
+                    </div>
+                   </div>
+                   <div class="button h-10">
+                <button type="submit" class="text-white inline-flex items-center bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                    <svg class="me-1 -ms-1 w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 5a1 1 0 011 1v3h3a1 1 0 110 2h-3v3a1 1 0 11-2 0v-3H6a1 1 0 110-2h3V6a1 1 0 011-1z" clip-rule="evenodd"></path></svg>
+                    Add new product
+                </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div> 
+<!-- ======================================= partie Annonce =============== -->
 
 <div class="text-center	text-white font-bold pt-10 ">
 
@@ -191,6 +250,11 @@ resident reviews and local insights to find what is right for you.</h1>
     <div class="pagination" id="pagination">
         <button onclick="changePage(-1)">Previous</button>
         <button onclick="changePage(1)">Next</button>
+    </div>
+    <div class=" flex pl-20">
+    <button data-modal-target="crud-modal" style="background-color:#183D3D " data-modal-toggle="crud-modal" class="block left-11 text-white hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800" type="button">
+      add Annonce + 
+    </button> 
     </div>
 
 <div class="cards flex justify-evenly flex-row sm:flex flex-wrap  ">
@@ -597,23 +661,6 @@ resident reviews and local insights to find what is right for you.</h1>
     showCards();
 </script>
 
-
-
-<!-- =================== modal ============= -->
-<script>
-        // JavaScript to handle modal opening and closing
-        const openModalButton = document.getElementById('openModal');
-        const closeModalButton = document.getElementById('closeModal');
-        const modal = document.getElementById('modal');
-
-        openModalButton.addEventListener('click', () => {
-            modal.style.display = 'flex';
-        });
-
-        closeModalButton.addEventListener('click', () => {
-            modal.style.display = 'none';
-        });
-    </script>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.js"></script>
 
