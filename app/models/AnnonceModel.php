@@ -1,7 +1,9 @@
 <?php
 
 namespace App\models;
+
 require '../../vendor/autoload.php';
+
 use App\dao\AnnonceDAO;
 
 class AnnonceModel
@@ -13,7 +15,7 @@ class AnnonceModel
     private $dateAjout;
     private $bienId;
 
-    public function __construct($id,$prix, $titre, $description, $dateAjout, $bienId)
+    public function __construct($id, $prix, $titre, $description, $dateAjout, $bienId)
     {
         $this->id = $id;
         $this->prix = $prix;
@@ -33,7 +35,6 @@ class AnnonceModel
         return AnnonceDAO::getAllAnnonce();
     }
 
-<<<<<<< HEAD
     public static function AddAnnonce($prix, $titre, $description, $dateAjout)
     {
         return AnnonceDAO::addAnnonce();
@@ -43,12 +44,11 @@ class AnnonceModel
     {
         return AnnonceDAO::deletAnnonce();
     }
-     
+
     public static function UpdateAnnonce($prix, $titre, $description, $dateAjout)
     {
         return AnnonceDAO::UpdateAnnonce();
     }
-=======
     // public function AddAnnonce($image, $prix, $titre, $description, $dateAjout)
     // {
     //     return AnnonceDAO::addAnnonce();
@@ -58,12 +58,11 @@ class AnnonceModel
     // {
     //     return AnnonceDAO::deletAnnonce();
     // }
-     
+
     // public function UpdateAnnonce($image, $prix, $titre, $description, $dateAjout)
     // {
     //     return AnnonceDAO::UpdateAnnonce();
     // }
->>>>>>> bf0dd6ba067f5b4a7df567ef5bdaca65488d15fb
 
 
 }
