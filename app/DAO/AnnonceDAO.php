@@ -70,10 +70,6 @@ class AnnonceDAO
         return $all_annonce;
     }
 
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
 
     //     public function AddAnnonce()
 //     {
@@ -107,8 +103,6 @@ class AnnonceDAO
 
     //     }
 
->>>>>>> 3e62bd114998a11ca3714468e992324b6861b46f
->>>>>>> 5312a7bce068b21c52a1c2404a281b45748b7e59
     public static function AddAnnonce($prix, $titre, $description, $date_ajout)
     {
         $conn = Database::connect();
@@ -118,16 +112,12 @@ class AnnonceDAO
    
         $ajouterAnnonce = $conn->prepare($requetAjouter);
 
-<<<<<<< HEAD
         $ajouterAnnonce->bind_param("issd",$prix ,$titre ,$description ,$date_ajout);
         $AddAnnonce= $ajouterAnnonce->execute();
-=======
-        $stmt=bind_param("fssd",$prix ,$titre ,$description ,$date_ajout);
-        $AddAnnonce= $stmt->execute();
->>>>>>> 5312a7bce068b21c52a1c2404a281b45748b7e59
+       
         return $AddAnnonce;
       
-   }var_dump($AddAnnonce);
+   }
 
     public static function deleteAnnonce($id)
         {
@@ -162,14 +152,7 @@ class AnnonceDAO
     return $updateAnnonce;
 
     }
-<<<<<<< HEAD
 
-<<<<<<< HEAD
 
-=======
-   
-=======
->>>>>>> 3e62bd114998a11ca3714468e992324b6861b46f
->>>>>>> 5312a7bce068b21c52a1c2404a281b45748b7e59
 }
     
