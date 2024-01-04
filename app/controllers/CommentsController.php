@@ -10,8 +10,8 @@ class CommentsController
     {
         if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['submit'])) {
             $commentText = $_POST['comment'];
-            $userId = 1;
-            $annonceId = 2;
+            $userId = 2;
+            $annonceId = 1;
 
             $commentModel = new CommentModel($commentText, $userId, $annonceId);
             $commentModel->saveComment();

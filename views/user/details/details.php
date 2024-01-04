@@ -39,19 +39,14 @@
     </header>
 
     <div class="details">
-        <div class="images">
-            <img src="/ImmoConnect/public/images/<?php echo $annonce['image'] ?>" class="img1">
-            <div class="image2">
-                <img src="/ImmoConnect/public/images/Black Brick Vila in Damavand, Iran by Reza Mohtashami (1).jfif"
-                    class="img2">
-                <img src="/ImmoConnect/public/images/Natural Light Living Rooms - Statement Wall Ideas for Living Room.jfif"
-                    class="img2">
-                <img src="/ImmoConnect/public/images/detail1.jfif" class="img2">
-                <img src="/ImmoConnect/public/images/best home decor style for 2023_home decor style rustic farmhouse _home decor living room home decor.jfif"
-                    class="img2">
-                <img src="/ImmoConnect/public/images/detail1.jfif" class="img2">
-            </div>
-        </div>
+    <div class="images">
+    <img src="/ImmoConnect/public/images/<?php echo $annonce['path'] ?>" class="img1">
+    <div class="image2">
+        <?php foreach ($annonce['images'] as $imagePath): ?>
+            <img src="/ImmoConnect/public/images/<?php echo $imagePath; ?>" class="img2">
+        <?php endforeach; ?>
+    </div>
+</div>
         <div class="owner">
             <div class="name">
                 <img src="/ImmoConnect/public/images/owner.jfif" class="owner">
@@ -166,7 +161,7 @@
             <?php foreach ($all_annonce as $all_annonces): ?>
 
                 <div class="card">
-                    <img src="/ImmoConnect/public/images/<?php echo $all_annonces['image'] ?>">
+                    <img src="/ImmoConnect/public/images/<?php echo $all_annonces['image_path'] ?>">
                     <div class="descr">
                         <p>
                             <?php echo $all_annonces['titre'] ?>
