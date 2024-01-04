@@ -51,11 +51,11 @@ class AnnonceDAO
    
         $ajouterAnnonce = $conn->prepare($requetAjouter);
 
-        $stmt=bind_param("issd",$prix ,$titre ,$description ,$date_ajout);
+        $stmt=bind_param("fssd",$prix ,$titre ,$description ,$date_ajout);
         $AddAnnonce= $stmt->execute();
         return $AddAnnonce;
-   
-   }
+      
+   }var_dump($AddAnnonce);
 
     public static function deleteAnnonce($id)
         {

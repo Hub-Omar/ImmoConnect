@@ -12,8 +12,12 @@ class Annoncecontroller{
     public function add(){
 
 
-       if(isset)
+       if(isset($_POST['submit']))
+         {
+            $Annonce= new AnnonceModel($prix, $titre, $description, $date_ajout);
+            $Annonce->AddAnnonce();
 
+         }
 
 
     }

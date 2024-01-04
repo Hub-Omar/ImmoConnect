@@ -1,4 +1,9 @@
+<?php
+use App\models\AnnonceController;
 
+require '../../vendor/autoload.php';
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -121,7 +126,7 @@
                 </button>
             </div>
             <!-- Modal body -->
-            <form class="flex flex-row justify-centre mr-1 md:p-5">
+            <form class="flex flex-row justify-centre mr-1 md:p-5" action="../../app/controllers/AnnonceController.php">
                 <div class="flex flex-col gap-4 mb-4 pl-3">
                     <div class="col-span-3">
                         <input type="file" class="h-10 w-36 block mb-2 text-sm rounded-lg font-medium text-gray-900 dark:text-white" id="imageInput" name="images[]" multiple accept="image/*">
