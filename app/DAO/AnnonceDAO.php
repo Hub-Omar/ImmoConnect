@@ -70,10 +70,7 @@ class AnnonceDAO
         return $all_annonce;
     }
 
-<<<<<<< HEAD
-<<<<<<< HEAD
 
-=======
     //     public function AddAnnonce()
 //     {
 //         $conn = Database::connect();
@@ -105,8 +102,7 @@ class AnnonceDAO
 
 
     //     }
->>>>>>> Nabil
-=======
+
     public static function AddAnnonce($prix, $titre, $description, $date_ajout)
     {
         $conn = Database::connect();
@@ -155,11 +151,5 @@ class AnnonceDAO
     return $updateAnnonce;
 
     }
-
-   
-=======
-
->>>>>>> 67057d4d8521168fa5e17f6e122ce02200b40515
->>>>>>> 9c650fcbba1f06045ed1062aa71ac816d2434040
 }
     
