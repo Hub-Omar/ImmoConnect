@@ -71,6 +71,7 @@ class AnnonceDAO
     }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
     //     public function AddAnnonce()
@@ -105,5 +106,60 @@ class AnnonceDAO
 
     //     }
 >>>>>>> Nabil
+=======
+    public static function AddAnnonce($prix, $titre, $description, $date_ajout)
+    {
+        $conn = Database::connect();
+        
+        $requetAjouter = "INSERT INTO `annonce`(`prix`, `titre`, `description`, `date_ajout`) 
+        VALUES (?,?,?,?)";
+   
+        $ajouterAnnonce = $conn->prepare($requetAjouter);
+
+        $stmt=bind_param("issd",$prix ,$titre ,$description ,$date_ajout);
+        $AddAnnonce= $stmt->execute();
+        return $AddAnnonce;
+   
+   }
+
+    public static function deleteAnnonce($id)
+        {
+
+       $conn = Database::connect();
+
+       $requeteDelete = "DELETE FROM `annonce` WHERE `id` = ?";
+
+       $delete = $conn->prepare($requeteDelete);
+
+       $delete->bind_param("i", $id);
+
+       $deleteAnnonce= $delete->execute();
+
+       return $deleteAnnonce;
+
+       }
+       
+
+    public static function updateAnnonce($prix, $titre, $description, $date_ajout)
+     {
+
+    $conn = Database::connect();
+
+    $requeteUpdate = "UPDATE `annonce` SET `prix`=?, `titre`=?, `description`=?, `date_ajout`=?";
+
+    $update = $conn->prepare($requeteUpdate);
+    $update->bind_param("issd",$prix, $titre, $description, $date_ajout);
+    
+    $updateAnnonce=$update->execute();
+
+    return $updateAnnonce;
+
+    }
+
+   
+=======
+
+>>>>>>> 67057d4d8521168fa5e17f6e122ce02200b40515
+>>>>>>> 9c650fcbba1f06045ed1062aa71ac816d2434040
 }
     

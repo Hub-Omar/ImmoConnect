@@ -8,7 +8,7 @@ use App\DAO\MessageDAO;
 
 class MessageController
 {
-    public function view()
+    public function viewChat()
     {
         include '../../views/user/chat.php';
         exit();
