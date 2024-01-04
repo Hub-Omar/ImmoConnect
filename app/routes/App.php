@@ -12,6 +12,7 @@ $router->setRoutes([
         'signup' => ['AuthController', 'signup'],
         'signin' => ['AuthController', 'login'],
         'view' => ['MessageController', 'view'],
+        'profil'=>['UserController', 'profil'],
     ],
     'POST' => [
         'submit' => ['DetailsController', 'save'],

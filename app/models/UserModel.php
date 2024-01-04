@@ -4,6 +4,7 @@ namespace App\models;
 
 require '../../vendor/autoload.php';
 use App\dao\UserDAO;
+use App\controllers;
 
 class UserModel
 {
@@ -25,6 +26,37 @@ class UserModel
         return false;
     }
 
+    public static function getAllUsers()
+    {
+        $allusers = UserDAO::getAllUsers();
+        
+        return $allusers;
+    }
+
+    public static function getUserbyId($id)
+    {
+        $userbyid = UserDAO::getUserbyId($id);
+        return $userbyid;
+    }
+
+    public static function updateUser($name, $email, $password, $tel, $id)
+    {
+        $updateUser = UserDAO::updateUser($name , $email , $password , $tel , $id);
+        return $updateUser;
+
+    }
+
+    public static function deleteUser($id)
+    {
+        $deleteUser = UserDAO::deleteUser($id);
+        return $deleteUser;
+    }
+
+    public static function getUserAnnonce($userId)
+    {
+        $biens = UserDAO::getAnnonceUser($userId);
+        return $biens;
+    }
     
 
     
