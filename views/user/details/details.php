@@ -195,7 +195,7 @@
                 </div>
             </div>
 
-            <form action="details" method="post" class="comm" id="commentForm">
+            <form action="details" method="post" class="comm" id="commentForm" >
                 <input type="hidden" name="annonceId" value="<?= $annonce['id'] ?>">
                 <textarea name="comment" id="comment" cols="30" rows="10" placeholder="add a comment"></textarea>
                 <button class="Contactowner" id="btn" type="submit" name="submit">Send</button>
@@ -277,8 +277,6 @@
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
 
     <script src="/ImmoConnect/public/js/main.js"></script>
-
-
 
     <script>
         var openmodal = document.querySelectorAll('.modal-open')

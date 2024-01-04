@@ -42,6 +42,7 @@ class AnnonceDAO
         return $all_annonce;
     }
 
+<<<<<<< HEAD
     public static function AddAnnonce($prix, $titre, $description, $date_ajout)
     {
         $conn = Database::connect();
@@ -92,4 +93,8 @@ class AnnonceDAO
     }
 
    
+=======
+
+>>>>>>> 67057d4d8521168fa5e17f6e122ce02200b40515
 }
+    

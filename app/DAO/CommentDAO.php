@@ -17,6 +17,7 @@ class CommentDAO
 
         $stmt->close();
         $conn->close();
+       
     }
 
     public static function getCommentsByAnnonceId($annonceId)
@@ -33,7 +34,7 @@ class CommentDAO
 
         $stmt->close();
         $conn->close();
-
+       
         return $comments;
     }
 }

@@ -18,7 +18,7 @@
         <div class="form-container max-w-sm mx-auto mt-20">
             <form id="signupForm" class="max-w-sm mx-auto" action="signin" method="post">
                 <h1 class="text-3xl text-white font-bold text-center">
-                    Log In 
+                    Log In
                 </h1>
                 <p class="text-white font-sans text-center">Sign in with your account !</p>
                 <div class="form-input mb-2 pt-5">
@@ -33,18 +33,12 @@
 
 
                 <div class="form-input mb-5 pt-2">
-                    <button type="submit" class="text-white bg-green-700 hover:bg-green-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Submit</button>
+                    <button type="submit" class="text-white bg-green-700 hover:bg-green-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800" name="login">Submit</button>
                     <a href="signup" class=" text-black p-5">Create an account !!<span class="text-white hover:text-blue-500 p-1">Sign Up</span></a>
 
-<<<<<<< HEAD
-                 </div>
                 </div>
+
             </form>
-=======
-                </div>
-        </div>
-        </form>
->>>>>>> bf0dd6ba067f5b4a7df567ef5bdaca65488d15fb
         </div>
     </section>
 
