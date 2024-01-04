@@ -11,6 +11,7 @@ $router->setRoutes([
         'details' => ['DetailsController', 'details'],
         'signup' => ['AuthController', 'signup'],
         'signin' => ['AuthController', 'login'],
+        'view' => ['MessageController', 'view'],
     ],
     'POST' => [
         'submit' => ['DetailsController', 'save'],

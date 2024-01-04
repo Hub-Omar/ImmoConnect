@@ -1,25 +1,20 @@
 <?php
 
 namespace App\models;
+
 require '../../vendor/autoload.php';
 use App\dao\UserDAO;
-use App\entity\UserEntity;
 
 class UserModel
 {
-    public function registerUser($name, $email, $password, $phone)
+    public static function registerUser($name, $email, $password, $phone)
     {
-        $userEntity = $userEntity = new UserEntity(null, $name, $email, $password, $phone, 2);
-        $userEntity->setFullName($name);
-        $userEntity->setEmail($email);
-        $userEntity->setPassword(password_hash($password, PASSWORD_DEFAULT));
-        $userEntity->setTel($phone);
-        $userEntity->setRoleId(2); 
+        $roleId = 2; 
 
-        UserDAO::registerUser($userEntity);
+        UserDAO::registerUser($name, $email, password_hash($password, PASSWORD_DEFAULT), $phone, $roleId);
     }
 
-    public function authenticateUser($email, $password)
+    public static function authenticateUser($email, $password)
     {
         $user = UserDAO::getUserByEmail($email);
 
@@ -29,9 +24,13 @@ class UserModel
 
         return false;
     }
+<<<<<<< HEAD
 
     
 
     
 
 }
+=======
+}
+>>>>>>> cdf2569db169f35cd82e1e84fe274de5dff741bd

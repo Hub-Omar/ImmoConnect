@@ -340,7 +340,7 @@ form{
 
 .pagination{
     display: flex;
-    width: 100%;
+    width: 85%;
     align-items: flex-end;
     justify-content: end;
     gap: 3rem;

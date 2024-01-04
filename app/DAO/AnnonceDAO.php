@@ -42,35 +42,59 @@ class AnnonceDAO
         return $all_annonce;
     }
 
-    public function AddAnnonce()
+<<<<<<< HEAD
+    public static function AddAnnonce($prix, $titre, $description, $date_ajout)
     {
         $conn = Database::connect();
         
-        $requetAjouter = "INSERT INTO `annonce`(`image`, `prix`, `titre`, `description`, `date_ajout`, `bien_id`) 
-        VALUES ([value-2],[value-3],[value-4],[value-5],[value-6],[value-7])";
+        $requetAjouter = "INSERT INTO `annonce`(`prix`, `titre`, `description`, `date_ajout`) 
+        VALUES (?,?,?,?)";
    
-        $ajouterclients = mysqli_query($connect,$requetAjouter);
+        $ajouterAnnonce = $conn->prepare($requetAjouter);
+
+        $stmt=bind_param("issd",$prix ,$titre ,$description ,$date_ajout);
+        $AddAnnonce= $stmt->execute();
+        return $AddAnnonce;
    
-        if($ajouterclients){
-        header("Location:clients.php");
-   }
-   else{
-    echo"erreur";
    }
 
+    public static function deleteAnnonce($id)
+        {
+
+       $conn = Database::connect();
+
+       $requeteDelete = "DELETE FROM `annonce` WHERE `id` = ?";
+
+       $delete = $conn->prepare($requeteDelete);
+
+       $delete->bind_param("i", $id);
+
+       $deleteAnnonce= $delete->execute();
+
+       return $deleteAnnonce;
+
+       }
+       
+
+    public static function updateAnnonce($prix, $titre, $description, $date_ajout)
+     {
+
+    $conn = Database::connect();
+
+    $requeteUpdate = "UPDATE `annonce` SET `prix`=?, `titre`=?, `description`=?, `date_ajout`=?";
+
+    $update = $conn->prepare($requeteUpdate);
+    $update->bind_param("issd",$prix, $titre, $description, $date_ajout);
+    
+    $updateAnnonce=$update->execute();
+
+    return $updateAnnonce;
 
     }
 
-    public function DeletAnnonce()
-    {
-        $conn = Database::connect();
+   
+=======
 
-    }
-
-    public function UpdateAnnonce()
-    {        
-        $conn = Database::connect();
-
-        
-    }
+>>>>>>> 67057d4d8521168fa5e17f6e122ce02200b40515
 }
+    

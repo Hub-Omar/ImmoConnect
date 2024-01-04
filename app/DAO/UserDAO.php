@@ -4,24 +4,17 @@ namespace App\DAO;
 
 require '../../vendor/autoload.php';
 use App\database\Database;
-use App\entity\UserEntity;
 
 class UserDAO
 {
-    public static function registerUser(UserEntity $user)
+    public static function registerUser($fullName, $email, $password, $tel, $roleId)
     {
         $conn = Database::connect();
-        $fullName = $user->getFullName();
-        $email = $user->getEmail();
-        $password = $user->getPassword();
-        $tel = $user->getTel();
-        $role = $user->getRoleId(); 
 
-        
         $sql = "INSERT INTO `user` (`nom_complet`, `email`, `password`, `Tel`, `role_id`) VALUES (?, ?, ?, ?, ?)";
         $stmt = $conn->prepare($sql);
         
-        $stmt->bind_param("ssssi", $fullName, $email, $password, $tel, $role);
+        $stmt->bind_param("ssssi", $fullName, $email, $password, $tel, $roleId);
         $stmt->execute();
 
         $stmt->close();
