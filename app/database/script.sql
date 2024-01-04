@@ -29,7 +29,7 @@ CREATE TABLE Annonce (
     prix double,
     titre VARCHAR(255),
     description VARCHAR(255),
-    date_ajout DATE
+    date_ajout TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
 
 CREATE TABLE images(

@@ -79,4 +79,8 @@ class MessageModel
     {
         return MessageDAO::getAllMessages();
     }
+    public static function addMessage($emitterId, $receiverId, $message)
+    {
+        return MessageDAO::addMessage($emitterId, $receiverId, $message);
+    }
 }

@@ -10,7 +10,7 @@ class DetailsController
 {
     public function details()
     {
-        $annonceId = 2;
+        $annonceId = 1;
         $annonce = AnnonceModel::getAnnonceById($annonceId);
         $all_annonce = AnnonceModel::getAllAnnonce();
         $comments = CommentModel::getCommentsByAnnonceId($annonceId);

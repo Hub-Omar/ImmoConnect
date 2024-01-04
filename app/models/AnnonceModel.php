@@ -50,6 +50,28 @@ class AnnonceModel
         return AnnonceDAO::UpdateAnnonce($prix, $titre, $description, $dateAjout);
     }
     
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+    // // public static function AddAnnonce($prix, $titre, $description, $dateAjout)
+    // public static function AddAnnonce($prix, $titre, $description, $dateAjout)
+    // {
+    //     return AnnonceDAO::addAnnonce();
+    // }
+
+    // public static function DeletAnnonce()
+    // {
+    //     return AnnonceDAO::deletAnnonce();
+    // }
+
+    // public static function UpdateAnnonce($prix, $titre, $description, $dateAjout)
+    // {
+    //     return AnnonceDAO::UpdateAnnonce();
+    // }
+
+>>>>>>> 3e62bd114998a11ca3714468e992324b6861b46f
+>>>>>>> 5312a7bce068b21c52a1c2404a281b45748b7e59
 
 
 }

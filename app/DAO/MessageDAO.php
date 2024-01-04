@@ -40,6 +40,38 @@ class MessageDAO
 
         return $allMessages;
     }
+    public static function addMessage($emitterId, $receiverId, $message)
+    {
+        $conn = Database::connect();
+
+        $checkSql = "SELECT * FROM `Message` WHERE `emetteur_id` = ? AND `recepteur_id` = ?";
+        $checkStmt = $conn->prepare($checkSql);
+        $checkStmt->bind_param("ii", $emitterId, $receiverId);
+        $checkStmt->execute();
+
+        $checkResult = $checkStmt->get_result();
+        $existingMessage = $checkResult->fetch_assoc();
+
+        $checkStmt->close();
+
+        if ($existingMessage) {
+            $responseSql = "INSERT INTO `Response` (`message_id`, `reply`, `sent_at`) VALUES (?, ?, CURRENT_TIMESTAMP)";
+            $responseStmt = $conn->prepare($responseSql);
+            $responseStmt->bind_param("is", $existingMessage['id'], $message);
+            $success = $responseStmt->execute();
+            $responseStmt->close();
+        } else {
+            $messageSql = "INSERT INTO `Message` (`emetteur_id`, `recepteur_id`, `message`, `sent_at`) VALUES (?, ?, ?, CURRENT_TIMESTAMP)";
+            $messageStmt = $conn->prepare($messageSql);
+            $messageStmt->bind_param("iis", $emitterId, $receiverId, $message);
+            $success = $messageStmt->execute();
+            $messageStmt->close();
+        }
+
+        $conn->close();
+
+        return $success;
+    }
 
 
 }
