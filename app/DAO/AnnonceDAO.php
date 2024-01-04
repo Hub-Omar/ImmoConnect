@@ -42,7 +42,6 @@ class AnnonceDAO
         return $all_annonce;
     }
 
-<<<<<<< HEAD
     public static function AddAnnonce($prix, $titre, $description, $date_ajout)
     {
         $conn = Database::connect();
@@ -52,8 +51,8 @@ class AnnonceDAO
    
         $ajouterAnnonce = $conn->prepare($requetAjouter);
 
-        $stmt=bind_param("issd",$prix ,$titre ,$description ,$date_ajout);
-        $AddAnnonce= $stmt->execute();
+        $ajouterAnnonce->bind_param("issd",$prix ,$titre ,$description ,$date_ajout);
+        $AddAnnonce= $ajouterAnnonce->execute();
         return $AddAnnonce;
    
    }
