@@ -105,6 +105,40 @@
 
 <!-- ============================= first Annonce/part1 ============== -->
 
+
+
+
+
+<button id="openModal" class="bg-blue-500 text-white px-4 py-2 rounded">Open Modal</button>
+
+    <!-- Modal -->
+    <div id="modal" class="fixed top-0 left-0 w-full h-full bg-black bg-opacity-50 flex items-center justify-center hidden">
+        <div class="bg-white p-8 rounded shadow-lg w-96">
+            <!-- Modal Content with Input Fields -->
+            <h2 class="text-2xl font-bold mb-4">Add Product</h2>
+
+            <!-- Image Input -->
+            <input type="file" class="w-full border p-2 mb-4" placeholder="Product Image">
+
+            <!-- Title Input -->
+            <input type="text" class="w-full border p-2 mb-4" placeholder="Product Title">
+
+            <!-- Description Input -->
+            <textarea class="w-full border p-2 mb-4" placeholder="Product Description"></textarea>
+
+            <!-- Price Input -->
+            <input type="number" class="w-full border p-2 mb-4" placeholder="Product Price">
+
+            <!-- Date Added Input -->
+            <input type="date" class="w-full border p-2 mb-4" placeholder="Date Added">
+
+            <!-- Save Button -->
+            <button id="saveProduct" class="bg-green-500 text-white px-4 py-2 rounded">Save</button>
+
+            <!-- Close Button -->
+            <button id="closeModal" class="bg-red-500 text-white px-4 py-2 rounded ml-2">Close</button>
+        </div>
+    </div>
 <div class="text-center	text-white font-bold pt-10 ">
 
 <h1 class="text-2xl	">Explore homes on ImmoConnect <br>
