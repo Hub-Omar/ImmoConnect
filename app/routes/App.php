@@ -11,13 +11,14 @@ $router->setRoutes([
         'details' => ['DetailsController', 'details'],
         'signup' => ['AuthController', 'signup'],
         'signin' => ['AuthController', 'login'],
-        'view' => ['MessageController', 'view'],
+        'viewChat' => ['MessageController', 'viewChat'],
     ],
     'POST' => [
         'submit' => ['DetailsController', 'save'],
         'details' => ['CommentsController', 'saveComment'],
         'signup' => ['AuthController', 'registerUser'],
         'signin' => ['AuthController', 'authenticateUser'],
+        'addMessage' => ['MessageController', 'addMessage'],
         ],
 ]);
 

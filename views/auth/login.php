@@ -36,17 +36,10 @@
                     <button type="submit" class="text-white bg-green-700 hover:bg-green-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800" name="login">Submit</button>
                     <a href="signup" class=" text-black p-5">Create an account !!<span class="text-white hover:text-blue-500 p-1">Sign Up</span></a>
 
-<<<<<<< HEAD
-                 </div>
-=======
->>>>>>> cdf2569db169f35cd82e1e84fe274de5dff741bd
+
                 </div>
 
             </form>
-<<<<<<< HEAD
-
-=======
->>>>>>> cdf2569db169f35cd82e1e84fe274de5dff741bd
         </div>
     </section>
 

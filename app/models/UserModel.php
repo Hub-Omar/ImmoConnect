@@ -24,13 +24,10 @@ class UserModel
 
         return false;
     }
-<<<<<<< HEAD
 
     
 
     
 
 }
-=======
-}
->>>>>>> cdf2569db169f35cd82e1e84fe274de5dff741bd
+

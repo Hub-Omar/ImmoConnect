@@ -10,7 +10,8 @@ class CommentDAO
     {
         $conn = Database::connect();
 
-        $sql = "INSERT INTO `commentair`(`label`, `annonce_id`, `user_id`) VALUES (?, ?, ?)";
+        $sql = "INSERT INTO `commentaire`(`label`, `annonce_id`, `user_id`) VALUES (?, ?, ?)";
+        $sql = "INSERT INTO `commentair`e(`label`, `annonce_id`, `user_id`) VALUES (?, ?, ?)";
         $stmt = $conn->prepare($sql);
         $stmt->bind_param("sii", $comment, $annonceId, $userId);
         $stmt->execute();
@@ -24,7 +25,7 @@ class CommentDAO
     {
         $conn = Database::connect();
 
-        $sql = "SELECT * FROM `commentair` WHERE `annonce_id` = ? ORDER BY id DESC LIMIT 4";
+        $sql = "SELECT * FROM `commentaire` WHERE `annonce_id` = ? ORDER BY id DESC LIMIT 4";
         $stmt = $conn->prepare($sql);
         $stmt->bind_param("i", $annonceId);
         $stmt->execute();
