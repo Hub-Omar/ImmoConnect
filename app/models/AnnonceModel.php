@@ -35,25 +35,8 @@ class AnnonceModel
         return AnnonceDAO::getAllAnnonce();
     }
 
-<<<<<<< HEAD
+    // // public static function AddAnnonce($prix, $titre, $description, $dateAjout)
     // public static function AddAnnonce($prix, $titre, $description, $dateAjout)
-=======
-    public static function AddAnnonce($prix, $titre, $description, $dateAjout)
-    {
-        return AnnonceDAO::addAnnonce();
-    }
-
-    public static function DeletAnnonce()
-    {
-        return AnnonceDAO::deletAnnonce();
-    }
-
-    public static function UpdateAnnonce($prix, $titre, $description, $dateAjout)
-    {
-        return AnnonceDAO::UpdateAnnonce();
-    }
-    // public function AddAnnonce($image, $prix, $titre, $description, $dateAjout)
->>>>>>> c097b55a3e98b7a1ab09237b6f99d0cd7268e41e
     // {
     //     return AnnonceDAO::addAnnonce();
     // }
@@ -62,20 +45,12 @@ class AnnonceModel
     // {
     //     return AnnonceDAO::deletAnnonce();
     // }
-<<<<<<< HEAD
-     
+
     // public static function UpdateAnnonce($prix, $titre, $description, $dateAjout)
     // {
     //     return AnnonceDAO::UpdateAnnonce();
     // }
 
-=======
-
-    // public function UpdateAnnonce($image, $prix, $titre, $description, $dateAjout)
-    // {
-    //     return AnnonceDAO::UpdateAnnonce();
-    // }
->>>>>>> c097b55a3e98b7a1ab09237b6f99d0cd7268e41e
 
 
 }
