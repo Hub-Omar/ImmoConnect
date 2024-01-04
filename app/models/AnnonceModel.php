@@ -37,17 +37,17 @@ class AnnonceModel
 
     public static function AddAnnonce($prix, $titre, $description, $dateAjout)
     {
-        return AnnonceDAO::addAnnonce();
+        return AnnonceDAO::addAnnonce($prix, $titre, $description, $dateAjout);
     }
 
     public static function DeletAnnonce($id)
     {
-        return AnnonceDAO::deletAnnonce();
+        return AnnonceDAO::deleteAnnonce($id);
     }
      
     public static function UpdateAnnonce($prix, $titre, $description, $dateAjout)
     {
-        return AnnonceDAO::UpdateAnnonce();
+        return AnnonceDAO::UpdateAnnonce($prix, $titre, $description, $dateAjout);
     }
     
 
