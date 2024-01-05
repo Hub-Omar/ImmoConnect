@@ -12,6 +12,8 @@ $router->setRoutes([
         'signup' => ['AuthController', 'signup'],
         'signin' => ['AuthController', 'login'],
         'viewChat' => ['MessageController', 'message'],
+        'profil'=>['UserController', 'profil'],
+        'annonce' => ['AnnonceController', 'annonce'],
     ],
     'POST' => [
         'submit' => ['DetailsController', 'save'],
@@ -19,12 +21,13 @@ $router->setRoutes([
         'signup' => ['AuthController', 'registerUser'],
         'signin' => ['AuthController', 'authenticateUser'],
         'addMessage' => ['MessageController', 'addMessage'],
-        ],
+        'booking' => ['DetailsController', 'bookNow'],
+    ],
 ]);
 
 if (isset($_GET['url'])) {
     $uri = trim($_GET['url'], '/');
-    
+
     $methode = $_SERVER['REQUEST_METHOD'];
 
     try {

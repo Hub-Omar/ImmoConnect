@@ -5,7 +5,7 @@ namespace App\controllers;
 require_once '../../vendor/autoload.php';
 use App\models\UserModel;
 use App\DAO\UserDAO;
-
+session_start();
 class AuthController
 {
     public function signup()
@@ -53,6 +53,7 @@ class AuthController
                     header("Location: admin");
                     exit();
                 } elseif ($user['role_id'] == 2) {
+                    $_SESSION['user_image'] = $user['profile'];
                     header("Location: details");
                     exit();
                 }

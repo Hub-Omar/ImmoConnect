@@ -24,7 +24,7 @@
 
     <header>
         <div class="head-left">
-            <a href="#"><i class='bx bxs-chevron-left'></i></a>
+            <a href="annonce"><i class='bx bxs-chevron-left'></i></a>
             <div class="search">
                 <input type="text" placeholder="Search" class="search" id="searchInput" oninput="searchCards()">
                 <div class="icon">
@@ -33,20 +33,24 @@
             </div>
         </div>
         <div class="btns">
-            <a href="signin" class="signin">Sign in</a>
-            <a href="signup" class="signup">Sign up</a>
+        <a href="viewChat" class="chat-icon"><img src="/ImmoConnect/public/images/<?php session_start(); echo $_SESSION['user_image']; ?>" style="width:50px;height:50px;border-radius:50%;  "></a>
         </div>
     </header>
 
     <div class="details">
-    <div class="images">
-    <img src="/ImmoConnect/public/images/<?php echo $annonce['path'] ?>" class="img1">
-    <div class="image2">
-        <?php foreach ($annonce['images'] as $imagePath): ?>
-            <img src="/ImmoConnect/public/images/<?php echo $imagePath; ?>" class="img2">
-        <?php endforeach; ?>
-    </div>
-</div>
+        <div class="images">
+            <img src="/ImmoConnect/public/images/<?php echo $annonce['path'] ?>" class="img1">
+            <div class="image2">
+                <?php if (isset($annonce['images']) && !empty($annonce['images'])): ?>
+                    <?php foreach ($annonce['images'] as $imagePath): ?>
+                        <img src="/ImmoConnect/public/images/<?php echo $imagePath; ?>" class="img2">
+                    <?php endforeach; ?>
+                <?php else: ?>
+                    <p>No Details available.</p>
+                <?php endif; ?>
+            </div>
+
+        </div>
         <div class="owner">
             <div class="name">
                 <img src="/ImmoConnect/public/images/owner.jfif" class="owner">
@@ -60,15 +64,23 @@
             <a href="#"><img src="/ImmoConnect/public/images/Screenshot 2023-12-26 171521.png" class="map"></a>
         </div>
     </div>
+
     <div class="description">
-        <p><i class='bx bxs-circle'></i> For Sell</p>
+        <p><i class='bx bxs-circle'></i>
+            <?php
+            echo $annonce['statut'] === 0 ? 'For Sell' : ($annonce['statut'] === 1 ? 'Not available' : 'other');
+            ?>
+        </p>
         <div class="price">
             <h1>$
                 <?php echo $annonce['prix'] ?>
             </h1>
             <div class="line"></div>
             <p>$614,999</p>
-            <button class="buy" onclick="showPaymentModal()">Buy Now</button>
+            <form action="booking" method="post" id="bookingForm" style="width:10%">
+                <input type="hidden" name="annonceId" value="<?php echo $annonce['id']; ?>">
+                <button class="buy" type="submit" style="background-color:#183D3D">Book Now</button>
+            </form>
 
         </div>
         <p class="desc">
@@ -159,15 +171,14 @@
     <div class="cards" id="cards-container">
         <?php if (isset($all_annonce) && !empty($all_annonce)): ?>
             <?php foreach ($all_annonce as $all_annonces): ?>
-
-                <div class="card">
-                    <img src="/ImmoConnect/public/images/<?php echo $all_annonces['image_path'] ?>">
+                <div class="card" onclick="loadAnnouncementDetails(<?php echo $all_annonces['annonce_id']; ?>)">
+                    <img src="/ImmoConnect/public/images/<?php echo $all_annonces['image_path']; ?>">
                     <div class="descr">
                         <p>
-                            <?php echo $all_annonces['titre'] ?>
+                            <?php echo $all_annonces['titre']; ?>
                         </p>
                         <p>$
-                            <?php echo $all_annonces['prix'] ?>
+                            <?php echo $all_annonces['prix']; ?>
                         </p>
                     </div>
                 </div>
@@ -190,7 +201,7 @@
                 </div>
             </div>
 
-            <form action="details" method="post" class="comm" id="commentForm" >
+            <form action="details" method="post" class="comm" id="commentForm">
                 <input type="hidden" name="annonceId" value="<?= $annonce['id'] ?>">
                 <textarea name="comment" id="comment" cols="30" rows="10" placeholder="add a comment"></textarea>
                 <button class="Contactowner" id="btn" type="submit" name="submit">Send</button>
@@ -272,6 +283,14 @@
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
 
     <script src="/ImmoConnect/public/js/main.js"></script>
+
+    
+
+    <script>
+        function loadAnnouncementDetails(annonceId) {
+            window.location.href = '/ImmoConnect/details?annonceId=' + annonceId;
+        }
+    </script>
 
     <script>
         var openmodal = document.querySelectorAll('.modal-open')

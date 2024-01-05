@@ -112,10 +112,11 @@ class AnnonceDAO
    
         $ajouterAnnonce = $conn->prepare($requetAjouter);
 
-        $stmt=bind_param("issd",$prix ,$titre ,$description ,$date_ajout);
-        $AddAnnonce= $stmt->execute();
+        $ajouterAnnonce->bind_param("issd",$prix ,$titre ,$description ,$date_ajout);
+        $AddAnnonce= $ajouterAnnonce->execute();
+       
         return $AddAnnonce;
-   
+      
    }
 
     public static function deleteAnnonce($id)
@@ -151,5 +152,25 @@ class AnnonceDAO
     return $updateAnnonce;
 
     }
+
+<<<<<<< HEAD
+    public static function updateStatut($annonceId, $newStatut)
+    {
+        $conn = Database::connect();
+
+        $sql = "UPDATE annonce SET statut = ? WHERE id = ?";
+        $stmt = $conn->prepare($sql);
+        $stmt->bind_param("ii", $newStatut, $annonceId);
+
+        $success = $stmt->execute();
+
+        $stmt->close();
+        $conn->close();
+
+        return $success;
+    }
+=======
+
+>>>>>>> 8fe6cb5e897db4879325f21cb093b19886e8a71c
 }
     
