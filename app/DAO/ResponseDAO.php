@@ -57,5 +57,23 @@ class ResponseDAO
 
         return $success;
     }
+    public static function getReceptorName($receptorId)
+    {
+        $conn = Database::connect();
+
+        $sql = "SELECT `nom_recepteur` FROM `ReceptorTable` WHERE `recepteur_id` = ?";
+        $stmt = $conn->prepare($sql);
+        $stmt->bind_param("i", $receptorId);
+        $stmt->execute();
+
+        $result = $stmt->get_result();
+        $receptorData = $result->fetch_assoc();
+
+        $receptorName = isset($receptorData['nom_recepteur']) ? $receptorData['nom_recepteur'] : '';
+
+        $stmt->close();
+        $conn->close();
+
+        return $receptorName;
+    }
 }
-?>

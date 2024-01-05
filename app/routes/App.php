@@ -12,7 +12,7 @@ $router->setRoutes([
         'signup' => ['AuthController', 'signup'],
         'signin' => ['AuthController', 'login'],
         'viewChat' => ['MessageController', 'message'],
-        'profil'=>['UserController', 'profil'],
+        'profil'=>['UserController', 'getUserAnnonce'],
         'annonce' => ['AnnonceController', 'annonce'],
         'home'=>['UserController', 'home'],
     ],

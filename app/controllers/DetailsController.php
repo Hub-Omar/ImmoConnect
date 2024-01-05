@@ -28,7 +28,7 @@ class DetailsController
     public function bookNow()
     {
         if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-            $annonceId = $_POST['annonceId'];
+            $annonceId = base64_decode($_POST['annonceId']);
 
             $success = AnnonceDAO::updateStatut($annonceId, true);
 
