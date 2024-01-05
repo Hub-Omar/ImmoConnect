@@ -110,12 +110,22 @@ class UserDAO
     {
         $conn = Database::connect();
 
-        $requete = "SELECT * 
-            FROM Bien as b 
-            JOIN images as i ON b.id = i.bien_id
-            JOIN annonce as a ON i.annonce_id=a.id
-            
-            WHERE b.user_id = ?";
+        $requete = "SELECT 
+        b.id AS bien_id, 
+        b.emplacement, 
+        b.type, 
+        b.user_id,
+        a.id AS annonce_id, 
+        a.prix, 
+        a.titre, 
+        a.description, 
+        a.date_ajout,
+        MIN(i.id) AS image_id,
+        MIN(i.path) AS image_path
+    FROM bien AS b
+    JOIN images AS i ON b.id = i.bien_id
+    JOIN annonce AS a ON i.annonce_id = a.id WHERE b.user_id = ?
+    GROUP BY a.id";
 
         $stmt = $conn->prepare($requete);
         $stmt->bind_param("i", $userId);

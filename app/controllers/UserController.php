@@ -8,13 +8,8 @@ use App\models\UserModel;
 
 class UserController
 {
-  public function profil()
-  {
-    include '../../views/user/profil/profil.php';
-    exit();
-  }
-
-  public function getAllUsers()
+    
+    public function getAllUsers()
     {
         $allUsers = UserModel::getAllUsers();
         // Faites quelque chose avec la liste des utilisateurs récupérés
@@ -36,7 +31,7 @@ class UserController
             $password = $_POST['password'];
             $tel = $_POST['tel'];
             $id = $_POST['id'];
-
+            
             
             $isUpdated = UserModel::updateUser($name, $email, $password, $tel, $id);
 
@@ -55,7 +50,7 @@ class UserController
     {
         if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['deleteUser'])) {
             $isDeleted = UserModel::deleteUser($id);
-
+            
             if ($isDeleted) {
                 header('location:../../../../views/admin/test.php');
             } else {
@@ -65,11 +60,24 @@ class UserController
             header('location:../../../../index.php');
         }
     }
-
-    public function getUserAnnonce($userId)
+    public function profil($biens)
     {
-        $biens = UserModel::getUserAnnonce($userId);
-        $this->profil($biens);
+      include '../../views/user/profil/profil.php';
+      exit();
     }
+
+    public function getUserAnnonce()
+    {
+        $userId = 2; 
+        $biens = UserModel::getUserAnnonce($userId);
+    
+        if ($biens) {
+            $this->profil($biens);
+        } else {
+         
+            echo "Error retrieving user announcements.";
+        }
+    }
+    
 }
 ?>
