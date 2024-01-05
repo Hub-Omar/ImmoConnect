@@ -13,6 +13,18 @@ class AnnonceController{
         include '../../views/annonce/annonce.php';
         exit();
     }
+    // public function add(){
+
+
+    //    if(isset($_POST['submit']))
+    //      {
+    //         $Annonce= new AnnonceModel($prix, $titre, $description, $date_ajout);
+    //         $Annonce->AddAnnonce();
+
+    //      }
+
+
+    // }
 
     
 
