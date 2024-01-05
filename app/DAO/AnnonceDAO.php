@@ -116,21 +116,14 @@ class AnnonceDAO
    
         $ajouterAnnonce = $conn->prepare($requetAjouter);
 
-<<<<<<< HEAD
+
         $ajouterAnnonce->bind_param("dsss",$prix ,$titre ,$description ,$dateAjout);
         $AddAnnonce= $ajouterAnnonce->execute();
        
    }
    
-=======
-        $ajouterAnnonce->bind_param("issd",$prix ,$titre ,$description ,$date_ajout);
-        $AddAnnonce= $ajouterAnnonce->execute();
-       
-        return $AddAnnonce;
-      
-   }
 
->>>>>>> 7e08b748e2b6de8cf8cc19f72fd83fdd2cf758dc
+
     public static function deleteAnnonce($id)
         {
 

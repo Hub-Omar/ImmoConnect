@@ -14,6 +14,7 @@ $router->setRoutes([
         'viewChat' => ['MessageController', 'message'],
         'profil'=>['UserController', 'profil'],
         'annonce' => ['AnnonceController', 'annonce'],
+        'home'=>['UserController', 'home'],
     ],
     'POST' => [
         'submit' => ['DetailsController', 'save'],

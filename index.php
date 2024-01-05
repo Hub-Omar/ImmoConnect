@@ -266,8 +266,10 @@
   <!-- History Section -->
   <section class="bg-white py-8" style="background-color: #5C8374;">
     <div style="width: 100%; height: 100%;">
-      <div style="width: 312px; height: 69px; left: 0px; top: 2px; background: #D9D9D9; border-radius: 30px"><div class="" style=" color: #183D3D; font-size: 50px; font-family: Poppins; font-weight: 400; word-wrap: break-word cen ">About Us</div></div>
-      
+      <div style="width: 312px; height: 69px; left: 0px; top: 2px; background: #D9D9D9; border-radius: 30px">
+        <div class="" style=" color: #183D3D; font-size: 50px; font-family: Poppins; font-weight: 400; word-wrap: break-word cen ">About Us</div>
+      </div>
+
     </div>
     <div class="container mx-auto flex px-6">
       <div class="" style="width: 100%; height:100%"><span style="color: black; font-size: 25px; font-family: Poppins; font-weight: 600; text-decoration: underline; word-wrap: break-word">Notre histoire<br /></span><span style="color: white; font-size: 25px; font-family: Roboto Serif; font-weight: 700; word-wrap: break-word">Imaginez un monde où chacun possédra ca maison</span><span style="color: white; font-size: 25px; font-family: Poppins; font-weight: 600; word-wrap: break-word">.<br /></span><span style="color: white; font-size: 25px; font-family: Poppins; font-weight: 500; word-wrap: break-word">Nous savons que l’accession à la propriété signifie bien plus que simplement posséder une propriété : elle débouche sur des avantages financiers, sociaux et émotionnels</span><span style="color: white; font-size: 25px; font-family: Poppins; font-weight: 600; word-wrap: break-word">.</span></div>
@@ -282,47 +284,47 @@
       <div style="width: 100%; height: 100%"><span style="color: black; font-size: 25px; font-family: Poppins; font-weight: 600; text-decoration: underline; word-wrap: break-word">Qu’est-ce qu’ImmoConnect ?<br /></span><span style="color: white; font-size: 25px; font-family: Poppins; font-weight: 500; word-wrap: break-word">ImmoConnect est une société de technologie immobilière basée au Maroc et axée sur l'amélioration de l'accession à la propriété. Nous aidons les consommateurs dans leur cheminement vers la maison de leurs Rêves.</span></div>
     </div>
     <div>
-    <h2 class="text-4xl font-bold mb-2">Notre Equipe</h2>
-    <div class="flex -mx-4">
-      <!-- Team Member Card -->
-      <div class="w-1/3 px-4">
-        <div class="bg-white shadow-lg rounded-lg px-4 py-6">
-          <div class="text-center">
-            <img class="w-32 h-32 rounded-full mx-auto" src="/ImmoConnect/public/images/team1.jpg" alt="Team member">
-            <h3 class="text-xl font-medium mt-2">John Doe</h3>
-            <p class="text-gray-600">Position</p>
+      <h2 class="text-4xl font-bold mb-2">Notre Equipe</h2>
+      <div class="flex -mx-4">
+        <!-- Team Member Card -->
+        <div class="w-1/3 px-4">
+          <div class="bg-white shadow-lg rounded-lg px-4 py-6">
+            <div class="text-center">
+              <img class="w-32 h-32 rounded-full mx-auto" src="/ImmoConnect/public/images/team1.jpg" alt="Team member">
+              <h3 class="text-xl font-medium mt-2">John Doe</h3>
+              <p class="text-gray-600">Position</p>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="w-1/3 px-4">
-        <div class="bg-white shadow-lg rounded-lg px-4 py-6">
-          <div class="text-center">
-            <img class="w-32 h-32 rounded-full mx-auto" src="/ImmoConnect/public/images/team1.jpg" alt="Team member">
-            <h3 class="text-xl font-medium mt-2">John Doe</h3>
-            <p class="text-gray-600">Position</p>
+        <div class="w-1/3 px-4">
+          <div class="bg-white shadow-lg rounded-lg px-4 py-6">
+            <div class="text-center">
+              <img class="w-32 h-32 rounded-full mx-auto" src="/ImmoConnect/public/images/team1.jpg" alt="Team member">
+              <h3 class="text-xl font-medium mt-2">John Doe</h3>
+              <p class="text-gray-600">Position</p>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="w-1/3 px-4">
-        <div class="bg-white shadow-lg rounded-lg px-4 py-6">
-          <div class="text-center">
-            <img class="w-32 h-32 rounded-full mx-auto" src="/ImmoConnect/public/images/team1.jpg" alt="Team member">
-            <h3 class="text-xl font-medium mt-2">John Doe</h3>
-            <p class="text-gray-600">Position</p>
+        <div class="w-1/3 px-4">
+          <div class="bg-white shadow-lg rounded-lg px-4 py-6">
+            <div class="text-center">
+              <img class="w-32 h-32 rounded-full mx-auto" src="/ImmoConnect/public/images/team1.jpg" alt="Team member">
+              <h3 class="text-xl font-medium mt-2">John Doe</h3>
+              <p class="text-gray-600">Position</p>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="w-1/3 px-4">
-        <div class="bg-white shadow-lg rounded-lg px-4 py-6">
-          <div class="text-center">
-            <img class="w-32 h-32 rounded-full mx-auto" src="/ImmoConnect/public/images/team1.jpg" alt="Team member">
-            <h3 class="text-xl font-medium mt-2">John Doe</h3>
-            <p class="text-gray-600">Position</p>
+        <div class="w-1/3 px-4">
+          <div class="bg-white shadow-lg rounded-lg px-4 py-6">
+            <div class="text-center">
+              <img class="w-32 h-32 rounded-full mx-auto" src="/ImmoConnect/public/images/team1.jpg" alt="Team member">
+              <h3 class="text-xl font-medium mt-2">John Doe</h3>
+              <p class="text-gray-600">Position</p>
+            </div>
           </div>
         </div>
+        <!-- Add more team member cards here -->
       </div>
-      <!-- Add more team member cards here -->
-    </div>
     </div>
   </section>
 
@@ -330,19 +332,44 @@
   <section class="bg-gray-200 py-8 mx-32 my-12">
     <div class="container mx-auto px-6">
       <h2 class="text-4xl font-bold mb-2">Contact</h2>
-      <form action="#" method="POST">
-        <div class="flex flex-wrap -mx-3 mb-6">
-          <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
-            <input class="appearance-none block w-full bg-white text-gray-700 border rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" type="text" placeholder="Full name">
+
+
+      <form class="max-w-md mx-auto">
+        <div class="relative z-0 w-full mb-5 group">
+          <input type="email" name="floating_email" id="floating_email" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " required />
+          <label for="floating_email" class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Email address</label>
+        </div>
+        <div class="relative z-0 w-full mb-5 group">
+          <input type="password" name="floating_password" id="floating_password" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " required />
+          <label for="floating_password" class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Password</label>
+        </div>
+        <div class="relative z-0 w-full mb-5 group">
+          <input type="password" name="repeat_password" id="floating_repeat_password" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " required />
+          <label for="floating_repeat_password" class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Confirm password</label>
+        </div>
+        <div class="grid md:grid-cols-2 md:gap-6">
+          <div class="relative z-0 w-full mb-5 group">
+            <input type="text" name="floating_first_name" id="floating_first_name" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " required />
+            <label for="floating_first_name" class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">First name</label>
           </div>
-          <div class="w-full md:w-1/2 px-3">
-            <input class="appearance-none block w-full bg-white text-gray-700 border rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white" type="email" placeholder="Email">
+          <div class="relative z-0 w-full mb-5 group">
+            <input type="text" name="floating_last_name" id="floating_last_name" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " required />
+            <label for="floating_last_name" class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Last name</label>
           </div>
         </div>
-        <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
-          Send
-        </button>
+        <div class="grid md:grid-cols-2 md:gap-6">
+          <div class="relative z-0 w-full mb-5 group">
+            <input type="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" name="floating_phone" id="floating_phone" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " required />
+            <label for="floating_phone" class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Phone number (123-456-7890)</label>
+          </div>
+          <div class="relative z-0 w-full mb-5 group">
+            <input type="text" name="floating_company" id="floating_company" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " required />
+            <label for="floating_company" class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Company (Ex. Google)</label>
+          </div>
+        </div>
+        <button type="submit" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Submit</button>
       </form>
+
     </div>
   </section>
 

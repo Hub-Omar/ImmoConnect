@@ -8,6 +8,12 @@ use App\models\UserModel;
 
 class UserController
 {
+    public function home()
+    {
+      include 'index.php';
+      exit();
+    }
+
   public function profil()
   {
     include '../../views/user/profil/profil.php';
