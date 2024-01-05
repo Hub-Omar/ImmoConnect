@@ -11,7 +11,6 @@ class CommentDAO
         $conn = Database::connect();
 
         $sql = "INSERT INTO `commentaire`(`label`, `annonce_id`, `user_id`) VALUES (?, ?, ?)";
-        $sql = "INSERT INTO `commentair`e(`label`, `annonce_id`, `user_id`) VALUES (?, ?, ?)";
         $stmt = $conn->prepare($sql);
         $stmt->bind_param("sii", $comment, $annonceId, $userId);
         $stmt->execute();

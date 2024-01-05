@@ -36,7 +36,7 @@
                 <img class="object-cover w-10 h-10 rounded-full" src="https://cdn.pixabay.com/photo/2018/09/12/12/14/man-3672010__340.jpg" alt="username" />
                 <div class="w-full pb-2">
                   <div class="flex justify-between">
-                    <span class="block ml-2 font-semibold text-gray-600"><?= $message['nom_recepteur']; ?></span>
+                    <span class="block ml-2 font-semibold text-gray-600"><?= $message['nom_recepteur'] ?></span>
                     <span class="block ml-2 text-sm text-gray-600"><?= date('H:i', strtotime($message['sent_at'])); ?></span>
                   </div>
                   <span class="block ml-2 text-sm text-gray-600"><?= $message['message_text']; ?></span>
