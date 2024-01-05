@@ -72,6 +72,21 @@ class MessageDAO
 
         return $success;
     }
+    public static function getMessagesUser($id){
+        $conn = Database::connect();
+
+        $requetSql = "SELECT ur.nom_complet as nom_recepteur,u.nom_complet as nom_emetteur,M.* FROM  user as ur JOIN `message` as M On ur.id=m.recepteur_id JOIN `user` as u  on M.emetteur_id=u.id   WHERE `emetteur_id` = ?";
+        $stmt = $conn->prepare($requetSql);
+        $stmt->bind_param("i", $id);
+        $stmt->execute();
+        $result = $stmt->get_result();
+        $messages = $result->fetch_all(MYSQLI_ASSOC);
+
+        $stmt->close();
+        $conn->close();
+return $messages;
+
+    }
 
 
 }

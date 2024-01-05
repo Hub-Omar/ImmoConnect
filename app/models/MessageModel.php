@@ -83,4 +83,8 @@ class MessageModel
     {
         return MessageDAO::addMessage($emitterId, $receiverId, $message);
     }
+    public static function getMessagesUser($id)
+    {
+        return MessageDAO::getMessagesUser($id);
+    }
 }

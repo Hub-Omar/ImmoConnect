@@ -3,16 +3,12 @@
 namespace App\controllers;
 
 require_once '../../vendor/autoload.php';
+
 use App\models\MessageModel;
-use App\DAO\MessageDAO;
 
 class MessageController
 {
-    public function viewChat()
-    {
-        include '../../views/user/chat.php';
-        exit();
-    }
+
     public function addMessage($emitterId, $receiverId, $message)
     {
         $success = MessageModel::addMessage($emitterId, $receiverId, $message);
@@ -24,5 +20,17 @@ class MessageController
         }
     }
 
-    
+    public function message()
+    {
+        $id = 1;
+        $messages = MessageModel::getMessagesUser($id);
+        $this->viewChat($messages);
+    }
+
+    private function viewChat($messages)
+    {
+
+        include '../../views/user/chat.php';
+        exit();
+    }
 }
