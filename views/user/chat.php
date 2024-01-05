@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -30,9 +29,7 @@
           <h2 class="my-2 mb-2 ml-2 text-lg text-gray-600">Chats</h2>
           <li>
             <?php foreach ($messages as $message) : ?>
-              <a id="messageid" class="flex items-center px-3 py-2 text-sm transition duration-150 ease-in-out border-b border-gray-300 cursor-pointer hover:bg-gray-100 focus:outline-none">
-                <input type="hidden" name="recepteur_id" value="<?= $message['recepteur_id']; ?>">
-
+              <a href="#" class="message-link flex items-center px-3 py-2 text-sm transition duration-150 ease-in-out border-b border-gray-300 cursor-pointer hover:bg-gray-100 focus:outline-none" data-recepteur="<?= $message['recepteur_id']; ?>">
                 <img class="object-cover w-10 h-10 rounded-full" src="https://cdn.pixabay.com/photo/2018/09/12/12/14/man-3672010__340.jpg" alt="username" />
                 <div class="w-full pb-2">
                   <div class="flex justify-between">
@@ -70,13 +67,13 @@
                       <span class="block"><?= $response['reply'] ?></span>
                     </div>
                   </li>
-              <?php }else{?>
-                <li class="flex justify-start">
+                <?php } else { ?>
+                  <li class="flex justify-start">
                     <div class="relative max-w-xl px-4 py-2 text-gray-700 rounded shadow">
                       <span class="block"><?= $response['reply'] ?></span>
                     </div>
                   </li>
-                
+
               <?php }
               endforeach; ?>
 
@@ -101,5 +98,7 @@
     </div>
   </div>
 </body>
+
+
 
 </html>
