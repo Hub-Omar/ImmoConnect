@@ -40,7 +40,7 @@ require '../../vendor/autoload.php';
   <div class="flex items-center md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
       <button type="button" class="flex text-sm bg-gray-800 rounded-full md:me-0 focus:ring-4 focus:ring-gray-300 dark:focus:ring-gray-600" id="user-menu-button" aria-expanded="false" data-dropdown-toggle="user-dropdown" data-dropdown-placement="bottom">
         <span class="sr-only">Open user menu</span>
-        <img class="w-8 h-8 rounded-full" src="../../public/image/7O2A0316.JPG" alt="user photo">
+        <img class="w-8 h-8 rounded-full" src="/ImmoConnect/public/image/7O2A0316.JPG" alt="user photo">
       </button>
       <!-- Dropdown menu -->
       <div class="z-50 hidden my-4 text-base list-none bg-white divide-y divide-gray-100 rounded-lg shadow dark:bg-gray-700 dark:divide-gray-600" id="user-dropdown">
@@ -50,11 +50,8 @@ require '../../vendor/autoload.php';
         </div>
         <ul class="py-2" aria-labelledby="user-menu-button">
           <li>
-<<<<<<< HEAD
             <a href="viewChat" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Chat</a>
-=======
-            <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Chat</a>
->>>>>>> 8fe6cb5e897db4879325f21cb093b19886e8a71c
+
           </li>
           <li>
             <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Settings</a>
@@ -93,7 +90,7 @@ require '../../vendor/autoload.php';
 
 
 <div class="relative">
-<img style="width:93rem;height:43rem" class="pl-6 rounded-3xl md: flex w-full" src="../../public/image/pexels-clay-elliot-5524336.jpg" />
+<img style="width:93rem;height:43rem" class="pl-6 rounded-3xl md: flex w-full" src="/ImmoConnect/public/image/pexels-clay-elliot-5524336.jpg" />
 <div style="top:20rem;right:20rem;background-color:rgba(30, 30, 30, 0.55)" class="absolute rounded-2xl h-52 w-96 flex flex-col space-y-12 md:right-8 w-8	">
   <p style="" class="relative text-white top-5 left-2 font-bold font-medium">Whether you’re searching  for houses, 
   apartments, or condos, it's easy to find a place
@@ -260,7 +257,7 @@ resident reviews and local insights to find what is right for you.</h1>
 <div class="cards flex justify-evenly flex-row sm:flex flex-wrap  ">
 
     <div class="card relative pl-4 border:1px none ;border-radius:20%;">
-      <img src="../../public/image/home2.jpg" class="relative " alt="home2" style="border:1px;border-radius:24px;height:16rem;width:15rem">
+      <img src="/ImmoConnect/public/image/home2.jpg" class="relative " alt="home2" style="border:1px;border-radius:24px;height:16rem;width:15rem">
       <div class="flex flex-col space-y-3 space-x-16 absolute rounded-3xl h-24" style="background-color:rgba(30, 30, 0, 0.55) ; top:160px; width:240px ;left:16px" >
         <span class="relative text-white pt-3 pl-4 font-bold font-medium">189 Wilson Ave</span>       
         <input type="submit" style="background-color:#183D3D" class="relative w-24 h-11 left-10 rounded-lg text-white font-light" value="Show More">
@@ -268,7 +265,7 @@ resident reviews and local insights to find what is right for you.</h1>
      </div>
 
      <div class="card relative pl-4 border:1px none ;border-radius:20%;">
-      <img src="../../public/image/home1.jpg" class="relative " alt="home2" style="border:1px;border-radius:24px;height:16rem;width:15rem">
+      <img src="/ImmoConnect/public/image/home1.jpg" class="relative " alt="home2" style="border:1px;border-radius:24px;height:16rem;width:15rem">
       <div class="flex flex-col space-y-3 space-x-16 absolute rounded-3xl h-24" style="background-color:rgba(30, 30, 0, 0.55) ; top:160px; width:240px ;left:16px" >
         <span class="relative text-white pt-3 pl-4 font-bold font-medium">189 Wilson Ave</span>       
         <input type="submit" style="background-color:#183D3D" class="relative w-24 h-11 left-10 rounded-lg text-white font-light" value="Show More">
@@ -276,7 +273,7 @@ resident reviews and local insights to find what is right for you.</h1>
      </div>
 
      <div class="card relative pl-4 border:1px none ;border-radius:20%;">
-      <img src="../../public/image/home3.jpg" class="relative " alt="home2" style="border:1px;border-radius:24px;height:16rem;width:15rem">
+      <img src="/ImmoConnect/public/image/home3.jpg" class="relative " alt="home2" style="border:1px;border-radius:24px;height:16rem;width:15rem">
       <div class="flex flex-col space-y-3 space-x-16 absolute rounded-3xl h-24" style="background-color:rgba(30, 30, 0, 0.55) ; top:160px; width:240px ;left:16px" >
         <span class="relative text-white pt-3 pl-4 font-bold font-medium">189 Wilson Ave</span>       
         <input type="submit" style="background-color:#183D3D" class="relative w-24 h-11 left-10 rounded-lg text-white font-light" value="Show More">
@@ -284,7 +281,7 @@ resident reviews and local insights to find what is right for you.</h1>
      </div>
 
      <div class="card relative pl-4 border:1px none ;border-radius:20%;">
-      <img src="../../public/image/home6.jpg" class="relative " alt="home2" style="border:1px;border-radius:24px;height:16rem;width:15rem">
+      <img src="/ImmoConnect/public/image/home6.jpg" class="relative " alt="home2" style="border:1px;border-radius:24px;height:16rem;width:15rem">
       <div class="flex flex-col space-y-3 space-x-16 absolute rounded-3xl h-24" style="background-color:rgba(30, 30, 0, 0.55) ; top:160px; width:240px ;left:16px" >
         <span class="relative text-white pt-3 pl-4 font-bold font-medium">189 Wilson Ave</span>       
         <input type="submit" style="background-color:#183D3D" class="relative w-24 h-11 left-10 rounded-lg text-white font-light" value="Show More">
@@ -298,7 +295,7 @@ resident reviews and local insights to find what is right for you.</h1>
   <div class="cards-b flex justify-evenly flex-row sm:flex flex-wrap pt-20 ">
 
 <div class="card relative pl-4 border:1px none ;border-radius:20%;">
-  <img src="../../public/image/home7.jpg" class="relative " alt="home2" style="border:1px;border-radius:24px;height:28rem;width:20rem">
+  <img src="/ImmoConnect/public/image/home7.jpg" class="relative " alt="home2" style="border:1px;border-radius:24px;height:28rem;width:20rem">
     <div class="flex flex-col absolute rounded-3xl h-48" style="background-color:rgba(30, 30, 0, 0.55) ; top:256px; width:320px ;left:16px" >
         <p class="relative text-white pt-3 pl-1 font-bold font-medium">189 Wilson Ave</p>       
         <p class="relative text-white pt-0 pl-1 font-bold font-medium">189 Wilson Ave</p>       
@@ -310,7 +307,7 @@ resident reviews and local insights to find what is right for you.</h1>
  </div>
 
  <div class="card relative pl-4 border:1px none ;border-radius:20%;">
-  <img src="../../public/image/home5.jpg" class="relative " alt="home2" style="border:1px;border-radius:24px;height:28rem;width:20rem">
+  <img src="/ImmoConnect/public/image/home5.jpg" class="relative " alt="home2" style="border:1px;border-radius:24px;height:28rem;width:20rem">
     <div class="flex flex-col absolute rounded-3xl h-48" style="background-color:rgba(30, 30, 0, 0.55) ; top:256px; width:320px ;left:16px" >
         <p class="relative text-white pt-3 pl-1 font-bold font-medium">189 Wilson Ave</p>       
         <p class="relative text-white pt-0 pl-1 font-bold font-medium">189 Wilson Ave</p>       
@@ -322,7 +319,7 @@ resident reviews and local insights to find what is right for you.</h1>
  </div>
 
  <div class="card relative pl-4 border:1px none ;border-radius:20%;">
-  <img src="../../public/image/home6.jpg" class="relative " alt="home2" style="border:1px;border-radius:24px;height:28rem;width:20rem">
+  <img src="/ImmoConnect/public/image/home6.jpg" class="relative " alt="home2" style="border:1px;border-radius:24px;height:28rem;width:20rem">
     <div class="flex flex-col absolute rounded-3xl h-48" style="background-color:rgba(30, 30, 0, 0.55) ; top:256px; width:320px ;left:16px" >
         <p class="relative text-white pt-3 pl-1 font-bold font-medium">189 Wilson Ave</p>       
         <p class="relative text-white pt-0 pl-1 font-bold font-medium">189 Wilson Ave</p>       
@@ -343,7 +340,7 @@ resident reviews and local insights to find what is right for you.</h1>
 
  <div class="flex flex-row justify-evenly sm:flex flex-wrap pt-20 ">
      <div class="card1 relative border:1px none ;border-radius:20%;">
-     <img src="../../public/image/home1.jpg" class="relative " alt="home2" style="border:1px;border-radius:24px;height:24rem;width:18rem">
+     <img src="/ImmoConnect/public/image/home1.jpg" class="relative " alt="home2" style="border:1px;border-radius:24px;height:24rem;width:18rem">
         <div class="flex flex-col absolute rounded-3xl h-48" style="background-color:rgba(30, 30, 0, 0.55) ; top:192px; width:288px ;left:0px" >
          <p class="relative text-white pt-3 pl-1 font-bold font-medium">189 Wilson Ave</p>       
          <p class="relative text-white pt-0 pl-1 font-bold font-medium">189 Wilson Ave</p>       
@@ -356,7 +353,7 @@ resident reviews and local insights to find what is right for you.</h1>
 
       <div class="flex flex-col justify-between sm:flex flex-wrap">
           <div class="card2 relative border:1px none ;border-radius:20%;">
-           <img src="../../public/image/home2.jpg" class="relative " alt="home2" style="border:1px;border-radius:24px;height:11rem;width:15rem">
+           <img src="/ImmoConnect/public/image/home2.jpg" class="relative " alt="home2" style="border:1px;border-radius:24px;height:11rem;width:15rem">
            <div class="flex flex-col space-y-1 space-x-32 absolute rounded-3xl h-20 left-0 bottom-0" style="background-color:rgba(30, 30, 0, 0.55); width:240px" >
               <p class="relative text-white pl-4 font-bold font-medium">189 Wilson Ave</p>       
               <input type="submit" style="background-color:#183D3D" class="relative w-24 h-10 bottom-0 left-0 rounded-lg text-white font-light" value="Show More">
@@ -364,7 +361,7 @@ resident reviews and local insights to find what is right for you.</h1>
           </div>
 
           <div class="card2 relative border:1px none ;border-radius:20%;">
-           <img src="../../public/image/home2.jpg" class="relative " alt="home2" style="border:1px;border-radius:24px;height:11rem;width:15rem">
+           <img src="/ImmoConnect/public/image/home2.jpg" class="relative " alt="home2" style="border:1px;border-radius:24px;height:11rem;width:15rem">
            <div class="flex flex-col space-y-1 space-x-32 absolute rounded-3xl h-20 left-0 bottom-0" style="background-color:rgba(30, 30, 0, 0.55); width:240px" >
               <p class="relative text-white pl-4 font-bold font-medium">189 Wilson Ave</p>       
               <input type="submit" style="background-color:#183D3D" class="relative w-24 h-10 bottom-0 left-0 rounded-lg text-white font-light" value="Show More">
@@ -373,7 +370,7 @@ resident reviews and local insights to find what is right for you.</h1>
       </div>
 
        <div class="card3 relative border:1px none ;border-radius:20%;">
-          <img src="../../public/image/home1.jpg" class="relative " alt="home2" style="border:1px;border-radius:24px;height:24rem;width:18rem">
+          <img src="/ImmoConnect/public/image/home1.jpg" class="relative " alt="home2" style="border:1px;border-radius:24px;height:24rem;width:18rem">
           <div class="flex flex-col absolute rounded-3xl h-48" style="background-color:rgba(30, 30, 0, 0.55) ; top:192px; width:288px ;left:0px" >
              <p class="relative text-white pt-3 pl-1 font-bold font-medium">189 Wilson Ave</p>       
              <p class="relative text-white pt-0 pl-1 font-bold font-medium">189 Wilson Ave</p>       
@@ -386,7 +383,7 @@ resident reviews and local insights to find what is right for you.</h1>
 
         <div class="flex flex-col justify-between sm:flex flex-wrap">
           <div class="card2 relative border:1px none ;border-radius:20%;">
-           <img src="../../public/image/home2.jpg" class="relative " alt="home2" style="border:1px;border-radius:24px;height:11rem;width:15rem">
+           <img src="/ImmoConnect/public/image/home2.jpg" class="relative " alt="home2" style="border:1px;border-radius:24px;height:11rem;width:15rem">
            <div class="flex flex-col space-y-1 space-x-32 absolute rounded-3xl h-20 left-0 bottom-0" style="background-color:rgba(30, 30, 0, 0.55); width:240px" >
               <span class="relative text-white font-bold font-medium">189 Wilson Ave</span>       
               <input type="submit" style="background-color:#183D3D" class="relative w-24 h-10 bottom-0 left-0 rounded-lg text-white font-light" value="Show More">
@@ -394,7 +391,7 @@ resident reviews and local insights to find what is right for you.</h1>
           </div>
 
           <div class="card2 relative border:1px none ;border-radius:20%;">
-           <img src="../../public/image/home2.jpg" class="relative " alt="home2" style="border:1px;border-radius:24px;height:11rem;width:15rem">
+           <img src="/ImmoConnect/public/image/home2.jpg" class="relative " alt="home2" style="border:1px;border-radius:24px;height:11rem;width:15rem">
            <div class="flex flex-col space-y-1 space-x-32 absolute rounded-3xl h-20 left-0 bottom-0" style="background-color:rgba(30, 30, 0, 0.55); width:240px" >
               <span class="relative text-white font-bold font-medium">189 Wilson Ave</span>       
               <input type="submit" style="background-color:#183D3D" class="relative w-24 h-10 bottom-0 left-0 rounded-lg text-white font-light" value="Show More">
@@ -415,7 +412,7 @@ resident reviews and local insights to find what is right for you.</h1>
 <div class="cards-b flex justify-evenly flex-row sm:flex flex-wrap pt-20 ">
 
 <div class="card relative pl-4 border:1px none ;border-radius:20%;">
-  <img src="../../public/image/home7.jpg" class="relative " alt="home2" style="border:1px;border-radius:24px;height:28rem;width:20rem">
+  <img src="/ImmoConnect/public/image/home7.jpg" class="relative " alt="home2" style="border:1px;border-radius:24px;height:28rem;width:20rem">
     <div class="flex flex-col absolute rounded-3xl h-48" style="background-color:rgba(30, 30, 0, 0.55) ; top:256px; width:320px ;left:16px" >
         <p class="relative text-white pt-3 pl-1 font-bold font-medium">189 Wilson Ave</p>       
         <p class="relative text-white pt-0 pl-1 font-bold font-medium">189 Wilson Ave</p>       
@@ -427,7 +424,7 @@ resident reviews and local insights to find what is right for you.</h1>
  </div>
 
  <div class="card relative pl-4 border:1px none ;border-radius:20%;">
-  <img src="../../public/image/home5.jpg" class="relative " alt="home2" style="border:1px;border-radius:24px;height:28rem;width:20rem">
+  <img src="/ImmoConnect/public/image/home5.jpg" class="relative " alt="home2" style="border:1px;border-radius:24px;height:28rem;width:20rem">
     <div class="flex flex-col absolute rounded-3xl h-48" style="background-color:rgba(30, 30, 0, 0.55) ; top:256px; width:320px ;left:16px" >
         <p class="relative text-white pt-3 pl-1 font-bold font-medium">189 Wilson Ave</p>       
         <p class="relative text-white pt-0 pl-1 font-bold font-medium">189 Wilson Ave</p>       
@@ -439,7 +436,7 @@ resident reviews and local insights to find what is right for you.</h1>
  </div>
 
  <div class="card relative pl-4 border:1px none ;border-radius:20%;">
-  <img src="../../public/image/home6.jpg" class="relative " alt="home2" style="border:1px;border-radius:24px;height:28rem;width:20rem">
+  <img src="/ImmoConnect/public/image/home6.jpg" class="relative " alt="home2" style="border:1px;border-radius:24px;height:28rem;width:20rem">
     <div class="flex flex-col absolute rounded-3xl h-48" style="background-color:rgba(30, 30, 0, 0.55) ; top:256px; width:320px ;left:16px" >
         <p class="relative text-white pt-3 pl-1 font-bold font-medium">189 Wilson Ave</p>       
         <p class="relative text-white pt-0 pl-1 font-bold font-medium">189 Wilson Ave</p>       
