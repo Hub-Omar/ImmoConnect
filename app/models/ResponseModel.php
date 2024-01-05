@@ -70,6 +70,10 @@ class ResponseModel
     {
         return ResponseDAO::getResponsesByMessageId($messageId);
     }
+    public static function getResponsesByRecepteurId($recepteurId)
+    {
+        return ResponseDAO::getResponsesByRecepteurId($recepteurId);
+    }
 
     public static function addResponse($messageId, $emetteurId, $reply)
     {
