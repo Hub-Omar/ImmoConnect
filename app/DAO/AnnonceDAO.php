@@ -53,11 +53,11 @@ class AnnonceDAO
         a.date_ajout,
         MIN(i.id) AS image_id,
         MIN(i.path) AS image_path
-    FROM bien AS b
-    JOIN images AS i ON b.id = i.bien_id
-    JOIN annonce AS a ON i.annonce_id = a.id
-    GROUP BY a.id
-    ";
+         FROM bien AS b
+         JOIN images AS i ON b.id = i.bien_id
+         JOIN annonce AS a ON i.annonce_id = a.id
+         GROUP BY a.id";
+
         $stmt = $conn->prepare($sql);
         $stmt->execute();
 
@@ -70,43 +70,7 @@ class AnnonceDAO
         return $all_annonce;
     }
 
-<<<<<<< HEAD
-=======
-
-    //     public function AddAnnonce()
-//     {
-//         $conn = Database::connect();
-
-    //         $requetAjouter = "INSERT INTO `annonce`(`image`, `prix`, `titre`, `description`, `date_ajout`, `bien_id`) 
-//         VALUES ([value-2],[value-3],[value-4],[value-5],[value-6],[value-7])";
-
-    //         $ajouterclients = mysqli_query($connect,$requetAjouter);
-
-    //         if($ajouterclients){
-//         header("Location:clients.php");
-//    }
-//    else{
-//     echo"erreur";
-//    }
-
-
-    //     }
-
-    //     public function DeletAnnonce()
-//     {
-//         $conn = Database::connect();
-
-    //     }
-
-    //     public function UpdateAnnonce()
-//     {        
-//         $conn = Database::connect();
-
-
-    //     }
-
->>>>>>> 3e62bd114998a11ca3714468e992324b6861b46f
-    public static function AddAnnonce($prix, $titre, $description, $date_ajout)
+    public static function AddAnnonces($prix, $titre, $description, $dateAjout)
     {
         $conn = Database::connect();
         
@@ -115,12 +79,11 @@ class AnnonceDAO
    
         $ajouterAnnonce = $conn->prepare($requetAjouter);
 
-        $stmt=bind_param("fssd",$prix ,$titre ,$description ,$date_ajout);
-        $AddAnnonce= $stmt->execute();
-        return $AddAnnonce;
-      
-   }var_dump($AddAnnonce);
-
+        $ajouterAnnonce->bind_param("dsss",$prix ,$titre ,$description ,$dateAjout);
+        $AddAnnonce= $ajouterAnnonce->execute();
+       
+   }
+   
     public static function deleteAnnonce($id)
         {
 
@@ -134,12 +97,11 @@ class AnnonceDAO
 
        $deleteAnnonce= $delete->execute();
 
-       return $deleteAnnonce;
 
        }
        
 
-    public static function updateAnnonce($prix, $titre, $description, $date_ajout)
+    public static function updateAnnonce($prix, $titre, $description, $dateAjout)
      {
 
     $conn = Database::connect();
@@ -147,17 +109,13 @@ class AnnonceDAO
     $requeteUpdate = "UPDATE `annonce` SET `prix`=?, `titre`=?, `description`=?, `date_ajout`=?";
 
     $update = $conn->prepare($requeteUpdate);
-    $update->bind_param("issd",$prix, $titre, $description, $date_ajout);
+    $update->bind_param("issd",$prix, $titre, $description, $dateAjout);
     
     $updateAnnonce=$update->execute();
 
     return $updateAnnonce;
 
     }
-<<<<<<< HEAD
 
-   
-=======
->>>>>>> 3e62bd114998a11ca3714468e992324b6861b46f
 }
     
