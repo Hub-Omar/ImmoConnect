@@ -2,27 +2,22 @@
 
 namespace App\models;
 
-require '../../vendor/autoload.php';
-
 use App\dao\MessageDAO;
 
 class MessageModel
 {
-
-
     private $id;
-    private $emetteur_id;
-    private $recepteur_id;
+    private $emitterId;
+    private $receiverId;
     private $message;
-    private $sent_at;
+    private $sentAt;
 
-    public function __construct($id, $emetteur_id, $recepteur_id, $message, $sent_at)
+    public function __construct($emitterId, $receiverId, $message, $sentAt)
     {
-        $this->id = $id;
-        $this->emetteur_id = $emetteur_id;
-        $this->recepteur_id = $recepteur_id;
+        $this->emitterId = $emitterId;
+        $this->receiverId = $receiverId;
         $this->message = $message;
-        $this->sent_at = $sent_at;
+        $this->sentAt = $sentAt;
     }
 
     public function getId()
@@ -30,24 +25,24 @@ class MessageModel
         return $this->id;
     }
 
-    public function getEmetteurId()
+    public function getEmitterId()
     {
-        return $this->emetteur_id;
+        return $this->emitterId;
     }
 
-    public function setEmetteurId($emetteur_id)
+    public function setEmitterId($emitterId)
     {
-        $this->emetteur_id = $emetteur_id;
+        $this->emitterId = $emitterId;
     }
 
-    public function getRecepteurId()
+    public function getReceiverId()
     {
-        return $this->recepteur_id;
+        return $this->receiverId;
     }
 
-    public function setRecepteurId($recepteur_id)
+    public function setReceiverId($receiverId)
     {
-        $this->recepteur_id = $recepteur_id;
+        $this->receiverId = $receiverId;
     }
 
     public function getMessage()
@@ -62,12 +57,12 @@ class MessageModel
 
     public function getSentAt()
     {
-        return $this->sent_at;
+        return $this->sentAt;
     }
 
-    public function setSentAt($sent_at)
+    public function setSentAt($sentAt)
     {
-        $this->sent_at = $sent_at;
+        $this->sentAt = $sentAt;
     }
 
     public static function getMessageById($id)
@@ -79,10 +74,12 @@ class MessageModel
     {
         return MessageDAO::getAllMessages();
     }
+
     public static function addMessage($emitterId, $receiverId, $message)
     {
         return MessageDAO::addMessage($emitterId, $receiverId, $message);
     }
+
     public static function getMessagesUser($id)
     {
         return MessageDAO::getMessagesUser($id);

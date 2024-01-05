@@ -10,13 +10,14 @@ class ResponseModel
 {
     private $id;
     private $messageId;
+    private $emetteurId;
     private $reply;
     private $sentAt;
 
-    public function __construct($id, $messageId, $reply, $sentAt)
+    public function __construct($messageId, $emetteurId, $reply, $sentAt)
     {
-        $this->id = $id;
         $this->messageId = $messageId;
+        $this->emetteurId = $emetteurId;
         $this->reply = $reply;
         $this->sentAt = $sentAt;
     }
@@ -34,6 +35,15 @@ class ResponseModel
     public function setMessageId($messageId)
     {
         $this->messageId = $messageId;
+    }
+    public function getEmetteurId()
+    {
+        return $this->emetteurId;
+    }
+
+    public function setEmetteurId($emetteurId)
+    {
+        $this->emetteurId = $emetteurId;
     }
 
     public function getReply()
@@ -60,8 +70,9 @@ class ResponseModel
     {
         return ResponseDAO::getResponsesByMessageId($messageId);
     }
-    public static function addResponse($messageId, $reply)
+
+    public static function addResponse($messageId, $emetteurId, $reply)
     {
-        return ResponseDAO::addResponse($messageId, $reply);
+        return ResponseDAO::addResponse($messageId, $emetteurId, $reply);
     }
 }

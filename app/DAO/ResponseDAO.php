@@ -24,13 +24,13 @@ class ResponseDAO
 
         return $responses;
     }
-    public static function addResponse($messageId, $reply)
+    public static function addResponse($messageId,$emetteur_id, $reply)
     {
         $conn = Database::connect();
 
-        $sql = "INSERT INTO `Response` (`message_id`, `reply`, `sent_at`) VALUES (?, ?, CURRENT_TIMESTAMP)";
+        $sql = "INSERT INTO `Response` (`message_id`, `emetteur_id`, `reply`, `sent_at`) VALUES (?, ?, ?, CURRENT_TIMESTAMP)";
         $stmt = $conn->prepare($sql);
-        $stmt->bind_param("is", $messageId, $reply);
+        $stmt->bind_param("iis", $messageId, $emetteur_id, $reply);
         
         $success = $stmt->execute();
 

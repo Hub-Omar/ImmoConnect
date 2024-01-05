@@ -13,6 +13,7 @@ class UserModel
         $roleId = 2; 
 
         UserDAO::registerUser($name, $email, password_hash($password, PASSWORD_DEFAULT), $phone, $roleId);
+    
     }
 
     public static function authenticateUser($email, $password)
@@ -21,6 +22,7 @@ class UserModel
 
         if ($user && password_verify($password, $user['password'])) {
             return true;
+            
         }
 
         return false;

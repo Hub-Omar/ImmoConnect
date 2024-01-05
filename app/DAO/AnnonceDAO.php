@@ -153,7 +153,7 @@ class AnnonceDAO
 
     }
 
-<<<<<<< HEAD
+
     public static function updateStatut($annonceId, $newStatut)
     {
         $conn = Database::connect();
@@ -169,8 +169,6 @@ class AnnonceDAO
 
         return $success;
     }
-=======
 
->>>>>>> 8fe6cb5e897db4879325f21cb093b19886e8a71c
 }
     

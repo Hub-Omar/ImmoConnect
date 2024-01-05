@@ -3,8 +3,10 @@
 namespace App\controllers;
 
 require_once '../../vendor/autoload.php';
+
 use App\models\UserModel;
 use App\DAO\UserDAO;
+
 session_start();
 class AuthController
 {
@@ -50,9 +52,12 @@ class AuthController
                 $user = UserDAO::getUserByEmail($email);
 
                 if ($user['role_id'] == 1) {
+                    $_SESSION['id'] = $user['id'];
+
                     header("Location: admin");
                     exit();
                 } elseif ($user['role_id'] == 2) {
+                    $_SESSION['id'] = $user['id'];
                     $_SESSION['user_image'] = $user['profile'];
                     header("Location: details");
                     exit();
