@@ -78,7 +78,7 @@
             <div class="line"></div>
             <p>$614,999</p>
             <form action="booking" method="post" id="bookingForm" style="width:10%">
-                <input type="hidden" name="annonceId" value="<?php echo $annonce['id']; ?>">
+                <input type="hidden" name="annonceId" value="<?php echo base64_encode($annonce['id']); ?>">
                 <button class="buy" type="submit" style="background-color:#183D3D">Book Now</button>
             </form>
 
