@@ -29,7 +29,8 @@ CREATE TABLE Annonce (
     prix double,
     titre VARCHAR(255),
     description VARCHAR(255),
-    date_ajout TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+    date_ajout TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    statut BOOLEAN DEFAULT FALSE
 );
 
 CREATE TABLE images(
@@ -63,8 +64,10 @@ CREATE TABLE Message (
 CREATE TABLE Response(
     id INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
     message_id INT,
-    replay VARCHAR(255),
+    emetteur_id INT,
+    reply VARCHAR(255),
     sent_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    FOREIGN KEY (emetteur_id) REFERENCES user(id) ON DELETE CASCADE ON UPDATE CASCADE,
     FOREIGN KEY (message_id) REFERENCES message(id) ON DELETE CASCADE ON UPDATE CASCADE
 );
 

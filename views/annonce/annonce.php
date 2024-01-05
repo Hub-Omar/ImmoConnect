@@ -50,7 +50,11 @@
         </div>
         <ul class="py-2" aria-labelledby="user-menu-button">
           <li>
+<<<<<<< HEAD
+            <a href="viewChat" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Chat</a>
+=======
             <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Chat</a>
+>>>>>>> 8fe6cb5e897db4879325f21cb093b19886e8a71c
           </li>
           <li>
             <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Settings</a>

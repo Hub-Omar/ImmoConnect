@@ -70,7 +70,44 @@ class AnnonceDAO
         return $all_annonce;
     }
 
+<<<<<<< HEAD
     public static function AddAnnonces($prix, $titre, $description, $dateAjout)
+=======
+
+    //     public function AddAnnonce()
+//     {
+//         $conn = Database::connect();
+
+    //         $requetAjouter = "INSERT INTO `annonce`(`image`, `prix`, `titre`, `description`, `date_ajout`, `bien_id`) 
+//         VALUES ([value-2],[value-3],[value-4],[value-5],[value-6],[value-7])";
+
+    //         $ajouterclients = mysqli_query($connect,$requetAjouter);
+
+    //         if($ajouterclients){
+//         header("Location:clients.php");
+//    }
+//    else{
+//     echo"erreur";
+//    }
+
+
+    //     }
+
+    //     public function DeletAnnonce()
+//     {
+//         $conn = Database::connect();
+
+    //     }
+
+    //     public function UpdateAnnonce()
+//     {        
+//         $conn = Database::connect();
+
+
+    //     }
+
+    public static function AddAnnonce($prix, $titre, $description, $date_ajout)
+>>>>>>> 7e08b748e2b6de8cf8cc19f72fd83fdd2cf758dc
     {
         $conn = Database::connect();
         
@@ -79,11 +116,21 @@ class AnnonceDAO
    
         $ajouterAnnonce = $conn->prepare($requetAjouter);
 
+<<<<<<< HEAD
         $ajouterAnnonce->bind_param("dsss",$prix ,$titre ,$description ,$dateAjout);
         $AddAnnonce= $ajouterAnnonce->execute();
        
    }
    
+=======
+        $ajouterAnnonce->bind_param("issd",$prix ,$titre ,$description ,$date_ajout);
+        $AddAnnonce= $ajouterAnnonce->execute();
+       
+        return $AddAnnonce;
+      
+   }
+
+>>>>>>> 7e08b748e2b6de8cf8cc19f72fd83fdd2cf758dc
     public static function deleteAnnonce($id)
         {
 
@@ -117,5 +164,25 @@ class AnnonceDAO
 
     }
 
+<<<<<<< HEAD
+=======
+
+    public static function updateStatut($annonceId, $newStatut)
+    {
+        $conn = Database::connect();
+
+        $sql = "UPDATE annonce SET statut = ? WHERE id = ?";
+        $stmt = $conn->prepare($sql);
+        $stmt->bind_param("ii", $newStatut, $annonceId);
+
+        $success = $stmt->execute();
+
+        $stmt->close();
+        $conn->close();
+
+        return $success;
+    }
+
+>>>>>>> 7e08b748e2b6de8cf8cc19f72fd83fdd2cf758dc
 }
     

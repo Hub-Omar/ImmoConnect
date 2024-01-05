@@ -47,8 +47,9 @@
             </form>
         </div>
     </section>
-    
+
 </body>
 
 <script src="/ImmoConnect/public/js/sign_login.js"></script>
+
 </html>
