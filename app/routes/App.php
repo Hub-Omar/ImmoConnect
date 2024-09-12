@@ -9,15 +9,25 @@ $router = new Router();
 $router->setRoutes([
     'GET' => [
         'details' => ['DetailsController', 'details'],
+        'signup' => ['AuthController', 'signup'],
+        'signin' => ['AuthController', 'login'],
+        'viewChat' => ['MessageController', 'message'],
+        'profil'=>['UserController', 'getUserAnnonce'],
+        'annonce' => ['AnnonceController', 'annonce'],
     ],
     'POST' => [
-        'submit' => ['DetailsController', 'save']
-    ]
+        'submit' => ['DetailsController', 'save'],
+        'details' => ['CommentsController', 'saveComment'],
+        'signup' => ['AuthController', 'registerUser'],
+        'signin' => ['AuthController', 'authenticateUser'],
+        'addMessage' => ['MessageController', 'addMessage'],
+        'booking' => ['DetailsController', 'bookNow'],
+    ],
 ]);
 
 if (isset($_GET['url'])) {
     $uri = trim($_GET['url'], '/');
-    
+
     $methode = $_SERVER['REQUEST_METHOD'];
 
     try {
